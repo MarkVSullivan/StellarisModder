@@ -3,12 +3,14 @@ App to help maintain my Stellaris mod
 
 Mod does the following:
 - More terraforming candidate planets
+- Using minor artifacts for precursor clue produces a shorter cooldown
 - Make void borne ascension perk better to make up for reduced habitat habitability
 - Make psionic ascension provide worker productivity as well
 - Fully psionic ascended get access to two special techs
 - Habitat capital get bureaucrat jobs as well
 - Functional architecture should work for habitats as well
 - Add knight-errand and serf to the noble estates
+- Refineries, chemical planets, and crysal plants have two jobs, rather than one
 - After initial expansion, habitats are now size 9 (not 6)
 - After final expansion, habitats are now size 12 (not 8)
 - Each time the hydrocentric player expands planetary sea, increase planet size by 3 (not 1)
@@ -27,6 +29,6 @@ Mod does the following:
 - Make lower difficulties harder to fix too simple early game with scaling
 - Hydrocentric perk makes aquatic a bit better
 - Allow Hydrocentric empires to gene modify for aquatic
+- Some higher level traits (non-initial) slightly cheaper
 - Conquering capital planet of an empire with a relic gives relic 100% of the time
 - Make neighbor planets not frozen for ocean paradise origin
-- Adds new technologies (1 for more building slots, 1 more for civic slots)
