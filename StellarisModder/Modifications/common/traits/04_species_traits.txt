@@ -1,0 +1,17 @@
+# Some higher level traits (non-initial) slightly cheaper
+@LINEREPLACE trait_fertile
+cost = 4
+@WITH
+cost = 3
+@LINEREPLACE trait_robust
+cost = 4
+@WITH
+cost = 3
+@LINEREPLACE trait_robust
+leader_age = 50
+@WITH
+leader_age = 80
+@LINEREPLACE trait_erudite
+cost = 4
+@WITH
+cost = 3
