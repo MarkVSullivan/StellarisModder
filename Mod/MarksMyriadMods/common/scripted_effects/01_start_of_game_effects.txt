@@ -2395,17 +2395,20 @@ give_starting_resources_effect = {
 		}
 		owner = {
 			add_resource = {
-				minerals = 5000
+				minerals = 2500
 				energy = 5000
 				food = 2400
-				alloys = 2400
+				alloys = 2500
 				consumer_goods = 5000
 				influence = 600
 				unity = 6000
 				exotic_gases = 5000
 				rare_crystals = 5000
 				volatile_motes = 5000
+				minor_artifacts = 150
 			}
+			add_relic = r_war_forge
+			add_relic = r_omnicodex
 			give_technology = {
 				tech = tech_robotic_workers
 				message = no

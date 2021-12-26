@@ -1,0 +1,5 @@
+# Using minor artifacts for precursor clue produces a shorter cooldown
+@LINEREPLACE artifact_precursor_clue
+days = 1800
+@WITH
+days = 360
