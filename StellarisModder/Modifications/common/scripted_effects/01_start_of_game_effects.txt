@@ -145,6 +145,38 @@ give_starting_resources_effect = {
 				add_experience = 500
 			}
 			create_leader = {
+				class = scientist
+				species = owner_main_species
+				skill = 3
+				leader_age_min = 20
+				leader_age_max = 25
+				traits = {
+					trait = "leader_trait_towel"
+					trait = "leader_trait_inspired_archaeologist"
+					trait = "leader_trait_carefree"
+					trait = "leader_trait_meticulous"
+				}
+			}
+			last_created_leader = {
+				add_experience = 500
+			}
+			create_leader = {
+				class = scientist
+				species = owner_main_species
+				skill = 3
+				leader_age_min = 20
+				leader_age_max = 25
+				traits = {
+					trait = "leader_trait_towel"
+					trait = "leader_trait_inspired_archaeologist"
+					trait = "leader_trait_carefree"
+					trait = "leader_trait_meticulous"
+				}
+			}
+			last_created_leader = {
+				add_experience = 500
+			}
+			create_leader = {
 				class = admiral
 				species = owner_main_species
 				skill = 3
