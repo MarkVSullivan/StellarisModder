@@ -1,0 +1,51 @@
+# Can persue more than one precursor chain
+@LINEREPLACE ship_event#precursor.1
+	has_country_flag = yuht_intro
+@WITH
+	#has_country_flag = yuht_intro
+@LINEREPLACE ship_event#precursor.1
+	has_country_flag = first_league_intro
+@WITH
+	#has_country_flag = first_league_intro
+@LINEREPLACE ship_event#precursor.1
+	has_country_flag = irassian_intro
+@WITH
+	#has_country_flag = irassian_intro
+@LINEREPLACE ship_event#precursor.1
+	has_country_flag = cybrex_intro
+@with
+	#has_country_flag = cybrex_intro
+@LINEREPLACE ship_event#precursor.1
+	has_country_flag = zroni_intro
+@WITH 
+	#has_country_flag = zroni_intro
+@LINEREPLACE ship_event#precursor.1
+	has_country_flag = baol_intro
+@WITH 
+	#has_country_flag = baol_intro
+
+
+@LINEREPLACE ship_event#precursor.500
+	has_country_flag = vultaum_intro
+@WITH
+	#has_country_flag = vultaum_intro
+@LINEREPLACE ship_event#precursor.500
+	has_country_flag = first_league_intro
+@WITH
+	#has_country_flag = first_league_intro
+@LINEREPLACE ship_event#precursor.500
+	has_country_flag = irassian_intro
+@WITH
+	#has_country_flag = irassian_intro
+@LINEREPLACE ship_event#precursor.500
+	has_country_flag = cybrex_intro
+@with
+	#has_country_flag = cybrex_intro
+@LINEREPLACE ship_event#precursor.500
+	has_country_flag = zroni_intro
+@WITH 
+	#has_country_flag = zroni_intro
+@LINEREPLACE ship_event#precursor.500
+	has_country_flag = baol_intro
+@WITH 
+	#has_country_flag = baol_intro

@@ -59,7 +59,14 @@ namespace StellarisModder.Actions
             // This may have sub-entities to deal with.. let's check
             if (entityName.IndexOf(">") < 0)
             {
-                ResourceFileEntity entity = file.GetEntity(entityName);
+                string id = null;
+                if (entityName.IndexOf("#") > 0)
+                {
+                    id = entityName.Substring(entityName.IndexOf("#") + 1);
+                    entityName = entityName.Substring(0, entityName.IndexOf("#"));
+                }
+
+                ResourceFileEntity entity = file.GetEntity(entityName, id);
                 if (entity == null) return false;
 
                 return do_entity_replacement(entity, lineToReplace, replaceWith);
