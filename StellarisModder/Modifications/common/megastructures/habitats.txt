@@ -1,0 +1,11 @@
+# Make habitats slightly cheaper to build
+@REPLACE habitat_0>resources>cost
+        cost = {
+            alloys = 1000
+            influence = 100
+        }
+# Make habitats start with size 6
+@LINEREPLACE habitat_0>on_build_complete
+size = 4
+@WITH
+size = 6

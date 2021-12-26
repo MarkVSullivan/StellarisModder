@@ -1,0 +1,6 @@
+# Habitats are easier to maintain; housing also provides some amenities
+@REPLACE district_hab_housing>planet_modifier
+    planet_modifier = {
+		planet_housing_add = 8
+		planet_amenities_add = 5
+	}

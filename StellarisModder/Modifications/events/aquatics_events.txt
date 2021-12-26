@@ -1,0 +1,54 @@
+# Make neighbor planets not frozen for ocean paradise origin
+@REPLACE country_event#aquatics.1001>immediate>capital_scope.solar_system
+		capital_scope.solar_system = {
+			closest_system = {
+				limit = { has_star_flag = neighbor_t1_first_colony }
+				max_steps = 3
+				random_system_planet = {
+					limit = {
+						is_colonizable = yes
+						is_colony = no
+						has_planet_flag = prescripted_ideal
+					}
+					change_planet_size = 15
+					add_deposit = d_submerged_ore_veins
+					add_deposit = d_submerged_ore_veins
+					add_deposit = d_submerged_ore_veins
+					add_deposit = d_underwater_vent
+					add_deposit = d_underwater_vent
+					add_deposit = d_underwater_vent
+					add_deposit = d_wetware_computer
+				}
+				random_system_planet = {
+					limit = {
+						is_asteroid = yes
+					}
+					change_pc = pc_ice_asteroid
+				}
+			}
+			closest_system = {
+				limit = { has_star_flag = neighbor_t2_second_colony }
+				max_steps = 6
+				random_system_planet = {
+					limit = {
+						is_colonizable = yes
+						is_colony = no
+						has_planet_flag = prescripted_ideal
+					}
+					change_planet_size = 15
+					add_deposit = d_submerged_ore_veins
+					add_deposit = d_submerged_ore_veins
+					add_deposit = d_submerged_ore_veins
+					add_deposit = d_underwater_vent
+					add_deposit = d_underwater_vent
+					add_deposit = d_underwater_vent
+					add_deposit = d_wetware_computer
+				}
+				random_system_planet = {
+					limit = {
+						is_asteroid = yes
+					}
+					change_pc = pc_ice_asteroid
+				}
+			}
+		}

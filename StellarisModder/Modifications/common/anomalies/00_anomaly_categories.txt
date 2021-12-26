@@ -1,0 +1,11 @@
+# More terraforming candidate planets
+@LINEREPLACE terraforming_candidate_category>spawn_chance
+add = 1
+@WITH
+add = 3
+@LINEREPLACE terraforming_candidate_category>spawn_chance
+factor = 2
+@WITH
+factor = 5
+
+

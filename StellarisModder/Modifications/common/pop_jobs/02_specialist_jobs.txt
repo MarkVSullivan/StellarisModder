@@ -1,0 +1,18 @@
+# Make pearl divers slightly better
+@REPLACE pearl_diver>resources
+	resources = {
+		category = planet_artisans
+		produces = {
+			consumer_goods = 5
+		}
+		upkeep = {
+			minerals = 2
+		}
+	}
+@REPLACE pearl_diver>triggered_planet_modifier
+	triggered_planet_modifier = {
+		modifier = {
+			trade_value_add = 2
+			planet_amenities_add = 2
+		}
+	}

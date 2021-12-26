@@ -1,0 +1,26 @@
+# Hydrocentric perk makes aquatic a bit better
+@LINEREPLACE trait_aquatic
+pop_housing_usage_mult = -0.05
+@WITH
+pop_housing_usage_mult = -0.05
+@LINEREPLACE trait_aquatic
+planet_jobs_food_produces_mult = 0.05
+@WITH
+planet_jobs_food_produces_mult = 0.15
+@LINEREPLACE trait_aquatic
+planet_jobs_minerals_produces_mult = 0.05
+@WITH
+planet_jobs_minerals_produces_mult = 0.15
+@LINEREPLACE trait_aquatic
+planet_jobs_energy_produces_mult = 0.05
+@WITH
+planet_jobs_energy_produces_mult = 0.15
+
+# Allow Hydrocentric empires to gene modify for aquatic
+@ADD trait_aquatic
+	species_potential_add = {
+		exists = from
+		from = {
+			has_ascension_perk = ap_hydrocentric
+		}
+	}

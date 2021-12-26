@@ -1,0 +1,13 @@
+# More trait PICKS allowed (but no more points)
+@LINEREPLACE
+@robot_max_traits = 4
+@WITH
+@robot_max_traits = 6
+@LINEREPLACE
+@machine_max_traits = 5
+@WITH
+@machine_max_traits = 8
+@LINEREPLACE
+@species_max_traits = 5
+@WITH
+@species_max_traits = 8

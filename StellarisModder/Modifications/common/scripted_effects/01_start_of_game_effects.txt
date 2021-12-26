@@ -1,0 +1,248 @@
+# Update initial home habitat sizes for void dwellers origin
+@LINEREPLACE void_dweller_home_planet_setup
+set_planet_size = 6
+@WITH
+set_planet_size = 9
+@LINEREPLACE void_dweller_home_planet_setup
+set_planet_size = 4
+@WITH
+set_planet_size = 6
+# Non-AI players get a small boost of resources to start, better leaders
+@REPLACE give_starting_resources_effect
+give_starting_resources_effect = {
+	if = {
+		limit = {
+			owner = {
+				is_ai = no
+			}
+		}
+		ruler = { 
+			add_trait = leader_trait_ruler_chosen
+			add_trait = trait_ruler_destroyer_focus  
+			add_trait = trait_ruler_expansionist
+			add_trait = trait_ruler_warlike
+		}
+		every_owned_leader = {
+			if = {
+				limit = {
+					leader_class = scientist
+				}
+				add_trait = leader_trait_spark_of_genius
+				add_trait = leader_trait_resilient
+			}
+		}
+		owner = {
+			add_resource = {
+				minerals = 5000
+				energy = 5000
+				food = 2400
+				alloys = 2400
+				consumer_goods = 5000
+				influence = 600
+				unity = 6000
+				exotic_gases = 5000
+				rare_crystals = 5000
+				volatile_motes = 5000
+			}
+			give_technology = {
+				tech = tech_robotic_workers
+				message = no
+			}
+			give_technology = {
+				tech = tech_psionic_theory
+				message = no
+			}
+			give_technology = {
+				tech = tech_destroyers
+				message = no
+			}
+			give_technology = {
+				tech = tech_habitat_1
+				message = no
+			}
+			add_research_option = tech_habitat_2
+			create_leader = {
+				class = scientist
+				species = owner_main_species
+				skill = 3
+				leader_age_min = 20
+				leader_age_max = 25
+				traits = {
+					trait = "leader_trait_towel"
+					trait = "leader_trait_inspired_archaeologist"
+					trait = "leader_trait_carefree"
+					trait = "leader_trait_meticulous"
+				}
+			}
+			last_created_leader = {
+				add_experience = 500
+			}
+			create_leader = {
+				class = scientist
+				species = owner_main_species
+				skill = 3
+				leader_age_min = 20
+				leader_age_max = 25
+				traits = {
+					trait = "leader_trait_towel"
+					trait = "leader_trait_inspired_archaeologist"
+					trait = "leader_trait_carefree"
+					trait = "leader_trait_meticulous"
+				}
+			}
+			last_created_leader = {
+				add_experience = 500
+			}
+			create_leader = {
+				class = scientist
+				species = owner_main_species
+				skill = 3
+				leader_age_min = 20
+				leader_age_max = 25
+				traits = {
+					trait = "leader_trait_towel"
+					trait = "leader_trait_inspired_archaeologist"
+					trait = "leader_trait_carefree"
+					trait = "leader_trait_meticulous"
+				}
+			}
+			last_created_leader = {
+				add_experience = 500
+			}
+			create_leader = {
+				class = scientist
+				species = owner_main_species
+				skill = 3
+				leader_age_min = 20
+				leader_age_max = 25
+				traits = {
+					trait = "leader_trait_towel"
+					trait = "leader_trait_inspired_archaeologist"
+					trait = "leader_trait_carefree"
+					trait = "leader_trait_meticulous"
+				}
+			}
+			last_created_leader = {
+				add_experience = 500
+			}
+			create_leader = {
+				class = scientist
+				species = owner_main_species
+				skill = 3
+				leader_age_min = 20
+				leader_age_max = 25
+				traits = {
+					trait = "leader_trait_towel"
+					trait = "leader_trait_inspired_archaeologist"
+					trait = "leader_trait_carefree"
+					trait = "leader_trait_meticulous"
+				}
+			}
+			last_created_leader = {
+				add_experience = 500
+			}
+			create_leader = {
+				class = admiral
+				species = owner_main_species
+				skill = 3
+				leader_age_min = 20
+				leader_age_max = 25
+				traits = {
+					trait = "leader_trait_resilient"
+					trait = "leader_trait_aggressive"
+					trait = "leader_trait_cautious"
+					trait = "leader_trait_engineer"
+					trait = "leader_trait_resilient"
+				}
+			}
+			last_created_leader = {
+				add_experience = 500
+			}
+			create_leader = {
+				class = general
+				species = owner_main_species
+				skill = 3
+				leader_age_min = 20
+				leader_age_max = 25
+				traits = {
+					trait = "leader_trait_resilient"
+					trait = "leader_trait_army_logistician"
+					trait = "leader_trait_general_chosen"
+				}
+			}
+			last_created_leader = {
+				add_experience = 500
+			}
+			create_leader = {
+				class = governor
+				species = owner_main_species
+				skill = 3
+				leader_age_min = 20
+				leader_age_max = 25
+				traits = {
+					trait = "leader_trait_resilient"
+					trait = "leader_trait_retired_fleet_officer"
+					trait = "leader_trait_intellectual"
+					trait = "leader_trait_righteous"
+				}
+			}
+			last_created_leader = {
+				add_experience = 500
+			}
+		}
+	}
+	if = {
+		limit = {
+			is_catalytic_empire = yes
+		}
+		add_resource = { food = 100	}
+	}
+	if = {
+		limit = {
+			has_authority = auth_machine_intelligence
+		}
+		if = {
+			limit = {
+				OR = {
+					has_valid_civic = civic_machine_servitor
+					has_valid_civic = civic_machine_assimilator
+				}
+			}
+			if = {
+				limit = { has_country_flag = lithoid_subspecies }
+				add_resource = { minerals = 100	}
+				add_resource = { energy = 100 }
+			}
+			else = {
+				add_resource = { food = 100	}
+				add_resource = { energy = 100 }
+			}
+		}
+		else = {
+			add_resource = { energy = 200 }
+		}
+	}
+	else = {
+		if = {
+			limit = { is_lithoid_empire = no }
+			if = {
+				limit = { has_country_flag = lithoid_subspecies }
+				add_resource = { food = 100	}
+				add_resource = { minerals = 100 }
+			}
+			else = {
+				add_resource = { food = 200 }
+			}
+		}
+		else = {
+			if = {
+				limit = { has_country_flag = non_lithoid_subspecies }
+				add_resource = { food = 100	}
+				add_resource = { minerals = 100 }
+			}
+			else = {
+				add_resource = { minerals = 200 }
+			}
+		}
+	}
+}

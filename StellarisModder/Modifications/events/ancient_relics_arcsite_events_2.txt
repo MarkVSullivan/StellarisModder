@@ -1,0 +1,7 @@
+# Conquering capital planet of an empire with a relic gives relic 100% of the time
+@REPLACE country_event#ancrel.6499>immediate
+	immediate = {
+		FromFrom = { save_event_target_as = planet }
+		From = { save_event_target_as = victim }
+		country_event = { id = ancrel.6500 }
+	}

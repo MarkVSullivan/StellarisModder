@@ -1,0 +1,5 @@
+# Make habitats more void born specific by making them slightly less habitable for others.
+@LINEREPLACE pc_habitat>modifier
+pop_environment_tolerance = 0.70
+@WITH
+pop_environment_tolerance = 0.50
