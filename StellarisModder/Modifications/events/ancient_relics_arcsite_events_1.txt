@@ -21,8 +21,9 @@
 	#has_country_flag = irassian_intro
 @LINEREPLACE ship_event#ancrel.1
 	has_country_flag = cybrex_intro
-@with
+@WITH
 	#has_country_flag = cybrex_intro
+
 @LINEREPLACE ship_event#ancrel.2000
 	has_country_flag = vultaum_intro
 @WITH 
@@ -41,7 +42,7 @@
 	#has_country_flag = irassian_intro
 @LINEREPLACE ship_event#ancrel.2000
 	has_country_flag = cybrex_intro
-@with
+@WITH
 	#has_country_flag = cybrex_intro
 @LINEREPLACE ship_event#ancrel.2000
 	has_country_flag = zroni_intro

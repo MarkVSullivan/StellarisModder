@@ -27,7 +27,7 @@ namespace StellarisModder.Actions
             // Next line should be @WITH.. but verify
             string peek = Instructions.Peek();
             string replaceWith = String.Empty;
-            if (( peek != null ) && ( peek.IndexOf("@WITH") == 0 ))
+            if (( peek != null ) && ( peek.IndexOf("@WITH", StringComparison.OrdinalIgnoreCase) == 0 ))
             {
                 Instructions.Pop();
                 replaceWith = Instructions.Pop().Trim();
