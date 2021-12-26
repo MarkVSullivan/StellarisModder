@@ -648,7 +648,7 @@ artifact_precursor_clue = {
 	resources = {
 		category = artifact_actions
 		cost = {
-			minor_artifacts = 25
+			minor_artifacts = 10
 		}
 	}
 	potential = {

@@ -28,7 +28,7 @@ ship_event = {
 				#has_country_flag = yuht_intro
 				#has_country_flag = first_league_intro
 				#has_country_flag = irassian_intro
-				
+				#has_country_flag = cybrex_intro
 				#has_country_flag = zroni_intro
 				#has_country_flag = baol_intro
 			}
@@ -989,7 +989,7 @@ ship_event = {
 				has_country_flag = yuht_intro
 				#has_country_flag = first_league_intro
 				#has_country_flag = irassian_intro
-				
+				#has_country_flag = cybrex_intro
 				#has_country_flag = zroni_intro
 				#has_country_flag = baol_intro
 			}
@@ -1784,13 +1784,13 @@ ship_event = {
 		}
 		owner = {
 			NOR = {
-				has_country_flag = vultaum_intro
-				has_country_flag = yuht_intro
+				#has_country_flag = vultaum_intro
+				#has_country_flag = yuht_intro
 				has_country_flag = first_league_intro
-				has_country_flag = irassian_intro
-				has_country_flag = cybrex_intro
-				has_country_flag = zroni_intro
-				has_country_flag = baol_intro
+				#has_country_flag = irassian_intro
+				#has_country_flag = cybrex_intro
+				#has_country_flag = zroni_intro
+				#has_country_flag = baol_intro
 			}
 		}
 	}
@@ -2883,13 +2883,13 @@ ship_event = {
 		}
 		owner = {
 			NOR = {
-				has_country_flag = vultaum_intro
-				has_country_flag = yuht_intro
-				has_country_flag = first_league_intro
+				#has_country_flag = vultaum_intro
+				#has_country_flag = yuht_intro
+				#has_country_flag = first_league_intro
 				has_country_flag = irassian_intro
-				has_country_flag = cybrex_intro
-				has_country_flag = zroni_intro
-				has_country_flag = baol_intro
+				#has_country_flag = cybrex_intro
+				#has_country_flag = zroni_intro
+				#has_country_flag = baol_intro
 			}
 		}
 	}
@@ -3806,13 +3806,13 @@ ship_event = {
 		}
 		owner = {
 			NOR = {
-				has_country_flag = vultaum_intro
-				has_country_flag = yuht_intro
-				has_country_flag = first_league_intro
-				has_country_flag = irassian_intro
+				#has_country_flag = vultaum_intro
+				#has_country_flag = yuht_intro
+				#has_country_flag = first_league_intro
+				#has_country_flag = irassian_intro
 				has_country_flag = cybrex_intro
-				has_country_flag = zroni_intro
-				has_country_flag = baol_intro
+				#has_country_flag = zroni_intro
+				#has_country_flag = baol_intro
 			}
 		}
 	}
