@@ -1,18 +1,16 @@
 @hab_cost = 500
 @hab_maintenance = 2
-
 district_hab_housing = {
 	base_buildtime = 240
 	is_capped_by_modifier = no
-
 	show_on_uncolonized = {
 		uses_district_set = habitat
 	}
-
+	
 	potential = {
 		uses_district_set = habitat
 	}
-
+	
 	resources = {
 		category = planet_districts
 		cost = {
@@ -22,12 +20,12 @@ district_hab_housing = {
 			energy = @hab_maintenance
 		}
 	}
-
+	
 	planet_modifier = {
 		planet_housing_add = 8
 		planet_amenities_add = 5
 	}
-
+	
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -37,7 +35,7 @@ district_hab_housing = {
 			job_maintenance_drone_add = 2
 		}
 	}
-
+	
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -45,12 +43,12 @@ district_hab_housing = {
 		}
 		text = job_maintenance_drone_effect_desc
 	}
+	
 }
 
 district_hab_energy = {
 	base_buildtime = 240
 	is_capped_by_modifier = no
-
 	show_on_uncolonized = {
 		uses_district_set = habitat
 		OR = {
@@ -61,7 +59,6 @@ district_hab_energy = {
 			}
 		}
 	}
-
 	potential = {
 		uses_district_set = habitat
 		OR = {
@@ -72,16 +69,13 @@ district_hab_energy = {
 			}
 		}
 	}
-
 	conversion_ratio = 0.5
 	convert_to = {
 		district_hab_commercial
 	}
-
 	planet_modifier = {
 		planet_housing_add = 3
 	}
-
 	resources = {
 		category = planet_districts_hab_energy
 		cost = {
@@ -91,7 +85,6 @@ district_hab_energy = {
 			energy = @hab_maintenance
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -104,7 +97,6 @@ district_hab_energy = {
 			job_technician_add = 3
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -114,7 +106,6 @@ district_hab_energy = {
 			job_fe_acolyte_generator_add = 3
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -122,7 +113,6 @@ district_hab_energy = {
 		}
 		job_technician_drone_add = 3
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -130,7 +120,6 @@ district_hab_energy = {
 		}
 		job_technician_drone_add = 4
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -155,7 +144,6 @@ district_hab_energy = {
 		}
 		text = job_fe_acolyte_generator_effect_desc
 	}
-
 	ai_resource_production = {
 		energy = 1
 		trigger = {
@@ -167,15 +155,12 @@ district_hab_energy = {
 district_hab_industrial = {
 	base_buildtime = 240
 	is_capped_by_modifier = no
-
 	show_on_uncolonized = {
 		uses_district_set = habitat
 	}
-
 	potential = {
 		uses_district_set = habitat
 	}
-
 	resources = {
 		category = planet_districts_hab_industrial
 		cost = {
@@ -194,11 +179,9 @@ district_hab_industrial = {
 			energy = 2
 		}
 	}
-
 	planet_modifier = {
 		planet_housing_add = 3
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -213,7 +196,6 @@ district_hab_industrial = {
 			job_foundry_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -228,7 +210,6 @@ district_hab_industrial = {
 			job_foundry_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -243,7 +224,6 @@ district_hab_industrial = {
 			job_catalytic_technician_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -258,7 +238,6 @@ district_hab_industrial = {
 			job_catalytic_technician_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -271,7 +250,6 @@ district_hab_industrial = {
 			job_alloy_drone_add = 2
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -284,7 +262,6 @@ district_hab_industrial = {
 			job_fabricator_add = 2
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -297,7 +274,6 @@ district_hab_industrial = {
 			job_catalytic_drone_add = 2
 		}
 	}
-
 	# Designation Job Changes
 	triggered_planet_modifier = {
 		potential = {
@@ -314,7 +290,6 @@ district_hab_industrial = {
 			job_foundry_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			has_designation = col_habitat_foundry
@@ -330,7 +305,6 @@ district_hab_industrial = {
 			job_foundry_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			has_designation = col_habitat_factory
@@ -346,7 +320,6 @@ district_hab_industrial = {
 			job_foundry_add = -1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			has_designation = col_habitat_factory
@@ -362,7 +335,6 @@ district_hab_industrial = {
 			job_foundry_add = -1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			has_designation = col_habitat_foundry
@@ -378,7 +350,6 @@ district_hab_industrial = {
 			job_catalytic_technician_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			has_designation = col_habitat_foundry
@@ -394,7 +365,6 @@ district_hab_industrial = {
 			job_catalytic_technician_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			has_designation = col_habitat_factory
@@ -410,7 +380,6 @@ district_hab_industrial = {
 			job_catalytic_technician_add = -1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			has_designation = col_habitat_factory
@@ -426,7 +395,6 @@ district_hab_industrial = {
 			job_catalytic_technician_add = -1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			has_designation = col_habitat_factory
@@ -442,7 +410,6 @@ district_hab_industrial = {
 			job_fabricator_add = -2
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			has_designation = col_habitat_factory
@@ -458,7 +425,6 @@ district_hab_industrial = {
 			job_catalytic_drone_add = -2
 		}
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -469,7 +435,6 @@ district_hab_industrial = {
 		}
 		text = job_artisan_drone_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -479,7 +444,6 @@ district_hab_industrial = {
 		}
 		text = job_artificer_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -490,7 +454,6 @@ district_hab_industrial = {
 		}
 		text = job_foundry_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -501,7 +464,6 @@ district_hab_industrial = {
 		}
 		text = job_catalytic_technician_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -512,7 +474,6 @@ district_hab_industrial = {
 		}
 		text = job_fabricator_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -523,7 +484,6 @@ district_hab_industrial = {
 		}
 		text = job_alloy_drone_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -534,7 +494,6 @@ district_hab_industrial = {
 		}
 		text = job_catalytic_drone_effect_desc
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -547,7 +506,6 @@ district_hab_industrial = {
 			job_maintenance_drone_add = 1
 		}
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -563,17 +521,14 @@ district_hab_industrial = {
 district_hab_science = {
 	base_buildtime = 240
 	is_capped_by_modifier = no
-
 	show_on_uncolonized = {
 		uses_district_set = habitat
 		has_planet_flag = research_habitat
 	}
-
 	potential = {
 		uses_district_set = habitat
 		has_planet_flag = research_habitat
 	}
-
 	resources = {
 		category = planet_districts_hab_research
 		cost = {
@@ -583,11 +538,9 @@ district_hab_science = {
 			energy = @hab_maintenance
 		}
 	}
-
 	planet_modifier = {
 		planet_housing_add = 3
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -597,7 +550,6 @@ district_hab_science = {
 			job_researcher_add = 3
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -607,7 +559,6 @@ district_hab_science = {
 			job_brain_drone_add = 3
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -617,7 +568,6 @@ district_hab_science = {
 			job_calculator_add = 3
 		}
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -625,7 +575,6 @@ district_hab_science = {
 		}
 		text = job_researcher_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -633,7 +582,6 @@ district_hab_science = {
 		}
 		text = job_brain_drone_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -646,26 +594,20 @@ district_hab_science = {
 district_hab_commercial = {
 	base_buildtime = 240
 	is_capped_by_modifier = no
-
 	show_on_uncolonized = {
 		uses_district_set = habitat
-
 		exists = from
 		from = { is_gestalt = no }
 	}
-
 	potential = {
 		uses_district_set = habitat
-
 		exists = owner
 		owner = { is_gestalt = no }
 	}
-
 	conversion_ratio = 0.5
 	convert_to = {
 		district_hab_energy
 	}
-
 	resources = {
 		category = planet_districts_hab_trade
 		cost = {
@@ -675,11 +617,9 @@ district_hab_commercial = {
 			energy = @hab_maintenance
 		}
 	}
-
 	planet_modifier = {
 		planet_housing_add = 3
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -689,7 +629,6 @@ district_hab_commercial = {
 			job_clerk_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -699,7 +638,6 @@ district_hab_commercial = {
 			job_clerk_add = 3
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -709,7 +647,6 @@ district_hab_commercial = {
 			job_manager_add = 3
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -721,7 +658,6 @@ district_hab_commercial = {
 			job_merchant_add = 1
 		}
 	}
-
 	triggered_desc = {
 		text = job_clerk_effect_desc
 	}
@@ -734,7 +670,6 @@ district_hab_commercial = {
 			}
 		}
 	}
-
 	ai_resource_production = {
 		consumer_goods = 1
 		trigger = {
@@ -746,21 +681,17 @@ district_hab_commercial = {
 district_hab_mining = {
 	base_buildtime = 240
 	is_capped_by_modifier = no
-
 	show_on_uncolonized = {
 		uses_district_set = habitat
 		has_planet_flag = mining_habitat
 	}
-
 	potential = {
 		uses_district_set = habitat
 		has_planet_flag = mining_habitat
 	}
-
 	planet_modifier = {
 		planet_housing_add = 3
 	}
-
 	resources = {
 		category = planet_districts_hab_mining
 		cost = {
@@ -770,7 +701,6 @@ district_hab_mining = {
 			energy = @hab_maintenance
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -780,7 +710,6 @@ district_hab_mining = {
 			job_mining_drone_add = 4
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -790,7 +719,6 @@ district_hab_mining = {
 			job_mining_drone_add = 3
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -803,7 +731,6 @@ district_hab_mining = {
 			job_miner_add = 3
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -813,7 +740,6 @@ district_hab_mining = {
 			job_fe_acolyte_mine_add = 3
 		}
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -831,7 +757,6 @@ district_hab_mining = {
 		}
 		text = job_miner_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -839,7 +764,6 @@ district_hab_mining = {
 		}
 		text = job_fe_acolyte_mine_effect_desc
 	}
-
 	ai_resource_production = {
 		minerals = 1
 		trigger = {
@@ -851,10 +775,8 @@ district_hab_mining = {
 district_hab_cultural = {
 	base_buildtime = 240
 	is_capped_by_modifier = no
-
 	show_on_uncolonized = {
 		uses_district_set = habitat
-
 		exists = from
 		from = {
 			OR = {
@@ -863,10 +785,8 @@ district_hab_cultural = {
 			}
 		}
 	}
-
 	potential = {
 		uses_district_set = habitat
-
 		exists = owner
 		owner = {
 			OR = {
@@ -875,12 +795,10 @@ district_hab_cultural = {
 			}
 		}
 	}
-
 	conversion_ratio = 0.5
 	convert_to = {
 		district_hab_energy
 	}
-
 	resources = {
 		category = planet_districts_hab_leisure
 		cost = {
@@ -890,7 +808,6 @@ district_hab_cultural = {
 			energy = @hab_maintenance
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -905,7 +822,6 @@ district_hab_cultural = {
 			planet_housing_add = 3
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -919,7 +835,6 @@ district_hab_cultural = {
 			job_culture_worker_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -933,7 +848,6 @@ district_hab_cultural = {
 			job_culture_worker_add = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -947,7 +861,6 @@ district_hab_cultural = {
 			job_maintenance_drone_add = 1
 		}
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -957,7 +870,6 @@ district_hab_cultural = {
 		}
 		text = job_culture_worker_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -968,7 +880,6 @@ district_hab_cultural = {
 		}
 		text = job_duelist_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -979,7 +890,6 @@ district_hab_cultural = {
 		}
 		text = job_entertainer_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -990,7 +900,6 @@ district_hab_cultural = {
 		}
 		text = job_bio_trophy_effect_desc
 	}
-
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -1001,7 +910,6 @@ district_hab_cultural = {
 		}
 		text = job_maintenance_drone_effect_desc
 	}
-
 	ai_resource_production = {
 		unity = 1
 		trigger = {
@@ -1009,3 +917,4 @@ district_hab_cultural = {
 		}
 	}
 }
+

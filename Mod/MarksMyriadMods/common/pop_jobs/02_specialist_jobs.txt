@@ -6,24 +6,19 @@ colonist = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_colony_shelter
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_specialist_job
-
 	pop_modifier = {
 		pop_defense_armies_add = 1
 	}
-
 	planet_modifier = {
 		planet_amenities_add = 5
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -43,7 +38,6 @@ colonist = {
 			planet_amenities_add = -1
 		}
 	}
-
 	resources = {
 		category = planet_jobs
 		produces = {
@@ -59,7 +53,6 @@ colonist = {
 			minerals = 1
 		}
 	}
-
 	weight = {
 		weight = @colonist_job_weight # Higher prio
 		modifier = {
@@ -118,19 +111,16 @@ researcher = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_research_lab_1
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_specialist_job
 	possible = {
 		complex_specialist_job_check_trigger = yes
 	}
-
 	resources = {
 		category = planet_researchers
 		produces = {
@@ -156,7 +146,6 @@ researcher = {
 			consumer_goods = 1
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -262,19 +251,16 @@ priest = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_temple
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_specialist_job
 	possible = {
 		complex_specialist_job_check_trigger = yes
 	}
-
 	resources = {
 		category = planet_priests
 		produces = {
@@ -292,11 +278,9 @@ priest = {
 			consumer_goods = 2
 		}
 	}
-
 	planet_modifier = {
 		planet_amenities_add = 5
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -316,7 +300,6 @@ priest = {
 			planet_amenities_add = -1
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -447,17 +430,14 @@ death_priest = {
 	building_icon = building_sacrificial_temple_1
 	clothes_texture_index = 3
 	icon = death_priest
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_sapient = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible_precalc = can_fill_specialist_job
 	possible = { complex_specialist_job_check_trigger = yes }
-
 	resources = {
 		category = planet_priests
 		produces = {
@@ -475,11 +455,9 @@ death_priest = {
 			consumer_goods = 3
 		}
 	}
-
 	planet_modifier = {
 		planet_amenities_add = 5
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -497,7 +475,6 @@ death_priest = {
 			planet_amenities_add = -1
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -627,18 +604,15 @@ enforcer = {
 	condition_string = BATTLE_THRALL_JOB_TRIGGER
 	building_icon = building_precinct_house
 	clothes_texture_index = 5
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible = {
 		battle_thrall_job_check_trigger = yes
 	}
-
 	resources = {
 		category = planet_enforcers
 		produces = {
@@ -666,15 +640,12 @@ enforcer = {
 			energy = 2
 		}
 	}
-
 	pop_modifier = {
 		pop_defense_armies_add = 2
 	}
-
 	planet_modifier = {
 		planet_crime_add = -25
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = planet
@@ -684,7 +655,6 @@ enforcer = {
 			planet_crime_add = -10
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -799,14 +769,12 @@ telepath = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_psi_corps
 	clothes_texture_index = 5
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_specialist_job
 	possible = {
 		OR = {
@@ -814,7 +782,6 @@ telepath = {
 			has_trait = trait_psionic
 		}
 	}
-
 	resources = {
 		category = planet_telepaths
 		produces = {
@@ -845,11 +812,9 @@ telepath = {
 			energy = 2
 		}
 	}
-
 	planet_modifier = {
 		planet_crime_add = -35
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = planet
@@ -859,7 +824,6 @@ telepath = {
 			planet_crime_add = -10
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -869,7 +833,6 @@ telepath = {
 			planet_crime_add = -5
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -957,18 +920,15 @@ entertainer = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_holo_theatres
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible = {
 		entertainer_job_check_trigger = yes
 	}
-
 	resources = {
 		category = planet_entertainers
 		produces = {
@@ -978,11 +938,9 @@ entertainer = {
 			consumer_goods = 1
 		}
 	}
-
 	planet_modifier = {
 		planet_amenities_add = 10
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -1011,7 +969,6 @@ entertainer = {
 			pop_growth_speed = 0.01
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -1096,18 +1053,15 @@ duelist = {
 	condition_string = BATTLE_THRALL_JOB_TRIGGER
 	building_icon = building_holo_theatres
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible = {
 		battle_thrall_job_check_trigger = yes
 	}
-
 	resources = {
 		category = planet_entertainers
 		produces = {
@@ -1117,15 +1071,12 @@ duelist = {
 			alloys = 1
 		}
 	}
-
 	planet_modifier = {
 		planet_amenities_add = 12
 	}
-
 	country_modifier = {
 		country_naval_cap_add = 2
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -1145,7 +1096,6 @@ duelist = {
 			planet_amenities_add = -2
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -1237,19 +1187,16 @@ culture_worker = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_autochthon_monument
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_specialist_job
 	possible = {
 		complex_specialist_job_check_trigger = yes
 	}
-
 	resources = {
 		category = planet_culture_workers
 		produces = {
@@ -1260,7 +1207,6 @@ culture_worker = {
 			consumer_goods = 2
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -1372,19 +1318,16 @@ bureaucrat = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_capital
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_specialist_job
 	possible = {
 		complex_specialist_job_check_trigger = yes
 	}
-
 	resources = {
 		category = planet_bureaucrats
 		produces = {
@@ -1398,7 +1341,6 @@ bureaucrat = {
 			consumer_goods = 2
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1408,11 +1350,9 @@ bureaucrat = {
 			planet_stability_add = 1
 		}
 	}
-
 	country_modifier = {
 		country_admin_cap_add = 10
 	}
-
 	triggered_country_modifier = {
 		potential = {
 			exists = planet
@@ -1428,7 +1368,6 @@ bureaucrat = {
 			country_admin_cap_add = 1
 		}
 	}
-
 	triggered_country_modifier = {
 		potential = {
 			exists = planet
@@ -1443,7 +1382,6 @@ bureaucrat = {
 			country_admin_cap_add = 2
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -1502,16 +1440,13 @@ chemist = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_chemical_plant
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_specialist_job
-
 	resources = {
 		category = planet_chemists
 		produces = {
@@ -1521,7 +1456,6 @@ chemist = {
 			minerals = 10
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -1569,16 +1503,13 @@ translucer = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_crystal_plant
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_specialist_job
-
 	resources = {
 		category = planet_translucers
 		produces = {
@@ -1588,7 +1519,6 @@ translucer = {
 			minerals = 10
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -1647,16 +1577,13 @@ gas_refiner = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_refinery
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_specialist_job
-
 	resources = {
 		category = planet_refiners
 		produces = {
@@ -1666,7 +1593,6 @@ gas_refiner = {
 			minerals = 10
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -1725,27 +1651,22 @@ roboticist = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_robot_assembly_plant
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_specialist_job
-
 	planet_modifier = {
 		planet_pop_assembly_add = 2
 	}
-
 	resources = {
 		category = planet_pop_assemblers
 		upkeep = {
 			alloys = 2
 		}
 	}
-
 	weight = {
 		weight = 500
 	}
@@ -1756,30 +1677,25 @@ healthcare = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_clinic
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_specialist_job
-
 	planet_modifier = {
 		planet_amenities_add = 5
 		pop_growth_speed = 0.05
 		planet_pop_assembly_organic_mult = 0.05
 		pop_environment_tolerance = 0.025
 	}
-
 	resources = {
 		category = planet_doctors
 		upkeep = {
 			consumer_goods = 1
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -1799,7 +1715,6 @@ healthcare = {
 			planet_amenities_add = -1
 		}
 	}
-
 	weight = {
 		weight = @spawner_drone_job_weight
 		modifier = {
@@ -1839,20 +1754,16 @@ manager = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_autochthon_monument
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_specialist_job
-
 	planet_modifier = {
 		trade_value_add = 3
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			has_trait = trait_thrifty
@@ -1861,7 +1772,6 @@ manager = {
 			trade_value_add = 0.75
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			has_trait = trait_nuumismatic_administration
@@ -1870,7 +1780,6 @@ manager = {
 			trade_value_add = 0.75
 		}
 	}
-
 	resources = {
 		category = planet_managers
 		produces = {
@@ -1881,7 +1790,6 @@ manager = {
 			consumer_goods = 2
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -2006,11 +1914,9 @@ necromancer = {
 	condition_string = BATTLE_THRALL_JOB_TRIGGER
 	building_icon = building_dread_encampment
 	clothes_texture_index = 3
-
 	country_modifier = {
 		country_naval_cap_add = 2
 	}
-
 	triggered_country_modifier = { #intentionally left in
 		potential = {
 			exists = planet
@@ -2023,11 +1929,9 @@ necromancer = {
 			country_naval_cap_add = 2
 		}
 	}
-
 	pop_modifier = {
 		pop_defense_armies_add = 3
 	}
-
 	triggered_pop_modifier = {
 		potential = {
 			exists = planet
@@ -2039,7 +1943,6 @@ necromancer = {
 			pop_defense_armies_add = 2
 		}
 	}
-
 	resources = {
 		category = planet_researchers
 		produces = {
@@ -2050,18 +1953,15 @@ necromancer = {
 			consumer_goods = 2
 		}
 	}
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible = {
 		battle_thrall_job_check_trigger = yes
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -2158,22 +2058,18 @@ bluelotus_technician = {
 	condition_string = WORKER_JOB_TRIGGER
 	building_icon = building_illicit_research_labs
 	icon = foundry
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_worker_job
-
 	resources = {
 		category = planet_metallurgists
 		produces = {
 			alloys = 4
 		}
-
 		upkeep = {
 			trigger = {
 				is_organic_species = yes
@@ -2207,7 +2103,6 @@ bluelotus_technician = {
 			energy = @living_standard_energy_normal
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -2266,17 +2161,14 @@ death_chronicler = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_galactic_memorial_1
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible_precalc = can_fill_specialist_job
 	possible = { complex_specialist_job_check_trigger = yes }
-
 	resources = {
 		category = planet_culture_workers
 		produces = {
@@ -2313,11 +2205,9 @@ death_chronicler = {
 			minerals = @living_standard_food_normal
 		}
 	}
-
 	planet_modifier = {
 		planet_stability_add = 2
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -2384,7 +2274,6 @@ necro_apprentice = {
 	building_icon = building_chamber_of_elevation_1
 	clothes_texture_index = 3
 	icon = apprentice
-
 	desc = { #Note: planet-scope
 		trigger = {
 			OR = {
@@ -2401,14 +2290,12 @@ necro_apprentice = {
 		}
 		text = job_necro_apprentice_desc_hive
 	}
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
 	possible = { #deliberately allows slaves!
 		species = { species_can_be_necrophaged = yes }
 		owner = {
@@ -2416,7 +2303,6 @@ necro_apprentice = {
 			has_origin = origin_necrophage
 		}
 	}
-
 	resources = {
 		category = planet_necro_apprentices
 		produces = {
@@ -2491,7 +2377,6 @@ necro_apprentice = {
 			minerals = @living_standard_food_normal
 		}
 	}
-
 	planet_modifier = {
 		planet_amenities_add = 5
 	}
@@ -2511,7 +2396,6 @@ necro_apprentice = {
 			planet_amenities_add = -1
 		}
 	}
-
 	weight = {
 		weight = @ruler_job_weight #deliberate
 		modifier = {
@@ -2548,19 +2432,16 @@ necro_apprentice = {
 	}
 }
 
-
 foundry = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_foundry_1
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible_precalc = can_fill_specialist_job
 	possible = {
 		hidden_trigger = { exists = owner }
@@ -2568,7 +2449,6 @@ foundry = {
 			is_gestalt = no
 		}
 	}
-
 	resources = {
 		category = planet_metallurgists
 		produces = {
@@ -2578,7 +2458,6 @@ foundry = {
 			minerals = 6
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight # Fairly important job
 		modifier = {
@@ -2624,13 +2503,11 @@ catalytic_technician = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_foundry_1
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible_precalc = can_fill_specialist_job
 	possible = {
 		hidden_trigger = { exists = owner }
@@ -2638,13 +2515,11 @@ catalytic_technician = {
 			is_gestalt = no
 		}
 	}
-
 	resources = {
 		category = planet_metallurgists
 		produces = {
 			alloys = 3
 		}
-
 		produces = {
 			trigger = {
 				exists = owner
@@ -2655,12 +2530,10 @@ catalytic_technician = {
 			}
 			alloys = -1.5
 		}
-
 		upkeep = {
 			food = 9
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight # Fairly important job
 		modifier = {
@@ -2706,13 +2579,11 @@ artisan = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_factory_1
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible_precalc = can_fill_specialist_job
 	possible = {
 		hidden_trigger = { exists = owner }
@@ -2720,7 +2591,6 @@ artisan = {
 			is_gestalt = no
 		}
 	}
-
 	resources = {
 		category = planet_artisans
 		produces = {
@@ -2730,7 +2600,6 @@ artisan = {
 			minerals = 6
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -2762,15 +2631,13 @@ artisan = {
 			exists = planet
 			planet = { is_artificial = no }
 		}
-
 		# low income modifier
 		modifier = {
 			factor = 1.2
-
 			#OR = {
-			#	is_unemployed = yes
-			#	has_job = "artisan"
-			#}
+				#	is_unemployed = yes
+				#	has_job = "artisan"
+				#}
 			exists = planet
 			planet = {
 				has_available_jobs = "artisan"
@@ -2792,13 +2659,11 @@ artificer = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_factory_1
 	clothes_texture_index = 3
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 	}
-
 	possible_precalc = can_fill_specialist_job
 	possible = {
 		hidden_trigger = { exists = owner }
@@ -2806,23 +2671,19 @@ artificer = {
 			is_gestalt = no
 		}
 	}
-
 	planet_modifier = {
 		trade_value_add = 2
 	}
-
 	resources = {
 		category = planet_artisans
 		produces = {
 			consumer_goods = 7
 			engineering_research = 1.1
-
 		}
 		upkeep = {
 			minerals = 6
 		}
 	}
-
 	triggered_planet_modifier = {
 		potential = {
 			has_trait = trait_thrifty
@@ -2839,7 +2700,6 @@ artificer = {
 			trade_value_add = 0.2
 		}
 	}
-
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -2879,14 +2739,13 @@ pearl_diver = {
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_food_processing_facility
 	clothes_texture_index = 2
-
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
 	}
-
+	
 	possible_precalc = can_fill_specialist_job
 	possible = {
 		hidden_trigger = { exists = owner }
@@ -2895,23 +2754,24 @@ pearl_diver = {
 			is_anglers_empire = yes
 		}
 	}
-
+	
 	resources = {
 		category = planet_artisans
 		produces = {
 			consumer_goods = 5
 		}
 		upkeep = {
-			food = 0
 			minerals = 2
 		}
 	}
-
-	planet_modifier = {	
-		planet_amenities_add = 2
-		trade_value_add = 2
+	
+	triggered_planet_modifier = {
+		modifier = {
+			trade_value_add = 2
+			planet_amenities_add = 2
+		}
 	}
-
+	
 	triggered_planet_modifier = {
 		potential = {
 			has_trait = trait_thrifty
@@ -2920,7 +2780,7 @@ pearl_diver = {
 			trade_value_add = 0.5
 		}
 	}
-
+	
 	triggered_planet_modifier = {
 		potential = {
 			has_trait = trait_nuumismatic_administration
@@ -2929,7 +2789,7 @@ pearl_diver = {
 			trade_value_add = 0.2
 		}
 	}
-
+	
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -2954,5 +2814,6 @@ pearl_diver = {
 			}
 		}
 	}
+	
 }
 

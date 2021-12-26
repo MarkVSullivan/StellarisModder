@@ -12,14 +12,11 @@ mega_shipyard_0 = {
 			alloys = 3000
 			influence = 300
 		}
-
 		upkeep = {
 			energy = 5
 		}
 	}
-
 	prerequisites = { "tech_mega_shipyard" }
-
 	possible = {
 		exists = starbase
 		custom_tooltip = {
@@ -73,7 +70,6 @@ mega_shipyard_0 = {
 			has_no_non_gate_megastructure = yes
 		}
 	}
-
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
@@ -86,17 +82,14 @@ mega_shipyard_0 = {
 			}
 		}
 	}
-
 	# root = system
 	# from = country
 	ai_weight = {
 		factor = 15
-
 		modifier = {
 			factor = 0.1
 			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
 		}
-
 		modifier = {
 			factor = 0.1
 			any_neighbor_system = {
@@ -107,7 +100,6 @@ mega_shipyard_0 = {
 			}
 		}
 	}
-
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
@@ -136,30 +128,23 @@ mega_shipyard_1 = {
 		cost = {
 			alloys = 10000
 		}
-
 		upkeep = {
 			energy = 10
 		}
 	}
-
 	upgrade_from = {
 		mega_shipyard_0
 	}
-
 	prerequisites = { "tech_mega_shipyard" }
-
 	ship_modifier = {
 		ship_starting_experience_add = 100
 	}
-
 	station_modifier = {
 		starbase_shipyard_capacity_add = 5
 	}
-
 	country_modifier = {
 		starbase_shipyard_build_speed_mult = 0.33
 	}
-
 	on_build_complete = {
 		from = { country_event = { id = feda.1 } }
 	}
@@ -178,30 +163,23 @@ mega_shipyard_2 = {
 		cost = {
 			alloys = 10000
 		}
-
 		upkeep = {
 			energy = 20
 		}
 	}
-
-	upgrade_from = { 
+	upgrade_from = {
 		mega_shipyard_1
 	}
-
 	prerequisites = { "tech_mega_shipyard" }
-
 	ship_modifier = {
 		ship_starting_experience_add = 100
 	}
-
 	station_modifier = {
 		starbase_shipyard_capacity_add = 10
 	}
-
 	country_modifier = {
 		starbase_shipyard_build_speed_mult = 0.67
 	}
-
 	on_build_complete = {
 		from = { country_event = { id = feda.2 } }
 	}
@@ -220,31 +198,24 @@ mega_shipyard_3 = {
 		cost = {
 			alloys = 10000
 		}
-
 		upkeep = {
 			energy = 40
 		}
 	}
-
 	upgrade_from = {
 		mega_shipyard_2
 	}
-
 	prerequisites = { "tech_mega_shipyard" }
 	show_prereqs = yes
-
 	ship_modifier = {
 		ship_starting_experience_add = 100
 	}
-
 	station_modifier = {
 		starbase_shipyard_capacity_add = 20
 	}
-
 	country_modifier = {
 		starbase_shipyard_build_speed_mult = 1
 	}
-
 	on_build_complete = {
 		set_star_flag = mega_shipyard_built
 		from = {
@@ -263,7 +234,6 @@ mega_shipyard_permanently_ruined = {
 	entity_offset = { x = -27 y = -27 }
 	upgrade_from = {
 	}
-
 	potential = {
 		always = no
 	}
@@ -278,7 +248,6 @@ mega_shipyard_ruined = {
 	entity_offset = { x = -27 y = -27 }
 	upgrade_from = {
 	}
-
 	potential = {
 		always = no
 	}
@@ -291,44 +260,36 @@ mega_shipyard_restored = {
 	portrait = "GFX_megastructure_mega_shipyard_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
-	build_time = 3600
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
 		}
-
 		upkeep = {
 			energy = 40
 		}
 	}
-
 	upgrade_from = {
 		mega_shipyard_ruined
 	}
-
 	possible = {
 		from = { has_technology = tech_mega_engineering }
 	}
-
 	ship_modifier = {
 		ship_starting_experience_add = 100
 	}
-
 	station_modifier = {
 		starbase_shipyard_capacity_add = 20
 	}
-
 	country_modifier = {
 		starbase_shipyard_build_speed_mult = 1
 	}
-
 	on_build_start = {
 		fromfrom = {
 			set_graphical_culture = root.from
 		}
 	}
-
 	on_build_complete = {
 		set_star_flag = mega_shipyard_built
 		every_system_ambient_object = {
@@ -343,3 +304,4 @@ mega_shipyard_restored = {
 		}
 	}
 }
+

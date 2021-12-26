@@ -4,29 +4,24 @@
 @stage_4_research_bonus	= 350
 @entity_x				= 0
 @entity_y				= -20
-
-
 think_tank_0 = {
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	build_time = 18 #00
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 5000
 			influence = 300
 		}
-
 		upkeep = {
 			energy = 5
 		}
 	}
-
 	prerequisites = { "tech_science_nexus" }
-
 	possible = {
 		exists = starbase
 		custom_tooltip = {
@@ -53,7 +48,6 @@ think_tank_0 = {
 			from = { NOT = { has_country_flag = built_think_tank } }
 		}
 	}
-
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
@@ -83,9 +77,8 @@ think_tank_0 = {
 				fail_text = "requires_not_ring_world"
 				is_ringworld = no
 			}
-		} # use these for all non-star megastructures
+			} # use these for all non-star megastructures
 	}
-
 	# root = system
 	# from = country
 	ai_weight = {
@@ -94,7 +87,6 @@ think_tank_0 = {
 			factor = 0.1
 			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
 		}
-
 		modifier = {
 			factor = 0.1
 			any_neighbor_system = {
@@ -104,7 +96,6 @@ think_tank_0 = {
 				}
 			}
 		}
-
 		modifier = {
 			factor = 2.0
 			from = {
@@ -115,7 +106,6 @@ think_tank_0 = {
 			}
 		}
 	}
-
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
@@ -133,30 +123,25 @@ think_tank_1 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	build_time = 36 #00
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 15000
 		}
-
 		upkeep = {
 			energy = 25
 		}
-
 		produces = {
 			society_research = @stage_1_research_bonus
 			engineering_research = @stage_1_research_bonus
 			physics_research = @stage_1_research_bonus
 		}
 	}
-
 	upgrade_from = {
 		think_tank_0
 	}
-
 	prerequisites = { "tech_science_nexus" }
-
 	country_modifier = {
 		all_technology_research_speed = 0.05
 	}
@@ -168,30 +153,25 @@ think_tank_2 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	build_time = 36 #00
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 15000
 		}
-
 		upkeep = {
 			energy = 50
 		}
-
 		produces = {
 			society_research = @stage_2_research_bonus
 			engineering_research = @stage_2_research_bonus
 			physics_research = @stage_2_research_bonus
 		}
 	}
-
 	upgrade_from = {
 		think_tank_1
 	}
-
 	prerequisites = { "tech_science_nexus" }
-
 	country_modifier = {
 		all_technology_research_speed = 0.10
 	}
@@ -203,37 +183,31 @@ think_tank_3 = {
 	portrait = "GFX_megastructure_think_tank_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-	build_time = 36 #00
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 15000
 		}
-
 		upkeep = {
 			energy = 75
 		}
-
 		produces = {
 			society_research = @stage_3_research_bonus
 			engineering_research = @stage_3_research_bonus
 			physics_research = @stage_3_research_bonus
 		}
 	}
-
 	upgrade_from = {
 		think_tank_2
 	}
-
 	on_build_complete = {
 		from = {
 			set_country_flag = has_built_or_repaired_megastructure
 		}
 	}
-
 	prerequisites = { "tech_science_nexus" }
 	show_prereqs = yes
-
 	country_modifier = {
 		all_technology_research_speed = 0.15
 	}
@@ -252,7 +226,6 @@ think_tank_4 = {
 		upkeep = {
 			energy = 100
 		}
-
 		produces = {
 			society_research = @stage_4_research_bonus
 			engineering_research = @stage_4_research_bonus
@@ -262,19 +235,15 @@ think_tank_4 = {
 	upgrade_from = {
 		think_tank_3
 	}
-
 	on_build_complete = {
 		from = {
 			set_country_flag = has_built_or_repaired_megastructure
 		}
 	}
-
 	prerequisites = { "tech_science_nexus" }
-
 	# used from script only
 	upgrade_desc = hide
 	potential = { always = no }
-
 	country_modifier = {
 		all_technology_research_speed = 0.15
 	}
@@ -284,10 +253,8 @@ think_tank_4 = {
 think_tank_permanently_ruined = {
 	entity = "think_tank_destroyed_01_entity"
 	portrait = "GFX_megastructure_construction_background"
-
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-
 	potential = {
 		always = no
 	}
@@ -297,10 +264,8 @@ think_tank_permanently_ruined = {
 think_tank_ruined = {
 	entity = "think_tank_destroyed_01_entity"
 	portrait = "GFX_megastructure_construction_background"
-
 	place_entity_on_planet_plane = no
 	entity_offset = { x = @entity_x y = @entity_y }
-
 	potential = {
 		always = no
 	}
@@ -319,36 +284,29 @@ think_tank_restored = {
 		cost = {
 			alloys = 15000
 		}
-
 		upkeep = {
 			energy = 75
 		}
-
 		produces = {
 			society_research = @stage_3_research_bonus
 			engineering_research = @stage_3_research_bonus
 			physics_research = @stage_3_research_bonus
 		}
 	}
-
 	upgrade_from = {
 		think_tank_ruined
 	}
-
 	possible = {
 		from = { has_technology = tech_mega_engineering }
 	}
-
 	country_modifier = {
 		all_technology_research_speed = 0.15
 	}
-
 	on_build_start = {
 		fromfrom = {
 			set_graphical_culture = root.from
 		}
 	}
-
 	on_build_complete = {
 		every_system_ambient_object = {
 			limit = {
@@ -366,3 +324,4 @@ think_tank_restored = {
 		}
 	}
 }
+

@@ -11,13 +11,11 @@ generate_home_system_resources = {
 		prevent_anomaly = yes
 		clear_deposits = yes
 	}
-
 	system_star = {
 		set_planet_flag = starting_mining_target
 		set_planet_flag = starting_deposit
 		set_deposit = d_energy_5
 	}
-
 	random_system_planet = {
 		limit = {
 			NOT = { has_planet_flag = starting_deposit }
@@ -34,12 +32,10 @@ generate_home_system_resources = {
 				is_planet_class = pc_t_star
 			}
 		}
-
 		set_planet_flag = starting_mining_target
 		set_planet_flag = starting_deposit
 		set_deposit = d_energy_5
 	}
-
 	while = {
 		count = 2
 		random_system_planet = {
@@ -54,13 +50,11 @@ generate_home_system_resources = {
 					is_planet_class = pc_frozen
 				}
 			}
-
 			set_planet_flag = starting_mining_target
 			set_planet_flag = starting_deposit
 			set_deposit = d_minerals_5
 		}
 	}
-
 	random_system_planet = {
 		limit = {
 			NOT = { has_planet_flag = starting_deposit }
@@ -77,14 +71,12 @@ generate_home_system_resources = {
 				is_planet_class = pc_t_star
 			}
 		}
-
 		set_planet_flag = starting_deposit
 		random_list = {
 			50 = { set_deposit = d_energy_2 }
 			50 = { set_deposit = d_energy_3 }
 		}
 	}
-
 	random_system_planet = {
 		limit = {
 			NOT = { has_planet_flag = starting_deposit }
@@ -97,14 +89,12 @@ generate_home_system_resources = {
 				is_planet_class = pc_frozen
 			}
 		}
-
 		set_planet_flag = starting_deposit
 		random_list = {
 			50 = { set_deposit = d_minerals_2 }
 			50 = { set_deposit = d_minerals_3 }
 		}
 	}
-
 	random_system_planet = {
 		limit = {
 			NOT = { has_planet_flag = starting_deposit }
@@ -118,10 +108,8 @@ generate_home_system_resources = {
 				is_star = yes
 			}
 		}
-
 		set_planet_flag = starting_research_target
 		set_planet_flag = starting_deposit
-
 		if = {
 			limit = {
 				is_planet_class = pc_toxic
@@ -141,7 +129,6 @@ generate_home_system_resources = {
 			set_deposit = d_engineering_3
 		}
 	}
-
 	random_system_planet = {
 		limit = {
 			NOT = { has_planet_flag = starting_deposit }
@@ -155,9 +142,7 @@ generate_home_system_resources = {
 				is_star = yes
 			}
 		}
-
 		set_planet_flag = starting_deposit
-
 		if = {
 			limit = {
 				is_planet_class = pc_toxic
@@ -182,7 +167,6 @@ generate_home_system_resources = {
 # This is called after game start
 generate_start_deposits_and_blockers = {
 	clear_deposits = yes
-
 	# blockers
 	if = {
 		limit = {
@@ -200,7 +184,6 @@ generate_start_deposits_and_blockers = {
 				NOT = { has_origin = origin_machine }
 			}
 		}
-
 		add_deposit = d_exterminators_ruins
 		add_deposit = d_former_battlefield
 	}
@@ -210,7 +193,6 @@ generate_start_deposits_and_blockers = {
 				has_civic = civic_machine_servitor
 			}
 		}
-
 		add_deposit = d_strip_mine
 		add_deposit = d_unsupervised_settlement
 	}
@@ -221,7 +203,6 @@ generate_start_deposits_and_blockers = {
 				NOT = { has_origin = origin_machine }
 			}
 		}
-
 		add_deposit = d_strip_mine
 		add_deposit = d_assimilators_ruins
 	}
@@ -232,7 +213,6 @@ generate_start_deposits_and_blockers = {
 				NOT = { has_origin = origin_machine }
 			}
 		}
-
 		add_deposit = d_strip_mine
 		add_deposit = d_machine_empire_ruins
 	}
@@ -242,7 +222,6 @@ generate_start_deposits_and_blockers = {
 				has_authority = auth_hive_mind
 			}
 		}
-
 		add_deposit = d_collapsed_burrows
 		add_deposit = d_failing_infrastructure
 		add_deposit = d_failing_infrastructure
@@ -257,7 +236,6 @@ generate_start_deposits_and_blockers = {
 		add_deposit = d_failing_infrastructure
 		add_deposit = d_failing_infrastructure
 	}
-
 	if = {
 		limit = {
 			owner = {
@@ -273,7 +251,6 @@ generate_start_deposits_and_blockers = {
 			add_deposit = d_hibernating_lithoids
 		}
 	}
-
 	if = {
 		limit = {
 			owner = {
@@ -286,76 +263,62 @@ generate_start_deposits_and_blockers = {
 			add_deposit = d_hibernating_lithoids
 		}
 	}
-
 	if = {
 		limit = {
 			owner = {
 				has_origin = origin_post_apocalyptic
 			}
 		}
-
 		# 3 + 3 energy
 		add_deposit = d_hot_springs
 		add_deposit = d_searing_desert
 		add_deposit = d_underwater_vent
-
 		# 3 + 4 mining
 		add_deposit = d_veiny_cliffs
 		add_deposit = d_ore_rich_caverns
 		add_deposit = d_submerged_ore_veins
-
 		# 3 + 2 farming
 		add_deposit = d_lichen_fields
 		add_deposit = d_fungal_caves
 		add_deposit = d_fungal_forest
 	}
-
 	if = {
 		limit = {
 			owner = {
 				has_civic = civic_machine_terminator
 			}
 		}
-
 		# 4 + 3 energy
 		add_deposit = d_hot_springs
 		add_deposit = d_searing_desert
 		add_deposit = d_underwater_vent
 		add_deposit = d_searing_desert
-
 		# 4 + 3 mining
 		add_deposit = d_veiny_cliffs
 		add_deposit = d_ore_rich_caverns
 		add_deposit = d_submerged_ore_veins
-
 		# 3 farming
 		add_deposit = d_lichen_fields
 		add_deposit = d_fungal_caves
 	}
-
 	if = {
 		limit = {
 			owner = {
 				has_origin = origin_life_seeded
 			}
 		}
-
 		set_planet_size = 30
-
 		# 5 + 3 energy
 		add_deposit = d_searing_desert
 		add_deposit = d_underwater_vent
 		add_deposit = d_tempestous_mountain
-
 		# 5 + 3 mining
 		add_deposit = d_ore_rich_caverns
 		add_deposit = d_prosperous_mesa
 		add_deposit = d_submerged_ore_veins
-
 		# 5 + 3 farming (lithoids swap 3 for minerals)
 		add_deposit = d_lush_jungle
 		add_deposit = d_teeming_reef
-
 		if = {
 			limit = { owner = { is_lithoid_empire = yes } }
 			add_deposit = d_rich_mountain
@@ -363,24 +326,20 @@ generate_start_deposits_and_blockers = {
 		else = {
 			add_deposit = d_black_soil
 		}
-
 		# 1 random medium deposit
 		random_list = {
 			33 = { add_deposit = d_frozen_gas_lake }
 			33 = { add_deposit = d_prosperous_mesa }
 			33 = { add_deposit = d_fertile_lands }
 		}
-
 		add_deposit = d_dust_caverns
 		add_deposit = d_bubbling_swamp
 		add_deposit = d_crystalline_caverns
 	}
-
 	if = {
 		limit = {
 			is_planet_class = pc_continental
 		}
-
 		# 3 + 3 energy
 		add_deposit = d_hot_springs
 		add_deposit = d_rushing_waterfalls
@@ -393,19 +352,16 @@ generate_start_deposits_and_blockers = {
 			limit = { owner = { has_valid_civic = civic_machine_servitor } }
 			add_deposit = d_hot_springs
 		}
-
 		# 3 + 3 mining
 		add_deposit = d_veiny_cliffs
 		add_deposit = d_prosperous_mesa
 		add_deposit = d_rich_mountain
-
 		# 4 + 3 farming (lithoids swap 3 for minerals)
 		add_deposit = d_rugged_woods
 		add_deposit = d_fertile_lands
 		if = {
 			limit = { owner = { is_machine_empire = no } }
 			add_deposit = d_rugged_woods
-
 			if = {
 				limit = { owner = { is_lithoid_empire = yes } }
 				add_deposit = d_rich_mountain
@@ -415,12 +371,10 @@ generate_start_deposits_and_blockers = {
 			}
 		}
 	}
-
 	if = {
 		limit = {
 			is_planet_class = pc_tropical
 		}
-
 		# 3 + 3 energy
 		add_deposit = d_hot_springs
 		add_deposit = d_rushing_waterfalls
@@ -433,12 +387,10 @@ generate_start_deposits_and_blockers = {
 			limit = { owner = { has_valid_civic = civic_machine_servitor } }
 			add_deposit = d_hot_springs
 		}
-
 		# 3 + 3 mining
 		add_deposit = d_mineral_fields
 		add_deposit = d_prosperous_mesa
 		add_deposit = d_submerged_ore_veins
-
 		# 4 + 3 farming (lithoids swap 3 for minerals)
 		add_deposit = d_green_hills
 		add_deposit = d_lush_jungle
@@ -454,12 +406,10 @@ generate_start_deposits_and_blockers = {
 			}
 		}
 	}
-
 	if = {
 		limit = {
 			is_planet_class = pc_ocean
 		}
-
 		# 3 + 3 energy
 		add_deposit = d_hot_springs
 		add_deposit = d_rushing_waterfalls
@@ -472,19 +422,16 @@ generate_start_deposits_and_blockers = {
 			limit = { owner = { has_valid_civic = civic_machine_servitor } }
 			add_deposit = d_hot_springs
 		}
-
 		# 3 + 3 mining
 		add_deposit = d_mineral_fields
 		add_deposit = d_ore_rich_caverns
 		add_deposit = d_submerged_ore_veins
-
 		# 4 + 3 farming (lithoids swap 3 for minerals)
 		add_deposit = d_green_hills
 		add_deposit = d_lush_jungle
 		if = {
 			limit = { owner = { is_machine_empire = no } }
 			add_deposit = d_green_hills
-
 			if = {
 				limit = { owner = { is_lithoid_empire = yes } }
 				add_deposit = d_submerged_ore_veins
@@ -494,12 +441,10 @@ generate_start_deposits_and_blockers = {
 			}
 		}
 	}
-
 	if = {
 		limit = {
 			is_planet_class = pc_arctic
 		}
-
 		# 3 + 3 energy
 		add_deposit = d_hot_springs
 		add_deposit = d_frozen_gas_lake
@@ -512,19 +457,16 @@ generate_start_deposits_and_blockers = {
 			limit = { owner = { has_valid_civic = civic_machine_servitor } }
 			add_deposit = d_hot_springs
 		}
-
 		# 3 + 3 mining
 		add_deposit = d_veiny_cliffs
 		add_deposit = d_ore_rich_caverns
 		add_deposit = d_rich_mountain
-
 		# 4 + 3 farming (lithoids swap 3 for minerals)
 		add_deposit = d_lichen_fields
 		add_deposit = d_fungal_caves
 		if = {
 			limit = { owner = { is_machine_empire = no } }
 			add_deposit = d_lichen_fields
-
 			if = {
 				limit = { owner = { is_lithoid_empire = yes } }
 				add_deposit = d_rich_mountain
@@ -534,12 +476,10 @@ generate_start_deposits_and_blockers = {
 			}
 		}
 	}
-
 	if = {
 		limit = {
 			is_planet_class = pc_tundra
 		}
-
 		# 3 + 3 energy
 		add_deposit = d_hot_springs
 		add_deposit = d_frozen_gas_lake
@@ -552,19 +492,16 @@ generate_start_deposits_and_blockers = {
 			limit = { owner = { has_valid_civic = civic_machine_servitor } }
 			add_deposit = d_hot_springs
 		}
-
 		# 3 + 3 mining
 		add_deposit = d_mineral_fields
 		add_deposit = d_ore_rich_caverns
 		add_deposit = d_rich_mountain
-
 		# 4 + 3 farming (lithoids swap 3 for minerals)
 		add_deposit = d_forgiving_tundra
 		add_deposit = d_fungal_caves
 		if = {
 			limit = { owner = { is_machine_empire = no } }
 			add_deposit = d_forgiving_tundra
-
 			if = {
 				limit = { owner = { is_lithoid_empire = yes } }
 				add_deposit = d_rich_mountain
@@ -574,12 +511,10 @@ generate_start_deposits_and_blockers = {
 			}
 		}
 	}
-
 	if = {
 		limit = {
 			is_planet_class = pc_alpine
 		}
-
 		# 3 + 3 energy
 		add_deposit = d_hot_springs
 		add_deposit = d_frozen_gas_lake
@@ -592,19 +527,16 @@ generate_start_deposits_and_blockers = {
 			limit = { owner = { has_valid_civic = civic_machine_servitor } }
 			add_deposit = d_hot_springs
 		}
-
 		# 3 + 3 mining
 		add_deposit = d_veiny_cliffs
 		add_deposit = d_ore_rich_caverns
 		add_deposit = d_rich_mountain
-
 		# 4 + 3 farming (lithoids swap 3 for minerals)
 		add_deposit = d_forgiving_tundra
 		add_deposit = d_fungal_caves
 		if = {
 			limit = { owner = { is_machine_empire = no } }
 			add_deposit = d_forgiving_tundra
-
 			if = {
 				limit = { owner = { is_lithoid_empire = yes } }
 				add_deposit = d_rich_mountain
@@ -614,12 +546,10 @@ generate_start_deposits_and_blockers = {
 			}
 		}
 	}
-
 	if = {
 		limit = {
 			is_planet_class = pc_desert
 		}
-
 		# 3 + 3 energy
 		add_deposit = d_arid_highlands
 		add_deposit = d_searing_desert
@@ -632,19 +562,16 @@ generate_start_deposits_and_blockers = {
 			limit = { owner = { has_valid_civic = civic_machine_servitor } }
 			add_deposit = d_arid_highlands
 		}
-
 		# 3 + 3 mining
 		add_deposit = d_mineral_fields
 		add_deposit = d_ore_rich_caverns
 		add_deposit = d_rich_mountain
-
 		# 4 + 3 farming (lithoids swap 3 for minerals)
 		add_deposit = d_nutritious_mudland
 		add_deposit = d_great_river
 		if = {
 			limit = { owner = { is_machine_empire = no } }
 			add_deposit = d_nutritious_mudland
-
 			if = {
 				limit = { owner = { is_lithoid_empire = yes } }
 				add_deposit = d_rich_mountain
@@ -654,12 +581,10 @@ generate_start_deposits_and_blockers = {
 			}
 		}
 	}
-
 	if = {
 		limit = {
 			is_planet_class = pc_arid
 		}
-
 		# 3 + 3 energy
 		add_deposit = d_arid_highlands
 		add_deposit = d_searing_desert
@@ -672,19 +597,16 @@ generate_start_deposits_and_blockers = {
 			limit = { owner = { has_valid_civic = civic_machine_servitor } }
 			add_deposit = d_arid_highlands
 		}
-
 		# 3 + 3 mining
 		add_deposit = d_veiny_cliffs
 		add_deposit = d_ore_rich_caverns
 		add_deposit = d_rich_mountain
-
 		# 4 + 3 farming (lithoids swap 3 for minerals)
 		add_deposit = d_bountiful_plains
 		add_deposit = d_great_river
 		if = {
 			limit = { owner = { is_machine_empire = no } }
 			add_deposit = d_bountiful_plains
-
 			if = {
 				limit = { owner = { is_lithoid_empire = yes } }
 				add_deposit = d_rich_mountain
@@ -694,12 +616,10 @@ generate_start_deposits_and_blockers = {
 			}
 		}
 	}
-
 	if = {
 		limit = {
 			is_planet_class = pc_savannah
 		}
-
 		# 3 + 3 energy
 		add_deposit = d_arid_highlands
 		add_deposit = d_searing_desert
@@ -712,19 +632,16 @@ generate_start_deposits_and_blockers = {
 			limit = { owner = { has_valid_civic = civic_machine_servitor } }
 			add_deposit = d_arid_highlands
 		}
-
 		# 3 + 3 mining
 		add_deposit = d_mineral_fields
 		add_deposit = d_prosperous_mesa
 		add_deposit = d_submerged_ore_veins
-
 		# 4 + 3 farming (lithoids swap 3 for minerals)
 		add_deposit = d_bountiful_plains
 		add_deposit = d_fertile_lands
 		if = {
 			limit = { owner = { is_machine_empire = no } }
 			add_deposit = d_bountiful_plains
-
 			if = {
 				limit = { owner = { is_lithoid_empire = yes } }
 				add_deposit = d_rich_mountain
@@ -734,7 +651,6 @@ generate_start_deposits_and_blockers = {
 			}
 		}
 	}
-
 	if = {
 		limit = {
 			is_planet_class = pc_relic
@@ -742,16 +658,13 @@ generate_start_deposits_and_blockers = {
 				has_origin = origin_remnants
 			}
 		}
-
 		set_planet_size = 22
-
 		# 5 blockers
 		add_deposit = d_ruined_arcology
 		add_deposit = d_ruined_arcology
 		add_deposit = d_ruined_arcology
 		add_deposit = d_ruined_arcology
 		add_deposit = d_ruined_arcology
-
 		# 3 + 3 energy
 		add_deposit = d_arid_highlands
 		add_deposit = d_searing_desert
@@ -764,12 +677,10 @@ generate_start_deposits_and_blockers = {
 			limit = { owner = { has_valid_civic = civic_machine_servitor } }
 			add_deposit = d_arid_highlands
 		}
-
 		# 3 + 3 mining
 		add_deposit = d_mineral_fields
 		add_deposit = d_prosperous_mesa
 		add_deposit = d_submerged_ore_veins
-
 		# 4 + 3 farming
 		add_deposit = d_bountiful_plains
 		add_deposit = d_fertile_lands
@@ -779,7 +690,6 @@ generate_start_deposits_and_blockers = {
 			add_deposit = d_black_soil
 		}
 	}
-
 	# Ocean Paradise Origin
 	if = {
 		limit = {
@@ -798,7 +708,6 @@ generate_start_deposits_and_blockers = {
 		}
 		clear_deposits = yes
 		clear_blockers = yes
-
 		# Food
 		add_deposit = d_teeming_reef
 		add_deposit = d_teeming_reef
@@ -808,17 +717,14 @@ generate_start_deposits_and_blockers = {
 		add_deposit = d_teeming_reef
 		add_deposit = d_teeming_reef
 		add_deposit = d_teeming_reef
-
 		# Minerals
 		add_deposit = d_submerged_ore_veins
 		add_deposit = d_submerged_ore_veins
 		add_deposit = d_submerged_ore_veins
-
 		# Energy
 		add_deposit = d_underwater_vent
 		add_deposit = d_underwater_vent
 		add_deposit = d_underwater_vent
-
 		# Bonus
 		add_deposit = d_crystal_reef
 		random_list = {
@@ -849,7 +755,6 @@ generate_earth_deposits_and_blockers = {
 		limit = { owner = { has_valid_civic = civic_machine_servitor } }
 		add_deposit = d_hot_springs
 	}
-
 	if = {
 		limit = {
 			owner = {
@@ -862,7 +767,6 @@ generate_earth_deposits_and_blockers = {
 			add_deposit = d_hibernating_lithoids
 		}
 	}
-
 	if = {
 		limit = {
 			owner = {
@@ -875,16 +779,13 @@ generate_earth_deposits_and_blockers = {
 			add_deposit = d_hibernating_lithoids
 		}
 	}
-
 	if = {
 		limit = {
 			owner = {
 				has_origin = origin_life_seeded
 			}
 		}
-
 		set_planet_size = 30
-
 		add_deposit = d_dust_caverns
 		add_deposit = d_bubbling_swamp
 		add_deposit = d_crystalline_caverns
@@ -898,7 +799,6 @@ generate_start_buildings_and_districts = {
 				owner = { has_origin = origin_shattered_ring }
 			}
 		}
-
 		if = {
 			limit = {
 				owner = {
@@ -910,7 +810,6 @@ generate_start_buildings_and_districts = {
 					}
 				}
 			}
-
 			if = {
 				limit = { owner = { last_created_species = { is_lithoid = yes } } }
 				owner = {
@@ -923,7 +822,6 @@ generate_start_buildings_and_districts = {
 				}
 			}
 		}
-
 		if = {
 			limit = {
 				owner = {
@@ -935,17 +833,13 @@ generate_start_buildings_and_districts = {
 				set_country_flag = non_lithoid_subspecies
 			}
 		}
-
 		if = {
 			limit = { owner = { is_regular_empire = yes } }
-
 			# total - 24 jobs
-
 			# 3 jobs
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_city
 			}
-
 			if = {
 				limit = {
 					owner = { NOT = { has_valid_civic = civic_agrarian_idyll } }
@@ -965,14 +859,12 @@ generate_start_buildings_and_districts = {
 					}
 				}
 			}
-
 			if = {
 				limit = { owner = { is_megacorp = yes } }
 				add_district_and_planet_size_if_needed_effect = {
 					district = district_city
 				}
 			}
-
 			# 4 - 6 jobs
 			if = {
 				limit = {
@@ -1014,7 +906,6 @@ generate_start_buildings_and_districts = {
 					}
 				}
 			}
-
 			# 4 jobs
 			while = {
 				count = 2
@@ -1022,12 +913,10 @@ generate_start_buildings_and_districts = {
 					district = district_mining
 				}
 			}
-
 			# 2 jobs
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_generator
 			}
-
 			# 4 jobs
 			while = {
 				count = 2
@@ -1035,7 +924,6 @@ generate_start_buildings_and_districts = {
 					district = district_industrial
 				}
 			}
-
 			# 2 jobs
 			if = {
 				limit = { owner = { is_megacorp = no } }
@@ -1043,7 +931,6 @@ generate_start_buildings_and_districts = {
 					district = district_generator
 				}
 			}
-
 			# 2 jobs
 			if = {
 				limit = {
@@ -1053,13 +940,10 @@ generate_start_buildings_and_districts = {
 					district = district_generator
 				}
 			}
-
 			# 3 jobs
 			add_building = building_capital
-
 			# 2 jobs
 			add_building = building_bureaucratic_1
-
 			# 2 jobs
 			if = {
 				limit = {
@@ -1068,7 +952,6 @@ generate_start_buildings_and_districts = {
 					}
 				}
 				add_building = building_dread_encampment
-
 				solar_system = { #Necromancers do not give engineering. So make sure there's some readily-accessible engineering
 					while = {
 						count = 2
@@ -1086,7 +969,6 @@ generate_start_buildings_and_districts = {
 			else = {
 				add_building = building_research_lab_1
 			}
-
 			# 4-5 jobs
 			if = {
 				limit = {
@@ -1148,10 +1030,8 @@ generate_start_buildings_and_districts = {
 				}
 			}
 		}
-
 		if = {
 			limit = { owner = { is_hive_empire = yes } }
-
 			# 9 jobs
 			while = {
 				count = 3
@@ -1159,7 +1039,6 @@ generate_start_buildings_and_districts = {
 					district = district_hive
 				}
 			}
-
 			# 6-9 jobs
 			if = {
 				limit = { owner = { is_lithoid_empire = no } }
@@ -1194,7 +1073,6 @@ generate_start_buildings_and_districts = {
 					}
 				}
 			}
-
 			# 6 jobs
 			while = {
 				count = 2
@@ -1202,7 +1080,6 @@ generate_start_buildings_and_districts = {
 					district = district_mining
 				}
 			}
-
 			if = {
 				limit = {
 					owner = { has_origin = origin_tree_of_life }
@@ -1212,7 +1089,6 @@ generate_start_buildings_and_districts = {
 					district = district_farming
 				}
 			}
-
 			# 6 jobs
 			while = {
 				count = 2
@@ -1220,7 +1096,6 @@ generate_start_buildings_and_districts = {
 					district = district_generator
 				}
 			}
-
 			# 3 jobs
 			if = {
 				limit = {
@@ -1230,18 +1105,14 @@ generate_start_buildings_and_districts = {
 					district = district_generator
 				}
 			}
-
 			# 2 jobs
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_industrial
 			}
-
 			# 5 jobs
 			add_building = building_hive_capital
-
 			# 2 jobs
 			add_building = building_research_lab_1
-
 			if = {
 				limit = { #Necrophages need fewer complex drones or the menial drone slots won't be filled
 					NOT = { owner = { has_origin = origin_necrophage } }
@@ -1262,13 +1133,10 @@ generate_start_buildings_and_districts = {
 				add_building = building_spawning_pool
 			}
 		}
-
 		# Replace capital building for machine empires
 		if = {
 			limit = { owner = { is_machine_empire = yes } }
-
 			# total - 27 jobs
-
 			# 3 jobs
 			while = {
 				count = 2
@@ -1276,32 +1144,24 @@ generate_start_buildings_and_districts = {
 					district = district_nexus
 				}
 			}
-
 			# 2 jobs
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_industrial
 			}
-
 			# 6 jobs
 			add_building = building_machine_capital
-
 			# 1 job
 			add_building = building_machine_assembly_plant
-
 			# 2 job
 			add_building = building_uplink_node
-
 			# 2 jobs
 			add_building = building_research_lab_1
-
 			if = {
 				limit = { owner = { NOT = { has_origin = origin_machine } } }
-
 				# 4 jobs
 				add_district_and_planet_size_if_needed_effect = {
 					district = district_mining
 				}
-
 				# 2 jobs
 				if = {
 					limit = {
@@ -1311,7 +1171,6 @@ generate_start_buildings_and_districts = {
 						district = district_mining
 					}
 				}
-
 				# 8 jobs
 				while = {
 					count = 4
@@ -1319,7 +1178,6 @@ generate_start_buildings_and_districts = {
 						district = district_generator
 					}
 				}
-
 				# 2 jobs
 				if = {
 					limit = {
@@ -1329,12 +1187,10 @@ generate_start_buildings_and_districts = {
 						district = district_generator
 					}
 				}
-
 				#Assimilators
 				if = {
 					limit = { owner = { has_civic = civic_machine_assimilator } }
 					remove_district = district_generator
-
 					if = {
 						limit = { owner = { has_country_flag = lithoid_subspecies } }
 						add_district_and_planet_size_if_needed_effect = {
@@ -1347,11 +1203,9 @@ generate_start_buildings_and_districts = {
 						}
 					}
 				}
-
 				#Servitors
 				if = {
 					limit = { owner = { has_civic = civic_machine_servitor } }
-
 					if = {
 						limit = { owner = { has_country_flag = lithoid_subspecies } }
 						add_district_and_planet_size_if_needed_effect = {
@@ -1363,7 +1217,6 @@ generate_start_buildings_and_districts = {
 							district = district_farming
 						}
 					}
-
 					add_district_and_planet_size_if_needed_effect = {
 						district = district_nexus
 					}
@@ -1378,17 +1231,14 @@ generate_start_buildings_and_districts = {
 						district = district_generator_uncapped
 					}
 				}
-
 				add_district_and_planet_size_if_needed_effect = {
 					district = district_mining_uncapped
 				}
-
 				#Assimilators
 				if = {
 					limit = { owner = { has_civic = civic_machine_assimilator } }
 					add_deposit = d_organic_slurry
 				}
-
 				# Blocker that removes the extra machine world replicator jobs until removed
 				add_deposit = d_resource_consolidation_1
 			}
@@ -1465,12 +1315,10 @@ generate_start_buildings_and_districts = {
 			}
 		}
 	}
-
 	if = {
 		limit = {
 			owner = { has_origin = origin_shattered_ring }
 		}
-
 		add_deposit = d_segment_rubble_1
 		add_deposit = d_segment_rubble_2
 		add_deposit = d_segment_rubble_3
@@ -1478,7 +1326,6 @@ generate_start_buildings_and_districts = {
 		add_deposit = d_decrepit_tunnels_1
 		add_deposit = d_decrepit_tunnels_2
 		add_deposit = d_decrepit_tunnels_3
-
 		if = {
 			limit = {
 				owner = {
@@ -1487,7 +1334,6 @@ generate_start_buildings_and_districts = {
 			}
 			add_deposit = d_unsupervised_settlement
 		}
-
 		else_if = {
 			limit = {
 				owner = {
@@ -1496,11 +1342,9 @@ generate_start_buildings_and_districts = {
 			}
 			add_deposit = d_collapsed_burrows
 		}
-
 		else = {
 			add_deposit = d_decrepit_dwellings
 		}
-
 		if = {
 			limit = {
 				owner = {
@@ -1515,7 +1359,6 @@ generate_start_buildings_and_districts = {
 				add_deposit = d_hibernating_lithoids
 			}
 		}
-
 		if = {
 			limit = {
 				owner = {
@@ -1528,7 +1371,6 @@ generate_start_buildings_and_districts = {
 				add_deposit = d_hibernating_lithoids
 			}
 		}
-
 		if = {
 			limit = {
 				owner = {
@@ -1538,7 +1380,6 @@ generate_start_buildings_and_districts = {
 					}
 				}
 			}
-
 			if = {
 				limit = {
 					owner = {
@@ -1555,19 +1396,15 @@ generate_start_buildings_and_districts = {
 				}
 			}
 		}
-
 		if = {
 			limit = {
 				owner = { is_regular_empire = yes }
 			}
-
 			# total - 24 jobs
-
 			# 3 jobs
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_city
 			}
-
 			if = {
 				limit = {
 					owner = { NOT = { has_valid_civic = civic_agrarian_idyll } }
@@ -1587,14 +1424,12 @@ generate_start_buildings_and_districts = {
 					}
 				}
 			}
-
 			if = {
 				limit = { owner = { is_megacorp = yes } }
 				add_district_and_planet_size_if_needed_effect = {
 					district = district_city
 				}
 			}
-
 			# 4 - 6 jobs
 			if = {
 				limit = {
@@ -1628,7 +1463,6 @@ generate_start_buildings_and_districts = {
 					}
 				}
 			}
-
 			# 4 jobs
 			while = {
 				count = 2
@@ -1636,12 +1470,10 @@ generate_start_buildings_and_districts = {
 					district = district_mining_uncapped
 				}
 			}
-
 			# 2 jobs
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_srw_commercial
 			}
-
 			# 4 jobs
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_mining_uncapped
@@ -1649,7 +1481,6 @@ generate_start_buildings_and_districts = {
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_srw_commercial
 			}
-
 			# 2 jobs
 			if = {
 				limit = { owner = { is_megacorp = no } }
@@ -1657,13 +1488,10 @@ generate_start_buildings_and_districts = {
 					district = district_srw_commercial
 				}
 			}
-
 			# 3 jobs
 			add_building = building_capital
-
 			# 2 jobs
 			add_building = building_bureaucratic_1
-
 			# 2 jobs
 			if = {
 				limit = {
@@ -1672,7 +1500,6 @@ generate_start_buildings_and_districts = {
 					}
 				}
 				add_building = building_dread_encampment
-
 				solar_system = { #Necromancers do not give engineering. So make sure there's some readily-accessible engineering
 					random_system_planet = {
 						limit = {
@@ -1687,7 +1514,6 @@ generate_start_buildings_and_districts = {
 			else = {
 				add_building = building_research_lab_1
 			}
-
 			# 4-5 jobs
 			if = {
 				limit = {
@@ -1736,12 +1562,10 @@ generate_start_buildings_and_districts = {
 				}
 			}
 		}
-
 		if = {
 			limit = {
 				owner = { is_hive_empire = yes }
 			}
-
 			# 9 jobs
 			while = {
 				count = 3
@@ -1749,7 +1573,6 @@ generate_start_buildings_and_districts = {
 					district = district_hive
 				}
 			}
-
 			# 6-9 jobs
 			if = {
 				limit = {
@@ -1770,7 +1593,6 @@ generate_start_buildings_and_districts = {
 					}
 				}
 			}
-
 			# 6 jobs
 			while = {
 				count = 2
@@ -1778,7 +1600,6 @@ generate_start_buildings_and_districts = {
 					district = district_mining_uncapped
 				}
 			}
-
 			# 6 jobs
 			while = {
 				count = 2
@@ -1786,31 +1607,23 @@ generate_start_buildings_and_districts = {
 					district = district_generator_uncapped
 				}
 			}
-
 			# 2 jobs
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_mining_uncapped
 			}
-
 			# 5 jobs
 			add_building = building_hive_capital
-
 			# 2 jobs
 			add_building = building_research_lab_1
-
 			# 2 jobs
 			add_building = building_hive_node
-
 			# 1 job
 			add_building = building_spawning_pool
 		}
-
 		# Replace capital building for machine empires
 		if = {
 			limit = { owner = { is_machine_empire = yes } }
-
 			# total - 27 jobs
-
 			# 3 jobs
 			while = {
 				count = 2
@@ -1818,29 +1631,22 @@ generate_start_buildings_and_districts = {
 					district = district_nexus
 				}
 			}
-
 			# 2 jobs
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_mining_uncapped
 			}
-
 			# 6 jobs
 			add_building = building_machine_capital
-
 			# 1 job
 			add_building = building_machine_assembly_plant
-
 			# 2 job
 			add_building = building_uplink_node
-
 			# 2 jobs
 			add_building = building_research_lab_1
-
 			# 4 jobs
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_mining_uncapped
 			}
-
 			# 8 jobs
 			while = {
 				count = 4
@@ -1848,7 +1654,6 @@ generate_start_buildings_and_districts = {
 					district = district_generator_uncapped
 				}
 			}
-
 			#Assimilators
 			if = {
 				limit = { owner = { has_civic = civic_machine_assimilator } }
@@ -1865,7 +1670,6 @@ generate_start_buildings_and_districts = {
 					}
 				}
 			}
-
 			#Servitors
 			if = {
 				limit = { owner = { has_civic = civic_machine_servitor } }
@@ -1887,7 +1691,6 @@ generate_start_buildings_and_districts = {
 			}
 		}
 	}
-
 	# Additional resources based on empire type and possible subspecies
 	owner = {
 		give_starting_resources_effect = yes
@@ -1906,7 +1709,6 @@ generate_start_pops = {
 				}
 			}
 		}
-
 		if = { limit = { last_created_species = { is_species_class = MACHINE } }
 			modify_species = {
 				species = last_created_species
@@ -1915,7 +1717,6 @@ generate_start_pops = {
 			}
 			last_created_species = { save_event_target_as = last_created_species }
 		}
-
 		if = {
 			limit = {
 				owner = {
@@ -1925,7 +1726,6 @@ generate_start_pops = {
 					}
 				}
 			}
-
 			last_created_species = {
 				set_species_flag = syncretic_species@root.owner
 				if = {
@@ -1984,7 +1784,6 @@ generate_start_pops = {
 				}
 			}
 		}
-
 		if = {
 			limit = {
 				owner = { has_valid_civic = civic_machine_servitor }
@@ -2019,7 +1818,6 @@ generate_start_pops = {
 				}
 			}
 		}
-
 		if = {
 			limit = {
 				owner = { has_valid_civic = civic_machine_assimilator }
@@ -2055,7 +1853,6 @@ generate_start_pops = {
 			}
 		}
 	}
-
 	if = {
 		limit = { owner = { has_origin = origin_mechanists } }
 		owner = { create_built_robot_species = yes }
@@ -2065,7 +1862,6 @@ generate_start_pops = {
 				species = last_created_species
 			}
 		}
-
 		add_building = building_robot_assembly_plant
 		add_district_and_planet_size_if_needed_effect = {
 			district = district_generator
@@ -2096,7 +1892,6 @@ generate_start_pops = {
 				district = district_city
 			}
 		}
-
 		add_building = building_necrophage_elevation_chamber
 	}
 	if = {
@@ -2212,7 +2007,6 @@ generate_start_pops = {
 	}
 }
 
-
 generate_home_planet_final_pass = {
 	# Adjust life-seeded colonies
 	if = {
@@ -2221,7 +2015,6 @@ generate_home_planet_final_pass = {
 				has_origin = origin_life_seeded
 			}
 		}
-
 		owner = {
 			# Nuke other colonies gained from advanced empire, etc
 			every_owned_planet = {
@@ -2372,7 +2165,6 @@ generate_home_planet_final_pass = {
 }
 
 ### Origins
-
 void_dweller_home_planet_setup = {
 	owner = {
 		give_starting_resources_effect = yes
@@ -2382,7 +2174,6 @@ void_dweller_home_planet_setup = {
 			message = no
 		}
 		add_research_option = tech_habitat_2
-
 		if = {
 			limit = {
 				OR = {
@@ -2420,7 +2211,7 @@ void_dweller_home_planet_setup = {
 		entity = "habitat_phase_02_entity"
 		graphical_culture = event_target:void_dweller_owner
 	}
-	set_planet_size = 6
+	set_planet_size = 9
 	set_planet_flag = advanced_habitat
 	add_district_and_planet_size_if_needed_effect = {
 		district = district_hab_housing
@@ -2431,23 +2222,18 @@ void_dweller_home_planet_setup = {
 	add_district_and_planet_size_if_needed_effect = {
 		district = district_hab_industrial
 	}
-
 	add_building = building_hab_major_capital
-
-
 	if = {
 		limit = {
 			owner = {
 				is_lithoid_empire = no
 			}
 		}
-
 		add_building = building_bureaucratic_1
 	}
 	else = {
 		add_building = building_holo_theatres
 	}
-
 	if = {
 		limit = {
 			owner = {
@@ -2455,7 +2241,6 @@ void_dweller_home_planet_setup = {
 			}
 		}
 		add_building = building_dread_encampment
-
 		solar_system = { #Necromancers do not give engineering. So make sure there's some readily-accessible engineering
 			while = {
 				count = 2
@@ -2475,7 +2260,6 @@ void_dweller_home_planet_setup = {
 			district = district_hab_science
 		}
 	}
-
 	add_deposit = d_arcane_replicator
 	solar_system = {
 		random_system_planet = {
@@ -2491,7 +2275,7 @@ void_dweller_home_planet_setup = {
 				entity = "habitat_phase_01_entity"
 				graphical_culture = event_target:void_dweller_owner
 			}
-			set_planet_size = 4
+			set_planet_size = 6
 			set_planet_flag = mining_habitat
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_hab_housing
@@ -2499,7 +2283,6 @@ void_dweller_home_planet_setup = {
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_hab_mining
 			}
-
 			if = {
 				limit = {
 					owner = {
@@ -2534,7 +2317,7 @@ void_dweller_home_planet_setup = {
 				entity = "habitat_phase_01_entity"
 				graphical_culture = event_target:void_dweller_owner
 			}
-			set_planet_size = 4
+			set_planet_size = 6
 			set_planet_flag = energy_habitat
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_hab_housing
@@ -2545,14 +2328,12 @@ void_dweller_home_planet_setup = {
 			add_district_and_planet_size_if_needed_effect = {
 				district = district_hab_commercial
 			}
-
 			if = {
 				limit = {
 					owner = {
 						is_lithoid_empire = no
 					}
 				}
-
 				add_building = building_hydroponics_farm
 			}
 			else = {
@@ -2827,3 +2608,4 @@ give_starting_resources_effect = {
 		}
 	}
 }
+

@@ -82,6 +82,8 @@ namespace StellarisModder
             builder.AppendLine(indent(depth) + "}");
 
             Value = builder.ToString();
+
+            SubEntities = null;
         }
 
         public ResourceFileEntity GetSubEntity(string EntityName)

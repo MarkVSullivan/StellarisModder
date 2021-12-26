@@ -72,7 +72,12 @@ namespace StellarisModder.Actions
 
                 var parentEntity = file.GetEntity(parentEntityName);
 
-                return replace_within_entity_recursive(parentEntity, remainingEntityChain, lineToReplace, replaceWith, 1);
+                bool returnValue = replace_within_entity_recursive(parentEntity, remainingEntityChain, lineToReplace, replaceWith, 1);
+
+                if (parentEntity.SubEntities != null)
+                    parentEntity.Collapse(0);
+
+                return returnValue;
             }
         }
 
@@ -95,6 +100,7 @@ namespace StellarisModder.Actions
             {
                 var childEntity = entity.GetSubEntity(entityChain.Trim());
                 returnValue = do_entity_replacement(childEntity, lineToReplace, replaceWith);
+
             }
             else
             {
@@ -116,7 +122,14 @@ namespace StellarisModder.Actions
                 if (entity.Type == ResourceFileEntityType.Comments)
                     continue;
 
-                if (entity.Value.IndexOf("\t" + lineToReplace + "\r") >= 0)
+                if (( entity.Value.IndexOf("\r") < 0 ) && (entity.Value.IndexOf(lineToReplace) >= 0))
+                {
+                    lineFound = true;
+
+                    string newValue = entity.Value.Replace(lineToReplace, replaceWith);
+                    entity.Value = newValue;
+                }
+                else if (entity.Value.IndexOf("\t" + lineToReplace + "\r") >= 0)
                 {
                     lineFound = true;
 

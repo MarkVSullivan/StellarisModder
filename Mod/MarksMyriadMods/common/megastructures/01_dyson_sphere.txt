@@ -5,21 +5,18 @@ dyson_sphere_0 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -7 y = -7 }
-	build_time = 180#0
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 5000
 			influence = 300
 		}
-
 		upkeep = {
 			energy = 5
 		}
 	}
-
 	prerequisites = { "tech_dyson_sphere" }
-
 	possible = {
 		exists = starbase
 		custom_tooltip = {
@@ -84,7 +81,6 @@ dyson_sphere_0 = {
 			has_no_non_gate_megastructure = yes
 		}
 	}
-
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
@@ -97,17 +93,14 @@ dyson_sphere_0 = {
 			}
 		}
 	}
-
 	# root = system
 	# from = country
 	ai_weight = {
 		factor = 15
-
 		modifier = {
 			factor = 0.1
 			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
 		}
-
 		modifier = {
 			factor = 0.1
 			any_neighbor_system = {
@@ -118,7 +111,6 @@ dyson_sphere_0 = {
 			}
 		}
 	}
-
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
@@ -146,20 +138,17 @@ dyson_sphere_1 = {
 	entity = "dyson_sphere_phase_01_entity"
 	construction_entity = "dyson_sphere_frame_entity"
 	portrait = "GFX_megastructure_construction_background"
-	build_time = 3600
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
 		}
 	}
-
 	upgrade_from = {
 		dyson_sphere_0
 	}
-
 	prerequisites = { "tech_dyson_sphere" }
-
 	on_build_complete = {
 		every_system_planet = {
 			limit = {
@@ -175,24 +164,20 @@ dyson_sphere_2 = {
 	entity = "dyson_sphere_phase_02_entity"
 	construction_entity = "dyson_sphere_part_1_entity"
 	portrait = "GFX_megastructure_construction_background"
-	build_time = 3600
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
 		}
-
 		produces = {
 			energy = 1000
 		}
 	}
-
 	upgrade_from = {
 		dyson_sphere_1
 	}
-
 	prerequisites = { "tech_dyson_sphere" }
-
 	on_build_complete = {
 		every_system_planet = {
 			limit = {
@@ -208,24 +193,20 @@ dyson_sphere_3 = {
 	entity = "dyson_sphere_phase_03_entity"
 	construction_entity = "dyson_sphere_part_2_entity"
 	portrait = "GFX_megastructure_construction_background"
-	build_time = 3600
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
 		}
-
 		produces = {
 			energy = 2000
 		}
 	}
-
 	upgrade_from = {
 		dyson_sphere_2
 	}
-
 	prerequisites = { "tech_dyson_sphere" }
-
 	on_build_complete = {
 		every_system_planet = {
 			limit = {
@@ -241,24 +222,20 @@ dyson_sphere_4 = {
 	entity = "dyson_sphere_phase_04_entity"
 	construction_entity = "dyson_sphere_part_3_entity"
 	portrait = "GFX_megastructure_construction_background"
-	build_time = 3600
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
 		}
-
 		produces = {
 			energy = 3000
 		}
 	}
-
 	upgrade_from = {
 		dyson_sphere_3
 	}
-
 	prerequisites = { "tech_dyson_sphere" }
-
 	on_build_complete = {
 		every_system_planet = {
 			limit = {
@@ -274,30 +251,25 @@ dyson_sphere_5 = {
 	entity = "dyson_sphere_phase_05_entity"
 	construction_entity = "dyson_sphere_part_4_entity"
 	portrait = "GFX_megastructure_dyson_sphere_background"
-	build_time = 3600
+	build_time = 1800
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
 		}
-
 		produces = {
 			energy = 4000
 		}
 	}
-
 	upgrade_from = {
 		dyson_sphere_4
 	}
-
 	prerequisites = { "tech_dyson_sphere" }
 	show_prereqs = yes
-
 	on_build_complete = {
 		from = {
 			set_country_flag = has_built_or_repaired_megastructure
 		}
-
 		every_system_planet = {
 			limit = {
 				OR = {
@@ -326,7 +298,6 @@ dyson_sphere_5 = {
 dyson_sphere_permanently_ruined = {
 	entity = "dyson_sphere_destroyed_entity"
 	portrait = "GFX_megastructure_construction_background"
-
 	potential = {
 		always = no
 	}
@@ -336,7 +307,6 @@ dyson_sphere_permanently_ruined = {
 dyson_sphere_ruined = {
 	entity = "dyson_sphere_destroyed_entity"
 	portrait = "GFX_megastructure_construction_background"
-
 	potential = {
 		always = no
 	}
@@ -347,13 +317,12 @@ dyson_sphere_restored = {
 	entity = "dyson_sphere_phase_05_entity"
 	construction_entity = "dyson_sphere_part_4_entity"
 	portrait = "GFX_megastructure_dyson_sphere_background"
-	build_time = 7200
+	build_time = 3600
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 20000
 		}
-
 		produces = {
 			energy = 4000
 		}
@@ -361,17 +330,14 @@ dyson_sphere_restored = {
 	upgrade_from = {
 		dyson_sphere_ruined
 	}
-
 	possible = {
 		from = { has_technology = tech_mega_engineering }
 	}
-
 	on_build_start = {
 		fromfrom = {
 			set_graphical_culture = root.from
 		}
 	}
-
 	on_build_complete = {
 		every_system_planet = {
 			limit = {
@@ -411,3 +377,4 @@ dyson_sphere_restored = {
 		}
 	}
 }
+

@@ -63,13 +63,16 @@ namespace StellarisModder.Actions
 
                 var parentEntity = File.GetEntity(parentEntityName);
 
-                return replace_entity_recursive(parentEntity, remainingEntityChain, newEntity, 0);
+                add_entity_recursive(parentEntity, remainingEntityChain, newEntity, 0);
+                if (parentEntity.SubEntities != null)
+                    parentEntity.Collapse(0);
+                
             }
 
             return true;
         }
 
-        private bool replace_entity_recursive(ResourceFileEntity entity, string entityChain, ResourceFileEntity newEntity, int depth)
+        private bool add_entity_recursive(ResourceFileEntity entity, string entityChain, ResourceFileEntity newEntity, int depth)
         {
             bool returnValue = false;
 
@@ -86,7 +89,7 @@ namespace StellarisModder.Actions
                 string nextEntityName = entityChain.Substring(0, seperatorIndex);
                 string remainingEntityChain = entityChain.Substring(seperatorIndex + 1);
                 var nextEntity = entity.GetSubEntity(nextEntityName);
-                returnValue = replace_entity_recursive(nextEntity, remainingEntityChain, newEntity, depth + 1);
+                returnValue = add_entity_recursive(nextEntity, remainingEntityChain, newEntity, depth + 1);
                 entity.Collapse(depth);
             }
 

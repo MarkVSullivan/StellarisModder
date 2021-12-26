@@ -8,9 +8,7 @@
 # and Hadrien Buytaers
 #
 ################################
-
 namespace = ancrel
-
 # Omnicodex Activation
 country_event = {
 	id = ancrel.6000
@@ -18,9 +16,7 @@ country_event = {
 	desc = "ancrel.6000.desc"
 	picture = GFX_evt_genetic_modification
 	show_sound = event_laboratory_sound
-
 	is_triggered_only = yes
-
 	immediate = {
 		if = {
 			limit = {
@@ -135,7 +131,6 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = ancrel.6000.a
 		hidden_effect = {
@@ -270,9 +265,7 @@ country_event = {
 	}
 }
 
-
 ### Archaeology: Command Center
-
 # Stage 1 - Drilling a Hole
 fleet_event = {
 	id = ancrel.6005
@@ -280,19 +273,14 @@ fleet_event = {
 	desc = "ancrel.6005.desc"
 	picture = GFX_evt_mining_operations
 	show_sound = event_drilling
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -306,19 +294,14 @@ fleet_event = {
 	desc = "ancrel.6010.desc"
 	picture = GFX_evt_derelict_interior
 	show_sound = event_machinery
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = FASCINATING
 		small_artifact_reward = yes
@@ -332,19 +315,14 @@ fleet_event = {
 	desc = "ancrel.6015.desc"
 	picture = GFX_evt_ancient_databank
 	show_sound = event_door_opening
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = REMARKABLE
 		small_artifact_reward = yes
@@ -358,19 +336,14 @@ fleet_event = {
 	desc = "ancrel.6020.desc"
 	picture = GFX_evt_excavation_team
 	show_sound = event_screams
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTERESTING
 		great_artifact_reward = yes
@@ -378,7 +351,6 @@ fleet_event = {
 }
 
 ### Archaeology: Hunting Grounds
-
 # Spawn Site
 planet_event = {
 	id = ancrel.6049
@@ -386,7 +358,6 @@ planet_event = {
 	desc = "ancrel.6049.desc"
 	picture = GFX_evt_archaeology_camp
 	show_sound = event_dig_site
-
 	pre_triggers = {
 		has_owner = yes
 		is_homeworld = no
@@ -396,7 +367,6 @@ planet_event = {
 		is_capital = no
 		is_occupied_flag = no
 	}
-
 	trigger = {
 		has_ancrel = yes
 		num_pops > 0
@@ -418,14 +388,11 @@ planet_event = {
 			has_planet_flag = suppress_archaeological_sites
 		}
 	}
-
 	is_triggered_only = yes
-
 	immediate = {
 		set_global_flag = arc_hunting_grounds
 		set_planet_flag = colony_event
 	}
-
 	option = {
 		name = CURIOUS
 		create_archaeological_site = site_hunting_ground
@@ -439,19 +406,14 @@ fleet_event = {
 	desc = "ancrel.6050.desc"
 	picture = GFX_evt_habitable_dig_site
 	show_sound = event_wind_ruins
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -465,19 +427,14 @@ fleet_event = {
 	desc = "ancrel.6055.desc"
 	picture = GFX_evt_ancient_records
 	show_sound = event_dig_site
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -491,19 +448,14 @@ fleet_event = {
 	desc = "ancrel.6060.desc"
 	picture = GFX_evt_alien_cavemen
 	show_sound = event_screams
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -517,19 +469,14 @@ fleet_event = {
 	desc = "ancrel.6065.desc"
 	picture = GFX_evt_alien_wildlife
 	show_sound = event_trap_spikes
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -543,19 +490,14 @@ fleet_event = {
 	desc = "ancrel.6070.desc"
 	picture = GFX_evt_analyzing_artifacts
 	show_sound = event_finding_loot
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		owner = { add_relic = r_ancient_sword }
@@ -564,14 +506,11 @@ fleet_event = {
 }
 
 ### Archaeology: Zarqlan the Prophet
-
 # Spawning Event (HIDDEN)
 event = {
 	id = ancrel.6098
 	hide_window = yes
-
 	is_triggered_only = yes
-
 	trigger = {
 		mid_game_years_passed >= 20
 		has_ancrel = yes
@@ -588,7 +527,6 @@ event = {
 			}
 		}
 	}
-
 	immediate = {
 		random_list = {
 			100 = {}
@@ -624,9 +562,7 @@ country_event = {
 	picture = GFX_evt_cargoship_caravan
 	show_sound = event_power_down
 	location = event_target:tomb_planet
-
 	is_triggered_only = yes
-
 	immediate = {
 		random_planet_within_border = {
 			limit = {
@@ -642,7 +578,6 @@ country_event = {
 			save_event_target_as = tomb_planet
 		}
 	}
-
 	option = {
 		name = ancrel.6099.a
 		event_target:tomb_planet = {
@@ -651,7 +586,6 @@ country_event = {
 	}
 }
 
-
 # Stage 1 - The Mausoleum
 fleet_event = {
 	id = ancrel.6100
@@ -659,19 +593,14 @@ fleet_event = {
 	desc = "ancrel.6100.desc"
 	picture = GFX_evt_discovered_hidden_door
 	show_sound = event_dig_site
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = FASCINATING
 		small_artifact_reward = yes
@@ -685,19 +614,14 @@ fleet_event = {
 	desc = "ancrel.6105.desc"
 	picture = GFX_evt_discovered_hidden_door
 	show_sound = event_big_door_opening
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTRIGUING
 		small_artifact_reward = yes
@@ -711,19 +635,14 @@ fleet_event = {
 	desc = "ancrel.6110.desc"
 	picture = GFX_evt_discovered_hidden_door
 	show_sound = event_big_door_opening
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -737,19 +656,14 @@ fleet_event = {
 	desc = "ancrel.6115.desc"
 	picture = GFX_evt_discovered_hidden_door
 	show_sound = event_big_door_opening
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = REMARKABLE
 		small_artifact_reward = yes
@@ -763,19 +677,14 @@ fleet_event = {
 	desc = "ancrel.6120.desc"
 	picture = GFX_evt_discovered_hidden_door
 	show_sound = event_big_door_opening
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = ASTOUNDING
 		small_artifact_reward = yes
@@ -789,19 +698,14 @@ fleet_event = {
 	desc = "ancrel.6125.desc"
 	picture = GFX_evt_excavation_team
 	show_sound = event_bad_omen
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTRIGUING
 		owner = { add_relic = r_severed_head }
@@ -819,11 +723,8 @@ country_event = {
 	id = ancrel.6130
 	title = TRANSMISSION
 	desc = "ancrel.6130.desc"
-
 	diplomatic = yes
-
 	is_triggered_only = yes
-
 	picture_event_data = {
 		portrait = event_target:spiritualist_fallen_empire
 		planet_background = event_target:spiritualist_fallen_empire
@@ -831,7 +732,6 @@ country_event = {
 		city_level = event_target:spiritualist_fallen_empire
 		room = event_target:spiritualist_fallen_empire.ruler
 	}
-
 	trigger = {
 		any_country = {
 			OR = {
@@ -842,7 +742,6 @@ country_event = {
 			has_communications = root
 		}
 	}
-
 	immediate = {
 		random_country = {
 			limit = {
@@ -859,7 +758,6 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = ancrel.6130.a
 		add_modifier = {
@@ -872,9 +770,7 @@ country_event = {
 country_event = {
 	id = ancrel.6131
 	hide_window = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		if = {
 			limit = {
@@ -912,16 +808,12 @@ country_event = {
 	desc = "ancrel.6132.b.desc"
 	desc = "ancrel.6132.c.desc"
 	desc = "ancrel.6132.d.desc"
-
 	diplomatic = yes
-
 	is_triggered_only = yes
-
 	picture_event_data = {
 		portrait = event_target:spiritualist_fallen_empire
 		room = "ethic_spaceship_room"
 	}
-
 	option = {
 		name = ancrel.6132.a
 		hidden_effect = {
@@ -958,9 +850,7 @@ country_event = {
 	desc = "ancrel.6133.desc"
 	picture = GFX_evt_fleet_from_surface
 	show_sound = event_bad_omen
-
 	is_triggered_only = yes
-
 	option = {
 		name = ancrel.6132.a
 		hidden_effect = {
@@ -990,7 +880,6 @@ country_event = {
 }
 
 ### Archaeology: Barrier Moon
-
 # On Survey (Planet First)
 ship_event = {
 	id = ancrel.6150
@@ -999,16 +888,13 @@ ship_event = {
 	picture = GFX_evt_ship_in_orbit_2
 	show_sound = event_energy_field
 	location = from
-
 	is_triggered_only = yes
-
 	trigger = {
 		from = { has_planet_flag = minigalaxy_planet }
 		NOT = {
 			has_global_flag = minigalaxy_site_spawned
 		}
 	}
-
 	immediate = {
 		set_global_flag = minigalaxy_site_spawned
 		from = {
@@ -1020,7 +906,6 @@ ship_event = {
 			}
 		}
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1042,18 +927,14 @@ ship_event = {
 	picture = GFX_evt_ship_in_orbit_2
 	show_sound = event_energy_field
 	location = from
-
 	is_triggered_only = yes
-
 	trigger = {
 		from = { has_planet_flag = minigalaxy_moon }
 		NOT = { has_global_flag = minigalaxy_site_spawned }
 	}
-
 	immediate = {
 		set_global_flag = minigalaxy_site_spawned
 	}
-
 	option = {
 		name = CURIOUS
 		from = {
@@ -1063,7 +944,6 @@ ship_event = {
 }
 
 ### Moon Site
-
 # Stage 1 - The Armistice Initiative
 fleet_event = {
 	id = ancrel.6155
@@ -1071,19 +951,14 @@ fleet_event = {
 	desc = "ancrel.6155.desc"
 	picture = GFX_evt_ancient_alien_temple
 	show_sound = event_drilling
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1097,19 +972,14 @@ fleet_event = {
 	desc = "ancrel.6160.desc"
 	picture = GFX_evt_ancient_databank
 	show_sound = event_door_opening
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1123,11 +993,8 @@ fleet_event = {
 	desc = "ancrel.6165.desc"
 	picture = GFX_evt_generator_powerup
 	show_sound = event_power_down
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = {
 			solar_system = {
@@ -1139,11 +1006,9 @@ fleet_event = {
 			set_site_progress_locked = yes
 		}
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1162,7 +1027,6 @@ fleet_event = {
 }
 
 ### Planet Site
-
 # Stage 1 - Mysterious Disappearance
 fleet_event = {
 	id = ancrel.6170
@@ -1170,19 +1034,14 @@ fleet_event = {
 	desc = "ancrel.6170.desc"
 	picture = GFX_evt_relic_world_street
 	show_sound = event_wind_ruins
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1196,19 +1055,14 @@ fleet_event = {
 	desc = "ancrel.6175.desc"
 	picture = GFX_evt_relic_world_street
 	show_sound = event_wind_ruins
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1222,19 +1076,14 @@ fleet_event = {
 	desc = "ancrel.6180.desc"
 	picture = GFX_evt_relic_world_building
 	show_sound = event_whispering
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1248,19 +1097,14 @@ fleet_event = {
 	desc = "ancrel.6185.desc"
 	picture = GFX_evt_relic_world_building
 	show_sound = event_finding_loot
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		large_artifact_reward = yes
@@ -1269,7 +1113,6 @@ fleet_event = {
 }
 
 ### Archaeology: Star Petal
-
 # Stage 1 - Pleasure Planet
 fleet_event = {
 	id = ancrel.6200
@@ -1277,19 +1120,14 @@ fleet_event = {
 	desc = "ancrel.6200.desc"
 	picture = GFX_evt_gas_giant_station
 	show_sound = event_metal_fatigue
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1303,19 +1141,14 @@ fleet_event = {
 	desc = "ancrel.6205.desc"
 	picture = GFX_evt_derelict_interior
 	show_sound = event_whispering
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1329,19 +1162,14 @@ fleet_event = {
 	desc = "ancrel.6210.desc"
 	picture = GFX_evt_gas_giant_station
 	show_sound = event_screams
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1355,19 +1183,14 @@ fleet_event = {
 	desc = "ancrel.6215.desc"
 	picture = GFX_evt_analyzing_artifacts
 	show_sound = event_finding_loot
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		medium_artifact_reward = yes
@@ -1378,7 +1201,6 @@ fleet_event = {
 }
 
 ### Archaeology: Robot Debris
-
 # Stage 1 - Two Sides
 fleet_event = {
 	id = ancrel.6250
@@ -1386,19 +1208,14 @@ fleet_event = {
 	desc = "ancrel.6250.desc"
 	picture = GFX_evt_space_walk
 	show_sound = event_metal_fatigue
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1412,19 +1229,14 @@ fleet_event = {
 	desc = "ancrel.6255.desc"
 	picture = GFX_evt_ground_combat
 	show_sound = event_ground_battle
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1438,19 +1250,14 @@ fleet_event = {
 	desc = "ancrel.6260.desc"
 	picture = GFX_evt_barren_dig_site
 	show_sound = event_finding_loot
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		medium_artifact_reward = yes
@@ -1466,7 +1273,6 @@ fleet_event = {
 }
 
 ### Archaeology: Freighter Crash
-
 # Stage 1 - Captain's Chronicle
 fleet_event = {
 	id = ancrel.6300
@@ -1474,19 +1280,14 @@ fleet_event = {
 	desc = "ancrel.6300.desc"
 	picture = GFX_evt_crashed_station
 	show_sound = event_metal_fatigue
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1500,19 +1301,14 @@ fleet_event = {
 	desc = "ancrel.6310.desc"
 	picture = GFX_evt_ancient_databank
 	show_sound = event_metal_fatigue
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1526,19 +1322,14 @@ fleet_event = {
 	desc = "ancrel.6320.desc"
 	picture = GFX_evt_derelict_interior
 	show_sound = event_metal_fatigue
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1552,19 +1343,14 @@ fleet_event = {
 	desc = "ancrel.6330.desc"
 	picture = GFX_evt_generator_powerup
 	show_sound = event_metal_fatigue
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1578,19 +1364,14 @@ fleet_event = {
 	desc = "ancrel.6340.desc"
 	picture = GFX_evt_excavation_team
 	show_sound = event_metal_fatigue
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -1604,19 +1385,14 @@ fleet_event = {
 	desc = "ancrel.6350.desc"
 	picture = GFX_evt_unidentified_ship
 	show_sound = event_finding_loot
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		large_artifact_reward = yes
@@ -1624,14 +1400,11 @@ fleet_event = {
 }
 
 ### RELIC THEFT
-
 # Relic Acquired (HIDDEN)
 country_event = {
 	id = ancrel.6499
 	hide_window = yes
-
 	is_triggered_only = yes
-
 	trigger = {
 		From = {
 			is_country_type = default
@@ -1649,12 +1422,13 @@ country_event = {
 			}
 		}
 	}
-
+	
 	immediate = {
 		FromFrom = { save_event_target_as = planet }
 		From = { save_event_target_as = victim }
 		country_event = { id = ancrel.6500 }
 	}
+	
 }
 
 # Relic Acquired
@@ -1665,16 +1439,13 @@ country_event = {
 	picture = GFX_evt_victorious_army
 	show_sound = event_ground_battle
 	location = event_target:planet
-
 	is_triggered_only = yes
-
 	immediate = {
 		steal_relic = {
 			target = event_target:victim
 			relic = random
 		}
 	}
-
 	option = {
 		name = ancrel.6500.a
 		custom_tooltip = stole_relic
@@ -1694,19 +1465,14 @@ country_event = {
 	picture = GFX_evt_ground_combat
 	show_sound = event_ground_battle
 	location = event_target:planet
-
 	is_triggered_only = yes
-
 	option = {
 		name = ancrel.6505.a
 		custom_tooltip = relic_lost
 	}
 }
 
-
-
 ### Archaeology: Moon Bump
-
 # Stage 1 - City Center
 fleet_event = {
 	id = ancrel.9000
@@ -1714,18 +1480,14 @@ fleet_event = {
 	desc = "ancrel.9000.desc"
 	picture = GFX_evt_ancient_alien_temple
 	show_sound = event_collapsing_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -1736,10 +1498,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9005
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -1753,7 +1513,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9005 }
 	}
@@ -1766,18 +1525,14 @@ fleet_event = {
 	desc = "ancrel.9010.desc"
 	picture = GFX_evt_asteroid_approaching_planet
 	show_sound = event_screams
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = FASCINATING
 		owner = {
@@ -1819,18 +1574,14 @@ fleet_event = {
 	desc = "ancrel.9015.desc"
 	picture = GFX_evt_nuclear_explosion
 	show_sound = event_energy_field
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = UNFORTUNATE
 		owner = {
@@ -1846,18 +1597,14 @@ fleet_event = {
 	desc = "ancrel.9020.desc"
 	picture = GFX_evt_atmospheric_entry
 	show_sound = event_energy_field
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = OOPS
 		owner = {
@@ -1867,7 +1614,6 @@ fleet_event = {
 }
 
 ### Archaeology: The Echoes Inside
-
 # Stage 1 - Dead Lands
 fleet_event = {
 	id = ancrel.9025
@@ -1875,18 +1621,14 @@ fleet_event = {
 	desc = "ancrel.9025.desc"
 	picture = GFX_evt_ship_in_orbit
 	show_sound = event_bad_omen
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -1900,18 +1642,14 @@ fleet_event = {
 	desc = "ancrel.9030.desc"
 	picture = GFX_evt_tomb_world
 	show_sound = event_drilling
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -1925,18 +1663,14 @@ fleet_event = {
 	desc = "ancrel.9035.desc"
 	picture = GFX_evt_warm_barren
 	show_sound = event_collapsing_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -1950,18 +1684,14 @@ fleet_event = {
 	desc = "ancrel.9040.desc"
 	picture = GFX_evt_mining_operations
 	show_sound = event_bad_omen
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = WORRYING
 		owner = {
@@ -1976,7 +1706,6 @@ fleet_event = {
 }
 
 ### Archaeology: Target From Orbit
-
 # Stage 1 - Down We Go
 fleet_event = {
 	id = ancrel.9045
@@ -1984,18 +1713,14 @@ fleet_event = {
 	desc = "ancrel.9045.desc"
 	picture = GFX_evt_landing_ship
 	show_sound = event_dig_site
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -2009,18 +1734,14 @@ fleet_event = {
 	desc = "ancrel.9050.desc"
 	picture = GFX_evt_clocks
 	show_sound = event_finding_loot
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -2031,10 +1752,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9051
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -2048,7 +1767,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9051 }
 	}
@@ -2061,18 +1779,14 @@ fleet_event = {
 	desc = "ancrel.9055.desc"
 	picture = GFX_evt_sapient_AI
 	show_sound = event_energy_field
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = MARVELOUS
 		owner = {
@@ -2114,18 +1828,14 @@ fleet_event = {
 	desc = "ancrel.9060.desc"
 	picture = GFX_evt_asteroid_field
 	show_sound = event_bad_omen
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = UNFORTUNATE
 		owner = {
@@ -2141,18 +1851,14 @@ fleet_event = {
 	desc = "ancrel.9065.desc"
 	picture = GFX_evt_unity_symbol
 	show_sound = event_whispering
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = PECULIAR
 		owner = {
@@ -2188,7 +1894,6 @@ fleet_event = {
 }
 
 ### Archaeology: Shot into the Ground
-
 # Stage 1 - Digging It
 fleet_event = {
 	id = ancrel.9070
@@ -2196,18 +1901,14 @@ fleet_event = {
 	desc = "ancrel.9070.desc"
 	picture = GFX_evt_big_landing_ship
 	show_sound = event_drilling
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -2221,18 +1922,14 @@ fleet_event = {
 	desc = "ancrel.9075.desc"
 	picture = GFX_evt_gray_goo
 	show_sound = event_bad_omen
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -2243,10 +1940,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9076
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -2260,7 +1955,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9076 }
 	}
@@ -2273,18 +1967,14 @@ fleet_event = {
 	desc = "ancrel.9080.desc"
 	picture = GFX_evt_nuclear_explosion
 	show_sound = event_metal_fatigue
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = FASCINATING
 		owner = {
@@ -2326,18 +2016,14 @@ fleet_event = {
 	desc = "ancrel.9085.desc"
 	picture = GFX_evt_in_the_dark
 	show_sound = event_metal_fatigue
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		owner = {
@@ -2374,18 +2060,14 @@ fleet_event = {
 	desc = "ancrel.9090.desc"
 	picture = GFX_evt_space_monster
 	show_sound = event_dangerous_animals
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTRIGUING
 		owner = {
@@ -2422,7 +2104,6 @@ fleet_event = {
 }
 
 ### Archaeology: Cut to Fit
-
 # Stage 1 - Shapes of Perfection
 fleet_event = {
 	id = ancrel.9095
@@ -2430,18 +2111,14 @@ fleet_event = {
 	desc = "ancrel.9095.desc"
 	picture = GFX_evt_cold_barren
 	show_sound = event_wind_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -2455,18 +2132,14 @@ fleet_event = {
 	desc = "ancrel.9100.desc"
 	picture = GFX_evt_ruined_system
 	show_sound = event_metal_fatigue
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -2477,10 +2150,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9101
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			10 = {
@@ -2494,7 +2165,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9101 }
 	}
@@ -2507,18 +2177,14 @@ fleet_event = {
 	desc = "ancrel.9105.desc"
 	picture = GFX_evt_strategic_resources
 	show_sound = event_metal_fatigue
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = FASCINATING
 		owner = {
@@ -2560,18 +2226,14 @@ fleet_event = {
 	desc = "ancrel.9110.desc"
 	picture = GFX_evt_surreal_visions
 	show_sound = event_machinery
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		owner = {
@@ -2608,18 +2270,14 @@ fleet_event = {
 	desc = "ancrel.9115.desc"
 	picture = GFX_evt_gray_goo
 	show_sound = event_drilling
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTRIGUING
 		owner = {
@@ -2655,7 +2313,6 @@ fleet_event = {
 }
 
 ### Archaeology: Déjà Vu Dig
-
 # Stage 1 - Tumbled Down
 fleet_event = {
 	id = ancrel.9120
@@ -2663,18 +2320,14 @@ fleet_event = {
 	desc = "ancrel.9120.desc"
 	picture = GFX_evt_underground_civilization
 	show_sound = event_collapsing_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -2688,18 +2341,14 @@ fleet_event = {
 	desc = "ancrel.9125.desc"
 	picture = GFX_evt_in_the_dark
 	show_sound = event_dig_site
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -2710,10 +2359,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9126
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -2727,7 +2374,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9126 }
 	}
@@ -2740,18 +2386,14 @@ fleet_event = {
 	desc = "ancrel.9130.desc"
 	picture = GFX_evt_unity_symbol
 	show_sound = event_bad_omen
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTENSIFIES
 		leader = {
@@ -2796,18 +2438,14 @@ fleet_event = {
 	desc = "ancrel.9135.desc"
 	picture = GFX_evt_exploding_ship
 	show_sound = event_metal_fatigue
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = UNFORTUNATE
 		owner = {
@@ -2836,18 +2474,14 @@ fleet_event = {
 	desc = "ancrel.9140.desc"
 	picture = GFX_evt_warm_barren
 	show_sound = event_collapsing_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = NOTIME
 		owner = {
@@ -2884,7 +2518,6 @@ fleet_event = {
 }
 
 ### Archaeology: Trench World
-
 # Stage 1 - Dug with Intention
 fleet_event = {
 	id = ancrel.9145
@@ -2892,18 +2525,14 @@ fleet_event = {
 	desc = "ancrel.9145.desc"
 	picture = GFX_evt_arid
 	show_sound = event_wind_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -2914,10 +2543,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9146
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -2931,7 +2558,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9146 }
 	}
@@ -2944,18 +2570,14 @@ fleet_event = {
 	desc = "ancrel.9150.desc"
 	picture = GFX_evt_unspeakable_horror
 	show_sound = event_dangerous_animals
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = REMARKABLE
 		owner = {
@@ -3005,18 +2627,14 @@ fleet_event = {
 	desc = "ancrel.9155.desc"
 	picture = GFX_evt_desert
 	show_sound = event_drilling
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = SCRAPIT
 		owner = {
@@ -3054,18 +2672,14 @@ fleet_event = {
 	desc = "ancrel.9160.desc"
 	picture = GFX_evt_frozen
 	show_sound = event_wind_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = AMAZING
 		owner = {
@@ -3101,7 +2715,6 @@ fleet_event = {
 }
 
 ### Archaeology: Ebb & Flow
-
 # Stage 1 - Certainly Gone Now
 fleet_event = {
 	id = ancrel.9165
@@ -3109,18 +2722,14 @@ fleet_event = {
 	desc = "ancrel.9165.desc"
 	picture = GFX_evt_alien_city
 	show_sound = event_wind_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -3134,18 +2743,14 @@ fleet_event = {
 	desc = "ancrel.9170.desc"
 	picture = GFX_evt_derelict_interior
 	show_sound = event_big_door_opening
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -3159,18 +2764,14 @@ fleet_event = {
 	desc = "ancrel.9175.desc"
 	picture = GFX_evt_molten
 	show_sound = event_bad_omen
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -3181,10 +2782,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9176
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -3198,7 +2797,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9176 }
 	}
@@ -3211,18 +2809,14 @@ fleet_event = {
 	desc = "ancrel.9177.desc"
 	picture = GFX_evt_star_chart
 	show_sound = event_finding_loot
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTRIGUING
 		owner = {
@@ -3261,18 +2855,14 @@ fleet_event = {
 	desc = "ancrel.9180.desc"
 	picture = GFX_evt_ship_offloading_cargo
 	show_sound = event_finding_loot
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = EXCELLENT
 		owner = {
@@ -3290,18 +2880,14 @@ fleet_event = {
 	desc = "ancrel.9185.desc"
 	picture = GFX_evt_psionics
 	show_sound = event_whispering
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTRIGUING
 		owner = {
@@ -3334,7 +2920,6 @@ fleet_event = {
 }
 
 ### Archaeology: Sky Glow Hymn
-
 # Stage 1 - Barren Grounds & Vibrant Skies
 fleet_event = {
 	id = ancrel.9190
@@ -3342,18 +2927,14 @@ fleet_event = {
 	desc = "ancrel.9190.desc"
 	picture = GFX_evt_alien_city
 	show_sound = event_wind_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -3367,18 +2948,14 @@ fleet_event = {
 	desc = "ancrel.9195.desc"
 	picture = GFX_evt_cold_barren
 	show_sound = event_energy_field
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -3389,10 +2966,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9196
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -3406,7 +2981,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9196 }
 	}
@@ -3419,18 +2993,14 @@ fleet_event = {
 	desc = "ancrel.9200.desc"
 	picture = GFX_evt_dead_city
 	show_sound = event_whispering
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INCREDIBLE
 		owner = {
@@ -3451,18 +3021,14 @@ fleet_event = {
 	desc = "ancrel.9205.desc"
 	picture = GFX_evt_shrouded_planet
 	show_sound = event_energy_field
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = OOPS
 		owner = {
@@ -3483,31 +3049,26 @@ fleet_event = {
 	desc = "ancrel.9210.desc"
 	picture = GFX_evt_animal_wildlife
 	show_sound = event_whispering
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = GOODBYE
 		owner = {
 			add_modifier = {
-					modifier = anthem_of_aurora
-					days = -1
+				modifier = anthem_of_aurora
+				days = -1
 			}
 		}
 	}
 }
 
 ### Archaeology: Warmer Climates
-
 # Stage 1 - Nobody Home
 fleet_event = {
 	id = ancrel.9215
@@ -3515,18 +3076,14 @@ fleet_event = {
 	desc = "ancrel.9215.desc"
 	picture = GFX_evt_dead_city
 	show_sound = event_wind_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -3540,18 +3097,14 @@ fleet_event = {
 	desc = "ancrel.9220.desc"
 	picture = GFX_evt_derelict_interior
 	show_sound = event_big_door_opening
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -3562,10 +3115,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9221
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -3579,7 +3130,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9221 }
 	}
@@ -3592,18 +3142,14 @@ fleet_event = {
 	desc = "ancrel.9225.desc"
 	picture = GFX_evt_clones
 	show_sound = event_screams
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = UNFORTUNATE
 		owner = {
@@ -3642,18 +3188,14 @@ fleet_event = {
 	desc = "ancrel.9230.desc"
 	picture = GFX_evt_molten
 	show_sound = event_screams
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = OOPS
 		owner = {
@@ -3703,18 +3245,14 @@ fleet_event = {
 	desc = "ancrel.9235.desc"
 	picture = GFX_evt_cold_barren
 	show_sound = event_whispering
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = GOODBYE
 		owner = {
@@ -3816,7 +3354,6 @@ fleet_event = {
 }
 
 ### Archaeology: The Phoenix Collective
-
 # Stage 1 - Defined Steps
 fleet_event = {
 	id = ancrel.9240
@@ -3824,18 +3361,14 @@ fleet_event = {
 	desc = "ancrel.9240.desc"
 	picture = GFX_evt_dead_city
 	show_sound = event_wind_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -3849,18 +3382,14 @@ fleet_event = {
 	desc = "ancrel.9245.desc"
 	picture = GFX_evt_alien_ruins
 	show_sound = event_wind_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -3874,18 +3403,14 @@ fleet_event = {
 	desc = "ancrel.9250.desc"
 	picture = GFX_evt_unity_symbol
 	show_sound = event_whispering
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -3896,10 +3421,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9251
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -3913,7 +3436,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9251 }
 	}
@@ -3926,18 +3448,14 @@ fleet_event = {
 	desc = "ancrel.9255.desc"
 	picture = GFX_evt_atmospheric_entry
 	show_sound = event_bad_omen
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = UNFORTUNATE
 		owner = {
@@ -3980,18 +3498,14 @@ fleet_event = {
 	desc = "ancrel.9260.desc"
 	picture = GFX_evt_burning_settlement
 	show_sound = event_screams
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = ASTOUNDING
 		owner = {
@@ -4015,18 +3529,14 @@ fleet_event = {
 	desc = "ancrel.9265.desc"
 	picture = GFX_evt_animal_wildlife
 	show_sound = event_whispering
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTRIGUING
 		owner = {
@@ -4062,7 +3572,6 @@ fleet_event = {
 }
 
 ### Archaeology: The Grand Herald
-
 # Stage 1 - In High Spirits
 fleet_event = {
 	id = ancrel.9270
@@ -4070,18 +3579,14 @@ fleet_event = {
 	desc = "ancrel.9270.desc"
 	picture = GFX_evt_dead_city
 	show_sound = event_wind_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -4095,18 +3600,14 @@ fleet_event = {
 	desc = "ancrel.9275.desc"
 	picture = GFX_evt_unspeakable_horror
 	show_sound = event_bad_omen
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -4120,18 +3621,14 @@ fleet_event = {
 	desc = "ancrel.9280.desc"
 	picture = GFX_evt_alien_ruins
 	show_sound = event_machinery
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -4145,18 +3642,14 @@ fleet_event = {
 	desc = "ancrel.9285.desc"
 	picture = GFX_evt_alien_propaganda
 	show_sound = event_finding_loot
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -4170,18 +3663,14 @@ fleet_event = {
 	desc = "ancrel.9290.desc"
 	picture = GFX_evt_alien_cavemen
 	show_sound = event_wind_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -4192,10 +3681,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9291
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -4209,7 +3696,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9291 }
 	}
@@ -4222,18 +3708,14 @@ fleet_event = {
 	desc = "ancrel.9295.desc"
 	picture = GFX_evt_relic_shipyard
 	show_sound = event_energy_field
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = SPLENDID
 		small_artifact_reward = yes
@@ -4248,18 +3730,14 @@ fleet_event = {
 	desc = "ancrel.9300.desc"
 	picture = GFX_evt_relic_shipyard
 	show_sound = event_energy_field
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = SPLENDID
 		small_artifact_reward = yes
@@ -4274,18 +3752,14 @@ fleet_event = {
 	desc = "ancrel.9305.desc"
 	picture = GFX_evt_relic_shipyard
 	show_sound = event_energy_field
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = SPLENDID
 		small_artifact_reward = yes
@@ -4294,7 +3768,6 @@ fleet_event = {
 }
 
 ### Archaeology: Hive Coral
-
 # Stage 1 - Surface Piercers
 fleet_event = {
 	id = ancrel.9310
@@ -4302,18 +3775,14 @@ fleet_event = {
 	desc = "ancrel.9310.desc"
 	picture = GFX_evt_ocean
 	show_sound = event_finding_loot
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -4327,18 +3796,14 @@ fleet_event = {
 	desc = "ancrel.9315.desc"
 	picture = GFX_evt_continental
 	show_sound = event_bad_omen
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -4349,10 +3814,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9316
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -4366,7 +3829,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9316 }
 	}
@@ -4379,18 +3841,14 @@ fleet_event = {
 	desc = "ancrel.9320.desc"
 	picture = GFX_evt_ocean
 	show_sound = event_whispering
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTERESTING
 		owner = {
@@ -4444,18 +3902,14 @@ fleet_event = {
 	desc = "ancrel.9325.desc"
 	picture = GFX_evt_ocean
 	show_sound = event_whispering
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = FASCINATING
 		owner = {
@@ -4509,18 +3963,14 @@ fleet_event = {
 	desc = "ancrel.9330.desc"
 	picture = GFX_evt_ocean
 	show_sound = event_finding_loot
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = UNFORTUNATE
 		owner = {
@@ -4556,7 +4006,6 @@ fleet_event = {
 }
 
 ### Archaeology: Orbital Rain
-
 # Stage 1 - Wounds on the Ocean Floor
 fleet_event = {
 	id = ancrel.9335
@@ -4564,18 +4013,14 @@ fleet_event = {
 	desc = "ancrel.9335.desc"
 	picture = GFX_evt_ocean
 	show_sound = event_bad_omen
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -4589,18 +4034,14 @@ fleet_event = {
 	desc = "ancrel.9340.desc"
 	picture = GFX_evt_continental
 	show_sound = event_finding_loot
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -4611,10 +4052,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9341
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -4628,7 +4067,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9341 }
 	}
@@ -4641,18 +4079,14 @@ fleet_event = {
 	desc = "ancrel.9345.desc"
 	picture = GFX_evt_ocean
 	show_sound = event_metal_fatigue
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = UNFORTUNATE
 		owner = {
@@ -4706,18 +4140,14 @@ fleet_event = {
 	desc = "ancrel.9350.desc"
 	picture = GFX_evt_ocean
 	show_sound = event_finding_loot
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = PECULIAR
 		owner = {
@@ -4759,18 +4189,14 @@ fleet_event = {
 	desc = "ancrel.9355.desc"
 	picture = GFX_evt_glitchy_matrix
 	show_sound = event_power_down
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INCREDIBLE
 		owner = {
@@ -4806,7 +4232,6 @@ fleet_event = {
 }
 
 ### Archaeology: Fossilized Jellyfish
-
 # Stage 1 - Island Tunnels
 fleet_event = {
 	id = ancrel.9360
@@ -4814,18 +4239,14 @@ fleet_event = {
 	desc = "ancrel.9360.desc"
 	picture = GFX_evt_landing_ship
 	show_sound = event_bad_omen
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -4839,18 +4260,14 @@ fleet_event = {
 	desc = "ancrel.9365.desc"
 	picture = GFX_evt_continental
 	show_sound = event_wind_ruins
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -4861,10 +4278,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9366
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -4878,7 +4293,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9366 }
 	}
@@ -4891,18 +4305,14 @@ fleet_event = {
 	desc = "ancrel.9370.desc"
 	picture = GFX_evt_arctic
 	show_sound = event_finding_loot
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = UNFORTUNATE
 		owner = {
@@ -4918,18 +4328,14 @@ fleet_event = {
 	desc = "ancrel.9375.desc"
 	picture = GFX_evt_microscopic_life
 	show_sound = event_finding_loot
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = PECULIAR
 		owner = {
@@ -4971,18 +4377,14 @@ fleet_event = {
 	desc = "ancrel.9380.desc"
 	picture = GFX_evt_ocean
 	show_sound = event_finding_loot
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTERESTING
 		owner = {
@@ -5018,7 +4420,6 @@ fleet_event = {
 }
 
 ### Archaeology: Popular Rock
-
 # Stage 1 - Hello / Goodbye
 fleet_event = {
 	id = ancrel.9385
@@ -5026,18 +4427,14 @@ fleet_event = {
 	desc = "ancrel.9385.desc"
 	picture = GFX_evt_asteroid_field
 	show_sound = event_big_door_opening
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -5048,10 +4445,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9386
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -5065,7 +4460,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9386 }
 	}
@@ -5078,18 +4472,14 @@ fleet_event = {
 	desc = "ancrel.9390.desc"
 	picture = GFX_evt_ancient_records
 	show_sound = event_whispering
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = FASCINATING
 		owner = {
@@ -5122,18 +4512,14 @@ fleet_event = {
 	desc = "ancrel.9395.desc"
 	picture = GFX_evt_resource_cache
 	show_sound = event_finding_loot
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = EXCELLENT
 		owner = {
@@ -5151,18 +4537,14 @@ fleet_event = {
 	desc = "ancrel.9400.desc"
 	picture = GFX_evt_asteroid_approaching_planet
 	show_sound = event_power_down
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = PECULIAR
 		owner = {
@@ -5198,7 +4580,6 @@ fleet_event = {
 }
 
 ### Archaeology: Strange Flows
-
 # Stage 1 - Signs of Resistance
 fleet_event = {
 	id = ancrel.9405
@@ -5206,18 +4587,14 @@ fleet_event = {
 	desc = "ancrel.9405.desc"
 	picture = GFX_evt_molten
 	show_sound = event_energy_field
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -5231,18 +4608,14 @@ fleet_event = {
 	desc = "ancrel.9410.desc"
 	picture = GFX_evt_star_yellow
 	show_sound = event_bad_omen
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = DIG
 		small_artifact_reward = yes
@@ -5253,10 +4626,8 @@ fleet_event = {
 fleet_event = {
 	id = ancrel.9411
 	hide_window = yes
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			33 = {
@@ -5270,7 +4641,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.9411 }
 	}
@@ -5283,18 +4653,14 @@ fleet_event = {
 	desc = "ancrel.9415.desc"
 	picture = GFX_evt_star_neutron
 	show_sound = event_energy_field
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = ASTOUNDING
 		owner = {
@@ -5336,18 +4702,14 @@ fleet_event = {
 	desc = "ancrel.9420.desc"
 	picture = GFX_evt_planet_beam
 	show_sound = event_energy_field
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INCREDIBLE
 		owner = {
@@ -5389,18 +4751,14 @@ fleet_event = {
 	desc = "ancrel.9425.desc"
 	picture = GFX_evt_gray_gooed_planet
 	show_sound = event_power_down
-
 	archaeology = yes
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTERESTING
 		owner = {
@@ -5435,14 +4793,11 @@ fleet_event = {
 	}
 }
 
-
 # Arcane Deciphering Events
 country_event = {
 	id = ancrel.10000
 	hide_window = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		random_list = {
 			60 = { country_event = { id = ancrel.10001 } }
@@ -5456,14 +4811,14 @@ country_event = {
 					factor = 0
 					country_uses_consumer_goods = no
 				}
-				country_event = { id = ancrel.10007 } 
+				country_event = { id = ancrel.10007 }
 			}
 			1 = {
 				modifier = {
 					factor = 0
 					country_uses_food = no
 				}
-				country_event = { id = ancrel.10008 } 
+				country_event = { id = ancrel.10008 }
 			}
 			1 = { country_event = { id = ancrel.10009 } }
 		}
@@ -5475,9 +4830,7 @@ country_event = {
 	title = "ancrel.10001.name"
 	desc = "ancrel.10001.desc"
 	picture = GFX_evt_ancient_records
-
 	is_triggered_only = yes
-
 	option = {
 		name = "FASCINATING"
 		locked_random_list = {
@@ -5514,9 +4867,7 @@ country_event = {
 	title = "ancrel.10002.name"
 	desc = "ancrel.10002.desc"
 	picture = GFX_evt_ancient_records
-
 	is_triggered_only = yes
-
 	option = {
 		name = "FASCINATING"
 		add_modifier = {
@@ -5531,9 +4882,7 @@ country_event = {
 	title = "ancrel.10003.name"
 	desc = "ancrel.10003.desc"
 	picture = GFX_evt_ancient_records
-
 	is_triggered_only = yes
-
 	option = {
 		name = "FASCINATING"
 		locked_random_list = {
@@ -5591,12 +4940,9 @@ country_event = {
 	title = "ancrel.10004.name"
 	desc = "ancrel.10004.nanoforge"
 	picture = GFX_evt_ancient_records
-
 	is_triggered_only = yes
-
 	option = {
 		name = "EXCELLENT"
-
 		hidden_effect = {
 			owner = {
 				change_variable = { which = nano_forge_build_count value = 1 }
@@ -5610,12 +4956,9 @@ country_event = {
 	title = "ancrel.10004.name"
 	desc = "ancrel.10004.skydome"
 	picture = GFX_evt_ancient_records
-
 	is_triggered_only = yes
-
 	option = {
 		name = "EXCELLENT"
-
 		hidden_effect = {
 			owner = {
 				change_variable = { which = skydome_build_count value = 1 }
@@ -5629,12 +4972,9 @@ country_event = {
 	title = "ancrel.10004.name"
 	desc = "ancrel.10004.dimensional_fabricator"
 	picture = GFX_evt_ancient_records
-
 	is_triggered_only = yes
-
 	option = {
 		name = "EXCELLENT"
-
 		hidden_effect = {
 			owner = {
 				change_variable = { which = dimensional_fabricator_build_count value = 1 }
@@ -5648,12 +4988,9 @@ country_event = {
 	title = "ancrel.10004.name"
 	desc = "ancrel.10004.affluence_center"
 	picture = GFX_evt_ancient_records
-
 	is_triggered_only = yes
-
 	option = {
 		name = "EXCELLENT"
-
 		hidden_effect = {
 			owner = {
 				change_variable = { which = affluence_center_build_count value = 1 }
@@ -5667,12 +5004,9 @@ country_event = {
 	title = "ancrel.10004.name"
 	desc = "ancrel.10004.nourishment_center"
 	picture = GFX_evt_ancient_records
-
 	is_triggered_only = yes
-
 	option = {
 		name = "EXCELLENT"
-
 		hidden_effect = {
 			owner = {
 				change_variable = { which = nourishment_center_build_count value = 1 }
@@ -5686,12 +5020,9 @@ country_event = {
 	title = "ancrel.10004.name"
 	desc = "ancrel.10004.class_4_singularity"
 	picture = GFX_evt_ancient_records
-
 	is_triggered_only = yes
-
 	option = {
 		name = "EXCELLENT"
-
 		hidden_effect = {
 			owner = {
 				change_variable = { which = class_4_singularity_build_count value = 1 }
@@ -5706,9 +5037,7 @@ country_event = {
 	title = "ancrel.10010.name"
 	desc = "ancrel.10010.desc"
 	picture = GFX_evt_engineering_research
-
 	is_triggered_only = yes
-
 	option = {
 		name = "artifact_find_military_application_army"
 		custom_tooltip = "artifact_find_military_application_army_desc"
@@ -5745,7 +5074,6 @@ country_event = {
 	}
 	option = {
 		name = "marauder.30.e"
-
 		hidden_effect = {
 			add_resource = { minor_artifacts = 5 }
 			remove_modifier = "artifact_find_applications_cooldown"
@@ -5759,9 +5087,7 @@ country_event = {
 	title = "ancrel.10020.name"
 	desc = "ancrel.10020.desc"
 	picture = GFX_evt_society_research
-
 	is_triggered_only = yes
-
 	option = {
 		name = "artifact_find_peaceful_application_happy_bios"
 		custom_tooltip = "artifact_find_peaceful_application_happy_bios_desc"
@@ -5846,7 +5172,6 @@ country_event = {
 	}
 	option = {
 		name = "marauder.30.e"
-
 		hidden_effect = {
 			add_resource = { minor_artifacts = 5 }
 			remove_modifier = "artifact_find_applications_cooldown"
@@ -5880,7 +5205,6 @@ country_event = {
 	picture = GFX_evt_mega_art_installation
 	is_triggered_only = yes
 	location = FROM
-
 	option = {
 		name = EXCELLENT
 	}
@@ -5890,7 +5214,6 @@ country_event = {
 country_event = {
 	id = ancrel.9001
 	title = ancrel.9001.name
-
 	# Phobe
 	desc = {
 		trigger = {
@@ -5910,20 +5233,15 @@ country_event = {
 		}
 		text = ancrel.9001.desc
 	}
-
 	picture = GFX_evt_circuitry_modification
 	location = from
-
 	is_triggered_only = yes
-
 	option = {
 		name = INTERESTING
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = society
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_biology }
@@ -5934,7 +5252,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		owner = {
 			if = {
 				limit = {
@@ -5985,7 +5302,6 @@ country_event = {
 				}
 			}
 		}
-
 		add_modifier = {
 			modifier = artifact_irassian_research_completed # biology research and growth speed bonus
 			days = -1
@@ -5997,12 +5313,9 @@ country_event = {
 	id = ancrel.10040
 	title = ancrel.10040.name
 	desc = ancrel.10040.desc
-
 	picture = GFX_evt_analyzing_artifacts
 	location = from
-
 	is_triggered_only = yes
-
 	option = {
 		name = progress.2.a.mech # Acknowledged.
 	}
@@ -6012,7 +5325,6 @@ country_event = {
 country_event = {
 	id = ancrel.10050
 	title = ancrel.10050.name
-
 	# Phobe
 	desc = {
 		trigger = {
@@ -6032,26 +5344,20 @@ country_event = {
 		}
 		text = ancrel.10050.desc.1
 	}
-
 	picture = GFX_evt_animal_wildlife
 	location = from
-
 	is_triggered_only = yes
-
 	option = {
 		trigger = {
 			owner = {
 				can_research_technology = tech_colonization_3
 				NOT = { has_technology = tech_colonization_3 } }
-			}
-
+		}
 		name = INTERESTING
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = society
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_new_worlds }
@@ -6062,7 +5368,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		custom_tooltip = "ancrel.10050.unlock"
 		owner = {
 			if = {
@@ -6078,13 +5383,11 @@ country_event = {
 					progress = 0.5
 				}
 			}
-
 		}
 		hidden_effect = {
 			set_country_flag = artifact_yuht_research_completed
 		}
 	}
-
 	option = {
 		trigger = {
 			owner = {
@@ -6094,14 +5397,11 @@ country_event = {
 				}
 			}
 		}
-
 		name = INTERESTING
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = society
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_new_worlds }
@@ -6112,7 +5412,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		custom_tooltip = "ancrel.10050.unlock"
 		owner = {
 			add_monthly_resource_mult = {
@@ -6128,12 +5427,10 @@ country_event = {
 	}
 }
 
-
 # First League Research Complete
 country_event = {
 	id = ancrel.10200
 	title = ancrel.10200.name
-
 	# Phobe
 	desc = {
 		trigger = {
@@ -6153,24 +5450,18 @@ country_event = {
 		}
 		text = ancrel.10200.desc
 	}
-
 	picture = GFX_evt_city_planet
 	location = from
-
 	is_triggered_only = yes
-
 	option = {
 		exclusive_trigger = {
 			has_technology = tech_housing_2
 		}
-
 		name = INTERESTING
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = engineering
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_industry }
@@ -6181,7 +5472,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		owner = {
 			add_monthly_resource_mult = {
 				resource = engineering_research
@@ -6195,7 +5485,6 @@ country_event = {
 			days = -1
 		}
 	}
-
 	option = {
 		exclusive_trigger = {
 			has_technology = tech_housing_1
@@ -6203,14 +5492,11 @@ country_event = {
 				has_technology = tech_housing_2
 			}
 		}
-
 		name = INTERESTING
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = engineering
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_industry }
@@ -6221,7 +5507,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		owner = {
 			add_research_option = tech_housing_2
 			add_tech_progress = {
@@ -6229,27 +5514,22 @@ country_event = {
 				progress = 0.5
 			}
 		}
-
 		add_modifier = {
 			modifier = artifact_league_research_completed # industry research and building build speed
 			days = -1
 		}
 	}
-
 	option = {
 		exclusive_trigger = {
 			NOT = {
 				has_technology = tech_housing_1
 			}
 		}
-
 		name = INTERESTING
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = engineering
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_industry }
@@ -6260,10 +5540,8 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		give_technology = { tech = tech_housing_1 }
 		add_research_option = tech_housing_2
-
 		add_modifier = {
 			modifier = artifact_league_research_completed # industry research and building build speed
 			days = -1
@@ -6275,7 +5553,6 @@ country_event = {
 country_event = {
 	id = ancrel.10250
 	title = ancrel.10250.name
-
 	desc = {
 		trigger = {
 			OR = {
@@ -6296,23 +5573,18 @@ country_event = {
 		}
 		text = ancrel.10250.desc
 	}
-
 	picture = GFX_evt_ringworld
 	location = from
-
 	is_triggered_only = yes
-
 	option = {
 		exclusive_trigger = {
 			has_technology = tech_mega_engineering
 		}
 		name = INTERESTING
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = engineering
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_voidcraft }
@@ -6323,7 +5595,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		owner = {
 			add_monthly_resource_mult = {
 				resource = engineering_research
@@ -6337,15 +5608,12 @@ country_event = {
 			days = -1
 		}
 	}
-
 	option = {
 		name = INTERESTING
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = engineering
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_voidcraft }
@@ -6356,7 +5624,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		owner = {
 			add_research_option = tech_mega_engineering
 		}
@@ -6371,7 +5638,6 @@ country_event = {
 country_event = {
 	id = ancrel.10100
 	title = ancrel.10100.name
-
 	desc = {
 		trigger = { is_machine_empire = yes	}
 		text = ancrel.10100.desc_machine
@@ -6394,22 +5660,16 @@ country_event = {
 		}
 		text = ancrel.10100.desc
 	}
-
 	picture = GFX_evt_ancient_databank
 	location = from
-
 	is_triggered_only = yes
-
 	option = {
 		exclusive_trigger = { is_machine_empire = yes }
-
 		name = progress.2.a.mech # Acknowledged.
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = physics
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_computing }
@@ -6420,7 +5680,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -6429,23 +5688,18 @@ country_event = {
 				max = @tier4researchmax
 			}
 		}
-
 		add_modifier = {
 			modifier = artifact_vultaum_research_completed_machine # computer research and assembly speed
 			days = -1
 		}
 	}
-
 	option = {
 		exclusive_trigger = { is_hive_empire = yes }
-
 		name = story.210.a # Noted.
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = physics
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_computing }
@@ -6456,7 +5710,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -6465,13 +5718,11 @@ country_event = {
 				max = @tier4researchmax
 			}
 		}
-
 		add_modifier = {
 			modifier = artifact_vultaum_research_completed_hive # computer research
 			days = -1
 		}
 	}
-
 	option = {
 		trigger = {
 			owner = {
@@ -6479,14 +5730,11 @@ country_event = {
 				NOT = { has_ethic = ethic_fanatic_materialist }
 			}
 		}
-
 		name = INTERESTING
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = physics
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_computing }
@@ -6497,7 +5745,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -6506,25 +5753,20 @@ country_event = {
 				max = @tier4researchmax
 			}
 		}
-
 		add_modifier = {
 			modifier = artifact_vultaum_research_completed_suppressed # computer research and amenities bonus
 			days = -1
 		}
 	}
-
 	option = {
 		trigger = {
 			owner = { has_ethic = ethic_fanatic_materialist }
 		}
-
 		name = ancrel.10100.option.fm_enough
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = physics
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_computing }
@@ -6535,7 +5777,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -6544,27 +5785,22 @@ country_event = {
 				max = @tier4researchmax
 			}
 		}
-
 		add_modifier = {
 			modifier = artifact_vultaum_research_completed_suppressed # computer research and amenities bonus
 			days = -1
 		}
 	}
-
 	option = {
 		trigger = {
 			owner = {
 				has_ethic = ethic_fanatic_materialist
 			}
 		}
-
 		name = ancrel.10100.option.fm_delve_deeper
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = physics
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_computing }
@@ -6575,7 +5811,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -6584,12 +5819,10 @@ country_event = {
 				max = @tier4researchmax
 			}
 		}
-
 		add_modifier = {
 			modifier = artifact_vultaum_research_completed_suppressed # computer research and amenities bonus
 			days = -1
 		}
-
 		enable_special_project = {
 			name = "VULTAUM_SECRETS_2"
 			location = capital_scope
@@ -6601,14 +5834,10 @@ country_event = {
 country_event = {
 	id = ancrel.10110
 	title = ancrel.10110.name
-
 	desc = ancrel.10110.desc
-
 	picture = GFX_evt_glitchy_matrix
 	location = from
-
 	is_triggered_only = yes
-
 	option = {
 		name = ancrel.10110.option.fm_suppress # Suppress the findings.
 		owner = {
@@ -6619,16 +5848,13 @@ country_event = {
 				max = @tier4influencemax
 			}
 		}
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = physics
 			}
 			add_experience = 200
-
 			save_global_event_target_as = leading_vultaum_research_scientist
 		}
-
 		hidden_effect = {
 			random_list = {
 				50 = {
@@ -6646,7 +5872,6 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = ancrel.10110.option.fm_public # The public deserves to know.
 		owner = {
@@ -6663,25 +5888,20 @@ country_event = {
 				max = @tier5unitymax
 			}
 		}
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = physics
 			}
 			add_experience = 300
-
 			save_global_event_target_as = leading_vultaum_research_scientist
 		}
-
 		custom_tooltip = "artifact_vultaum_research_completed_public_tooltip"
 		add_modifier = {
 			modifier = artifact_vultaum_research_completed_public # all research, computer research, amenities bonus, unhappiness
 			days = -1
 		}
-
 		hidden_effect = {
 			remove_modifier = artifact_vultaum_research_completed_suppressed
-
 			random_list = {
 				35 = {
 					# physicist gains maniacal and substance abuser
@@ -6699,17 +5919,13 @@ country_event = {
 country_event = {
 	id = ancrel.10111
 	title = ancrel.10111.name
-
 	desc = ancrel.10111.desc
-
 	picture = GFX_evt_space_funeral
 	location = from
-
 	is_triggered_only = yes
 	trigger = {
 		exists = event_target:leading_vultaum_research_scientist
 	}
-
 	option = {
 		name = UNFORTUNATE
 		event_target:leading_vultaum_research_scientist = {
@@ -6721,17 +5937,13 @@ country_event = {
 country_event = {
 	id = ancrel.10112
 	title = ancrel.10112.name
-
 	desc = ancrel.10112.desc
-
 	picture = GFX_evt_smugglers_in_bar
 	location = from
-
 	is_triggered_only = yes
 	trigger = {
 		exists = event_target:leading_vultaum_research_scientist
 	}
-
 	option = {
 		name = INTERESTING
 		event_target:leading_vultaum_research_scientist = {
@@ -6745,17 +5957,13 @@ country_event = {
 country_event = {
 	id = ancrel.10113
 	title = ancrel.10113.name
-
 	desc = ancrel.10113.desc
-
 	picture = GFX_evt_physics_research
 	location = from
-
 	is_triggered_only = yes
 	trigger = {
 		exists = event_target:leading_vultaum_research_scientist
 	}
-
 	option = {
 		name = INTERESTING
 		event_target:leading_vultaum_research_scientist = {
@@ -6779,22 +5987,17 @@ country_event = {
 		}
 		text = ancrel.10300.desc.uplift
 	}
-
 	picture = GFX_evt_baol_grunur
 	location = from
-
 	is_triggered_only = yes
-
 	option = {
 		exclusive_trigger = {
 			NOT = { has_technology = tech_epigenetic_triggers }
 		}
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = society
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_biology }
@@ -6805,7 +6008,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		name = INTERESTING
 		owner = {
 			give_technology = { tech = tech_epigenetic_triggers }
@@ -6815,7 +6017,6 @@ country_event = {
 			days = -1
 		}
 	}
-
 	option = {
 		exclusive_trigger = {
 			owner = {
@@ -6823,14 +6024,11 @@ country_event = {
 				NOT = { has_technology = tech_terrestrial_sculpting }
 			}
 		}
-
 		name = INTERESTING
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = society
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_biology }
@@ -6841,7 +6039,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		owner = {
 			give_technology = { tech = tech_terrestrial_sculpting }
 		}
@@ -6850,15 +6047,12 @@ country_event = {
 			days = -1
 		}
 	}
-
 	option = {
 		name = INTERESTING
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = society
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_biology }
@@ -6869,7 +6063,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		owner = {
 			add_monthly_resource_mult = {
 				resource = society_research
@@ -6890,20 +6083,15 @@ country_event = {
 	id = ancrel.10350
 	title = ancrel.10350.name
 	desc = ancrel.10350.desc
-
 	picture = GFX_evt_surreal_visions
 	location = from
-
 	is_triggered_only = yes
-
 	option = {
 		name = INTERESTING
-
 		random_owned_leader = {
 			limit = {
 				is_researching_area = society
 			}
-
 			if = {
 				limit = {
 					NOT = { has_trait = leader_trait_expertise_psionics }
@@ -6914,7 +6102,6 @@ country_event = {
 				add_experience = 200
 			}
 		}
-
 		owner = {
 			if = {
 				limit = {
@@ -6936,15 +6123,12 @@ country_event = {
 				}
 			}
 		}
-
 		add_modifier = {
 			modifier = artifact_zroni_research_completed # psionic research bonus
 			days = -1
 		}
 	}
 }
-
-
 
 fleet_event = {
 	id = ancrel.11000
@@ -6953,19 +6137,14 @@ fleet_event = {
 	picture = GFX_evt_archaeology_camp
 	show_sound = event_mystic_reveal
 	location = from
-
 	is_triggered_only = yes
-
 	archaeology = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = ancrel.11000.a
 		small_artifact_reward = yes
@@ -6979,19 +6158,14 @@ fleet_event = {
 	picture = GFX_evt_city_ruins
 	show_sound = event_mystic_reveal
 	location = from
-
 	is_triggered_only = yes
-
 	archaeology = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = ancrel.11005.a
 		small_artifact_reward = yes
@@ -7005,19 +6179,14 @@ fleet_event = {
 	picture = GFX_evt_collapsing_roof
 	show_sound = event_mystic_reveal
 	location = from
-
 	is_triggered_only = yes
-
 	archaeology = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = ancrel.11010.a
 		small_artifact_reward = yes
@@ -7031,19 +6200,14 @@ fleet_event = {
 	picture = GFX_evt_ancient_records
 	show_sound = event_mystic_reveal
 	location = from
-
 	is_triggered_only = yes
-
 	archaeology = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = ancrel.11015.a
 		hidden_effect = {
@@ -7065,9 +6229,7 @@ country_event = {
 	title = ancrel.11020.name
 	desc = ancrel.11020.desc
 	picture = GFX_evt_black_hole
-
 	is_triggered_only = yes
-
 	option = {
 		name = ancrel.11020.a
 		add_monthly_resource_mult = {
@@ -7080,7 +6242,6 @@ country_event = {
 			factor = 3
 		}
 	}
-
 	option = {
 		name = ancrel.11020.b
 		custom_tooltip = ancrel.11020.tt
@@ -7200,15 +6361,11 @@ country_event = {
 	id = ancrel.11025
 	title = "TRANSMISSION"
 	desc = ancrel.11025.desc
-
 	diplomatic = yes
-
 	picture_event_data = {
 		room = no_video_feed_room
 	}
-
 	is_triggered_only = yes
-
 	option = {
 		name = ancrel.11025.a
 		if = {
@@ -7233,7 +6390,6 @@ country_event = {
 			days = -1
 		}
 	}
-
 	option = {
 		name = ancrel.11025.b
 		custom_tooltip = ancrel.11025.b.tt
@@ -7262,15 +6418,11 @@ country_event = {
 	id = ancrel.11027
 	title = "TRANSMISSION"
 	desc = ancrel.11027.desc
-
 	diplomatic = yes
-
 	picture_event_data = {
 		room = no_video_feed_room
 	}
-
 	is_triggered_only = yes
-
 	option = {
 		name = ancrel.11027.a
 	}
@@ -7280,15 +6432,11 @@ country_event = {
 	id = ancrel.11030
 	title = "TRANSMISSION"
 	desc = ancrel.11030.desc
-
 	diplomatic = yes
-
 	picture_event_data = {
 		room = no_video_feed_room
 	}
-
 	is_triggered_only = yes
-
 	option = {
 		name = ancrel.11030.a
 	}
@@ -7300,11 +6448,8 @@ country_event = {
 	title = ancrel.11035.name
 	desc = ancrel.11035.desc
 	picture = GFX_evt_black_hole
-
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
 	option = {
 		name = ancrel.11035.a
 	}
@@ -7314,15 +6459,12 @@ country_event = {
 country_event = {
 	id = ancrel.11040
 	hide_window = yes
-
 	is_triggered_only = yes
-
 	trigger = {
 		is_country_type = guardian_horror
 		has_country_flag = eldritch_horror_country
 		FROMFROM = { is_ship_size = dimensional_horror }
 	}
-
 	immediate = {
 		every_playable_country = {
 			if = {
@@ -7335,8 +6477,6 @@ country_event = {
 	}
 }
 
-
-
 # Percussive Maintenance / Abandoned Station event 1
 fleet_event = {
 	id = ancrel.12000
@@ -7345,19 +6485,14 @@ fleet_event = {
 	picture = GFX_evt_satellite_in_orbit
 	show_sound = event_laboratory_sound
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTERESTING
 		small_artifact_reward = yes
@@ -7379,19 +6514,14 @@ fleet_event = {
 	picture = GFX_evt_ancient_databank
 	show_sound = event_power_down
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = ancrel.12005.A
 		leader = {
@@ -7432,19 +6562,14 @@ fleet_event = {
 	picture = GFX_evt_physics_research
 	show_sound = event_bad_omen
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = ancrel.12010.A
 		small_artifact_reward = yes
@@ -7459,19 +6584,14 @@ fleet_event = {
 	picture = GFX_evt_interstellar_assembly
 	show_sound = event_screams
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = ancrel.12015.A
 		owner = {
@@ -7491,19 +6611,14 @@ fleet_event = {
 	picture = GFX_evt_archaeological_dig
 	show_sound = event_wind_ruins
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTERESTING
 		small_artifact_reward = yes
@@ -7518,19 +6633,14 @@ fleet_event = {
 	picture = GFX_evt_underground_city
 	show_sound = event_ghost_town
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = first_contact.5.A
 		small_artifact_reward = yes
@@ -7569,19 +6679,14 @@ fleet_event = {
 	picture = GFX_evt_disease_outbreak
 	show_sound = event_screams
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = ancrel.2047.a
 		small_artifact_reward = yes
@@ -7596,19 +6701,14 @@ fleet_event = {
 	picture = GFX_evt_city_planet
 	show_sound = event_door_opening
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTRIGUING
 		small_artifact_reward = yes
@@ -7647,11 +6747,8 @@ fleet_event = {
 	picture = GFX_evt_death_from_above
 	show_sound = event_mystic_reveal
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 		if = {
@@ -7666,10 +6763,8 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
-
 		if = {
 			limit = {
 				has_leviathans = yes
@@ -7692,7 +6787,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	option = {
 		name = ancrel.12040.A
 		allow = {
@@ -7707,7 +6801,6 @@ fleet_event = {
 	}
 	option = {
 		name = ancrel.12040.B
-
 		owner = {
 			add_monthly_resource_mult = {
 				resource = society_research
@@ -7716,7 +6809,6 @@ fleet_event = {
 				max = @tier1researchmax
 			}
 		}
-
 		from.planet = {
 			hidden_effect = { clear_deposits = yes }
 			add_deposit = d_society_8
@@ -7738,19 +6830,17 @@ country_event = {
 	auto_opens = yes
 	trackable = yes
 	location = fromfrom
-
-
 	trigger = {
 		from = { has_country_flag = polaris_country }
 	}
 	immediate = {
 		set_global_flag = polaris_seen
 	}
-
 	option = {
 		name = CURIOUS
 	}
 }
+
 # Stage 1
 fleet_event = {
 	id = ancrel.13005
@@ -7759,24 +6849,20 @@ fleet_event = {
 	picture = GFX_evt_outpost
 	show_sound = event_dig_site
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = acnrel.13005.a
 		small_artifact_reward = yes
 	}
 }
+
 # Stage 2
 fleet_event = {
 	id = ancrel.13010
@@ -7785,19 +6871,14 @@ fleet_event = {
 	picture = GFX_evt_discovered_hidden_door
 	show_sound = event_dig_site
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTERESTING
 		small_artifact_reward = yes
@@ -7812,19 +6893,14 @@ fleet_event = {
 	picture = GFX_evt_in_the_dark
 	show_sound = event_dig_site
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = EXCELLENT
 		small_artifact_reward = yes
@@ -7833,19 +6909,16 @@ fleet_event = {
 
 #Tombola
 fleet_event = {
-    id = ancrel.13006
-    hide_window = yes
-
-    archaeology = yes
-    is_triggered_only = yes
-
-    immediate = {
-   		random_list = {
+	id = ancrel.13006
+	hide_window = yes
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+		random_list = {
 			50 = {fleet_event = { id = ancrel.13020 } }
 			50 = {fleet_event = { id = ancrel.13025 } }
 		}
 	}
-
 	after = {
 		from = { expire_site_event = ancrel.13006 }
 	}
@@ -7859,15 +6932,11 @@ fleet_event = {
 	picture = GFX_evt_circuitry_modification
 	show_sound = event_dig_site
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	option = {
 		name = ancrel.13020.a
 		medium_artifact_reward = yes
@@ -7877,7 +6946,6 @@ fleet_event = {
 			}
 		}
 	}
-
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
@@ -7906,15 +6974,11 @@ fleet_event = {
 	picture = GFX_evt_microscopic_life
 	show_sound = event_dig_site
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
 	}
-
 	option = {
 		name = ancrel.13020.a
 	}
@@ -7929,37 +6993,37 @@ fleet_event = {
 						trigger = has_technology
 						tech_colonization_4 = {
 							add_tech_option_or_research_effect = {
-   								TECH = tech_colonization_5
-   								PROGRESS = 0.6
-   								CATEGORY = society_research
+								TECH = tech_colonization_5
+								PROGRESS = 0.6
+								CATEGORY = society_research
 							}
 						}
 						tech_colonization_3 = {
 							add_tech_option_or_research_effect = {
-   								TECH = tech_colonization_4
-   								PROGRESS = 0.7
-   								CATEGORY = society_research
+								TECH = tech_colonization_4
+								PROGRESS = 0.7
+								CATEGORY = society_research
 							}
 						}
 						tech_colonization_2 = {
 							add_tech_option_or_research_effect = {
-   								TECH = tech_colonization_3
-   								PROGRESS = 0.80
-   								CATEGORY = society_research
+								TECH = tech_colonization_3
+								PROGRESS = 0.80
+								CATEGORY = society_research
 							}
 						}
 						tech_colonization_1 = {
 							add_tech_option_or_research_effect = {
-   								TECH = tech_colonization_2
-   								PROGRESS = 0.99
-   								CATEGORY = society_research
+								TECH = tech_colonization_2
+								PROGRESS = 0.99
+								CATEGORY = society_research
 							}
 						}
 						default = {
 							add_tech_option_or_research_effect = {
-   								TECH = tech_colonization_1
-   								PROGRESS = 0.6
-   								CATEGORY = society_research
+								TECH = tech_colonization_1
+								PROGRESS = 0.6
+								CATEGORY = society_research
 							}
 						}
 					}
@@ -7978,7 +7042,6 @@ fleet_event = {
 }
 
 ### Archaeology: Fumongus
-
 # Stage 1 - Where the Water Went
 fleet_event = {
 	id = ancrel.13100
@@ -7986,19 +7049,14 @@ fleet_event = {
 	desc = "ancrel.13100.desc"
 	picture = GFX_evt_warm_barren
 	show_sound = event_dig_site
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = CURIOUS
 		small_artifact_reward = yes
@@ -8012,19 +7070,14 @@ fleet_event = {
 	desc = "ancrel.13105.desc"
 	picture = GFX_evt_alien_nature
 	show_sound = event_dig_site
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTRIGUING
 		small_artifact_reward = yes
@@ -8038,19 +7091,14 @@ fleet_event = {
 	desc = "ancrel.13110.desc"
 	picture = GFX_evt_alien_nature
 	show_sound = event_dig_site
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = INTERESTING
 		small_artifact_reward = yes
@@ -8064,19 +7112,14 @@ fleet_event = {
 	desc = "ancrel.13115.desc"
 	picture = GFX_evt_alien_nature
 	show_sound = event_dig_site
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = REMARKABLE
 		small_artifact_reward = yes
@@ -8090,19 +7133,14 @@ fleet_event = {
 	desc = "ancrel.13120.desc"
 	picture = GFX_evt_alien_nature
 	show_sound = event_dig_site
-
 	archaeology = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
-
 	after = {
 		from = { set_site_progress_locked = no }
 	}
-
 	option = {
 		name = FASCINATING
 		hidden_effect = {
@@ -8120,9 +7158,7 @@ fleet_event = {
 country_event = {
 	id = ancrel.13125
 	hide_window = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		if = {
 			limit = {
@@ -8143,9 +7179,7 @@ country_event = {
 	desc = "ancrel.13135.desc"
 	picture = GFX_evt_alien_nature
 	show_sound = event_dig_site
-
 	is_triggered_only = yes
-
 	option = {
 		name = ancrel.13135.a
 		owner = {
@@ -8167,7 +7201,6 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = ancrel.13135.b
 		add_monthly_resource_mult = {
@@ -8190,9 +7223,7 @@ country_event = {
 	desc = "ancrel.13130.desc"
 	picture = GFX_evt_alien_nature
 	show_sound = event_dig_site
-
 	is_triggered_only = yes
-
 	option = {
 		name = ancrel.13130.a
 		owner = {
@@ -8212,7 +7243,6 @@ country_event = {
 			set_country_flag = fumongus_ours
 		}
 	}
-
 	option = {
 		name = ancrel.13130.b
 		add_monthly_resource_mult = {
@@ -8227,3 +7257,4 @@ country_event = {
 		}
 	}
 }
+

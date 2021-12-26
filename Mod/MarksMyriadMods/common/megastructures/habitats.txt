@@ -1,5 +1,4 @@
 # see README.txt for example
-
 habitat_0 = {
 	entity = ""
 	construction_entity = "habitat_phase_01_entity"
@@ -7,7 +6,6 @@ habitat_0 = {
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -7 y = -7 }
 	build_time = 1800
-
 	resources = {
 		category = megastructures_habitat
 		cost = {
@@ -15,9 +13,9 @@ habitat_0 = {
 			influence = 100
 		}
 	}
+	
 	construction_blocks_others = no
 	construction_blocked_by_others = no
-
 	potential = {
 		OR = {
 			has_technology = tech_habitat_1
@@ -26,7 +24,7 @@ habitat_0 = {
 			has_country_flag = democratic_khanate_flag
 		}
 	}
-
+	
 	possible = {
 		exists = starbase
 		custom_tooltip = {
@@ -34,7 +32,7 @@ habitat_0 = {
 			is_inside_border = from
 		}
 	}
-
+	
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
@@ -66,7 +64,6 @@ habitat_0 = {
 					is_planet_class = pc_habitat
 				}
 			}
-
 			# balance for habitats
 			custom_tooltip = {
 				fail_text = "requires_not_minor_planetary_body"
@@ -79,19 +76,17 @@ habitat_0 = {
 				fail_text = "requires_not_star"
 				is_star = no
 			}
-		} # use these for all non-star megastructures
+			} # use these for all non-star megastructures
 	}
-
+	
 	# root = system
 	# from = country
 	ai_weight = {
 		factor = 5
-
 		modifier = {
 			factor = 0
 			starbase = { NOT = { has_starbase_size >= starbase_starport } }
 		}
-
 		modifier = {
 			factor = 0
 			any_system_planet = {
@@ -99,7 +94,6 @@ habitat_0 = {
 				is_colony = no
 			}
 		}
-
 		modifier = {
 			factor = 3
 			solar_system = {
@@ -114,7 +108,6 @@ habitat_0 = {
 				is_same_value = owner.capital_scope.solar_system
 			}
 		}
-
 		modifier = {
 			factor = 0.1
 			any_neighbor_system = {
@@ -123,10 +116,9 @@ habitat_0 = {
 			}
 		}
 	}
-
+	
 	on_build_start = {}
 	on_build_cancel = {}
-
 	on_build_complete = {
 		spawn_planet = {
 			class = "pc_habitat"
@@ -136,7 +128,6 @@ habitat_0 = {
 			orbit_distance_offset = 9.899
 			size = 6
 			has_ring = no
-
 			init_effect = {
 				set_name = "HABITAT_PLANET_NAME"
 				set_planet_entity = {
@@ -149,10 +140,8 @@ habitat_0 = {
 				}
 				set_all_comms_surveyed = yes
 				clear_blockers = yes
-
 				set_planet_flag = megastructure
 				set_planet_flag = habitat
-
 				if = {
 					limit = {
 						fromfrom.planet = {
@@ -172,7 +161,6 @@ habitat_0 = {
 					}
 					set_planet_flag = mining_habitat
 				}
-
 				if = {
 					limit = {
 						fromfrom.planet = {
@@ -192,12 +180,10 @@ habitat_0 = {
 					}
 					set_planet_flag = energy_habitat
 				}
-
 				if = {
 					limit = { fromfrom.planet = { has_deposit_for = shipclass_research_station } }
 					set_planet_flag = research_habitat
 				}
-
 				if = {
 					limit = {
 						fromfrom.planet = {
@@ -217,7 +203,6 @@ habitat_0 = {
 					}
 					set_planet_flag = commercial_habitat
 				}
-
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_exotic_gases_1 }
@@ -248,7 +233,6 @@ habitat_0 = {
 					}
 					add_deposit = d_hab_gas_5
 				}
-
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_rare_crystals_1 }
@@ -279,7 +263,6 @@ habitat_0 = {
 					}
 					add_deposit = d_hab_crystal_5
 				}
-
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_volatile_motes_1 }
@@ -310,7 +293,6 @@ habitat_0 = {
 					}
 					add_deposit = d_hab_mote_5
 				}
-
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_zro_deposit_1 }
@@ -332,7 +314,6 @@ habitat_0 = {
 					add_deposit = d_hab_zro_3
 					set_planet_flag = research_habitat
 				}
-
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_dark_matter_deposit_1 }
@@ -354,7 +335,6 @@ habitat_0 = {
 					add_deposit = d_hab_dark_matter_3
 					set_planet_flag = research_habitat
 				}
-
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_living_metal_deposit }
@@ -362,7 +342,6 @@ habitat_0 = {
 					add_deposit = d_hab_living_metal_1
 					set_planet_flag = research_habitat
 				}
-
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_alloys_1 }
@@ -398,7 +377,6 @@ habitat_0 = {
 					add_deposit = d_hab_alloy_5
 					set_planet_flag = mining_habitat
 				}
-
 				if = {
 					limit = {
 						fromfrom.planet = { has_deposit = d_nanites_deposit }
@@ -411,7 +389,6 @@ habitat_0 = {
 		fromfrom.planet = {
 			set_planet_flag = has_megastructure
 			save_event_target_as = habitat_planet
-
 			if = {
 				limit = { has_orbital_station = yes }
 				orbital_station = {
@@ -422,4 +399,6 @@ habitat_0 = {
 		remove_megastructure = fromfrom
 		from = { country_event = { id = utopia.61 } }
 	}
+	
 }
+
