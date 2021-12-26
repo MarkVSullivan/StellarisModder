@@ -1,0 +1,13 @@
+ job_serf:0 "Serf"
+ job_serf_plural:0 "Serfs"
+ mod_job_serf_add:0 "$job_serf$ Jobs"
+ job_knight_errant:0 "Knight-Errant"
+ job_knight_errant_plural:0 "Knight-Errants"
+ mod_job_knight_errant_add:0 "$job_knight_errant$ Jobs"
+
+
+ job_serf_effect_desc:0 "£job_serf£ $job_serf_plural$ produce £food£ §Y$food$§! and a small amount of £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+ job_knight_errant_effect_desc:1 "£job_knight_errant£ $job_knight_errant_plural$ decrease £crime£ §Y$PLANET_CRIME_TITLE$§!, £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, spawn £defense_army£ §YDefense Armies§!, and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
+
+ tech_planetary_infrastructure_3:0 "Dark Matter Infrastructure"
+ tech_planetary_infrastructure_3_desc:0 "Additional advances in metallurgy improve the infrastructure of our colonies."
