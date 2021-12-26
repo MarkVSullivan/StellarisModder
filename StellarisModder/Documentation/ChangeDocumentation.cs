@@ -30,7 +30,7 @@ namespace StellarisModder
             StringBuilder builder = new StringBuilder();
             foreach( string thisLine in changes )
             {
-                builder.AppendLine(thisLine);
+                builder.AppendLine("- " + thisLine);
             }
             return builder.ToString();
         }
