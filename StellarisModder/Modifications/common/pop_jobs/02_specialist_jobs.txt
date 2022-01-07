@@ -16,3 +16,51 @@
 			planet_amenities_add = 2
 		}
 	}
+
+# Make healthcare jobs better with final cloning techs
+@ADD healthcare
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = "tech_advanced_cloning_1" }
+		}
+		modifier = {
+			pop_growth_speed = 0.025
+			planet_pop_assembly_organic_mult = 0.025
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = "tech_advanced_cloning_2" }
+		}
+		modifier = {
+			pop_growth_speed = 0.025
+			planet_pop_assembly_organic_mult = 0.025
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = "tech_advanced_cloning_3" }
+		}
+		modifier = {
+			pop_growth_speed = 0.025
+			planet_pop_assembly_organic_mult = 0.025
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = "tech_advanced_cloning_4" }
+		}
+		modifier = {
+			pop_growth_speed = 0.025
+			planet_pop_assembly_organic_mult = 0.025
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = "tech_advanced_cloning_5" }
+		}
+		modifier = {
+			pop_growth_speed = 0.025
+			planet_pop_assembly_organic_mult = 0.025
+		}
+	}

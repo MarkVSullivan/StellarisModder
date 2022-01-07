@@ -13,7 +13,7 @@ namespace StellarisModder
 
         public const string Instructions_Folder = @"C:\Repos\StellarisModder\StellarisModder\Modifications";
 
-        public const string Mod_Output_Folder = @"C:\Repos\StellarisModder\StellarisModder\bin\Debug\Output";
+        public const string Mod_Output_Folder = @"C:\Repos\StellarisModder\Mod\MarksMyriadMods";
 
         public readonly static string Stellaris_Exe;
         public readonly static string Stellaris_Backup;

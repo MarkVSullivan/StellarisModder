@@ -1683,6 +1683,7 @@ healthcare = {
 		is_being_assimilated = no
 		is_sapient = yes
 	}
+	
 	possible_precalc = can_fill_specialist_job
 	planet_modifier = {
 		planet_amenities_add = 5
@@ -1690,12 +1691,14 @@ healthcare = {
 		planet_pop_assembly_organic_mult = 0.05
 		pop_environment_tolerance = 0.025
 	}
+	
 	resources = {
 		category = planet_doctors
 		upkeep = {
 			consumer_goods = 1
 		}
 	}
+	
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -1707,6 +1710,7 @@ healthcare = {
 			planet_amenities_add = 1
 		}
 	}
+	
 	triggered_planet_modifier = {
 		potential = {
 			has_trait = trait_repugnant
@@ -1715,6 +1719,7 @@ healthcare = {
 			planet_amenities_add = -1
 		}
 	}
+	
 	weight = {
 		weight = @spawner_drone_job_weight
 		modifier = {
@@ -1747,6 +1752,53 @@ healthcare = {
 			has_slavery_type = { type = slavery_indentured }
 		}
 	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = "tech_advanced_cloning_1" }
+		}
+		modifier = {
+			pop_growth_speed = 0.025
+			planet_pop_assembly_organic_mult = 0.025
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = "tech_advanced_cloning_2" }
+		}
+		modifier = {
+			pop_growth_speed = 0.025
+			planet_pop_assembly_organic_mult = 0.025
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = "tech_advanced_cloning_3" }
+		}
+		modifier = {
+			pop_growth_speed = 0.025
+			planet_pop_assembly_organic_mult = 0.025
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = "tech_advanced_cloning_4" }
+		}
+		modifier = {
+			pop_growth_speed = 0.025
+			planet_pop_assembly_organic_mult = 0.025
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_technology = "tech_advanced_cloning_5" }
+		}
+		modifier = {
+			pop_growth_speed = 0.025
+			planet_pop_assembly_organic_mult = 0.025
+		}
+	}
+	
 }
 
 manager = {
