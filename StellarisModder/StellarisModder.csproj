@@ -80,11 +80,13 @@
     <Content Include="Modifications\common\planet_classes\00_planet_classes.txt" />
     <Content Include="Modifications\common\pop_jobs\01_ruler_jobs.txt" />
     <Content Include="Modifications\common\pop_jobs\02_specialist_jobs.txt" />
+    <Content Include="Modifications\common\pop_jobs\03_worker_jobs.txt" />
     <Content Include="Modifications\common\scripted_effects\01_start_of_game_effects.txt" />
     <Content Include="Modifications\common\species_archetypes\00_species_archetypes.txt" />
     <Content Include="Modifications\common\static_modifiers\00_static_modifiers.txt" />
     <Content Include="Modifications\common\traits\02_species_traits_basic_characteristics.txt" />
     <Content Include="Modifications\common\traits\04_species_traits.txt" />
+    <Content Include="Modifications\common\war_goals\00_war_goals.txt" />
     <Content Include="Modifications\events\ancient_relics_arcsite_events_1.txt" />
     <Content Include="Modifications\events\ancient_relics_arcsite_events_2.txt" />
     <Content Include="Modifications\events\aquatics_events.txt" />
