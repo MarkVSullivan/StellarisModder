@@ -1,0 +1,56 @@
+﻿l_english:
+
+ job_serf:0 "Serf"
+ job_serf_plural:0 "Serfs"
+ mod_job_serf_add:0 "$job_serf$ Jobs"
+ job_serf_effect_desc:0 "£job_serf£ $job_serf_plural$ produce £food£ §Y$food$§! and a small amount of £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+
+ job_knight_errant:0 "Knight-Errant"
+ job_knight_errant_plural:0 "Knight-Errants"
+ mod_job_knight_errant_add:0 "$job_knight_errant$ Jobs"
+ job_knight_errant_effect_desc:1 "£job_knight_errant£ $job_knight_errant_plural$ decrease £crime£ §Y$PLANET_CRIME_TITLE$§!, £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!, spawn £defense_army£ §YDefense Armies§!, and £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
+
+ job_quartermaster:0 "Quartermaster"
+ job_quartermaster_plural:0 "Quartemasters"
+ mod_job_quartermaster_add:0 "$job_quartermaster$ Jobs"
+ job_quartermaster_desc:0 "Naval specialist who assist with organization of naval capacity in the empire."
+ job_quartermaster_effect_desc:0 "£job_soldier£ $job_quartermaster_plural$ increase £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
+
+ tech_planetary_infrastructure_3:0 "Dark Matter Infrastructure"
+ tech_planetary_infrastructure_3_desc:0 "Additional advances in metallurgy improve the infrastructure of our colonies."
+
+ tech_galactic_administration_2:0 "Advanced Galactic Administration"
+ tech_galactic_administration_2_desc:1 "The administrative needs of an empire spanning the galaxy are immense, but with some advances in administration, we will be ready."
+
+ building_grand_noble_estates:0 "Grand Noble Estates"
+ building_grand_noble_estates_desc:0 "An upgrade to the noble estates, this houses more nobles as well as the noble knight-errants."
+
+ building_naval_1:0 "Naval Coordination Center"
+ building_naval_1_desc:0 "The naval coordination center assist with coordinating naval ships and increases naval capacity."
+
+ building_naval_2:0 "Naval College"
+ building_naval_2_desc:0 "The naval college handles ship coordination in the sector, greatly increasing naval capacity."
+
+ building_mineral_capital:0 "Minerals Capital"
+ building_mineral_capital_desc:0 "This is the capital of mineral production for an empire"
+
+ building_research_capital:0 "Research Capital"
+ building_research_capital_desc:0 "Research capital for your empire"
+
+ building_credits_capital:0 "Energy Capital"
+ building_credits_capital_desc:0 "Energy capital for your empire"
+
+ tech_advanced_cloning_1:0 "Advanced Cloning 1"
+ tech_advanced_cloning_1_desc:0 "Additional advances in cloning improves population growth on all your colonies"
+
+ tech_advanced_cloning_2:0 "Advanced Cloning 2"
+ tech_advanced_cloning_2_desc:0 "Additional advances in cloning improves population growth on all your colonies"
+
+ tech_advanced_cloning_3:0 "Advanced Cloning 3"
+ tech_advanced_cloning_3_desc:0 "Additional advances in cloning improves population growth on all your colonies"
+
+ tech_advanced_cloning_4:0 "Advanced Cloning 4"
+ tech_advanced_cloning_4_desc:0 "Additional advances in cloning improves population growth on all your colonies"
+
+ tech_advanced_cloning_5:0 "Advanced Cloning 5"
+ tech_advanced_cloning_5_desc:0 "Additional advances in cloning improves population growth on all your colonies"

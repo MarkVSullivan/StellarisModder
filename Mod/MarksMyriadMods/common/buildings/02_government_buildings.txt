@@ -31,10 +31,10 @@ building_noble_estates = {
 	}
 	
 	planet_modifier = {
-		job_noble_add = 2
+		job_noble_add = 1
 		job_knight_errant_add = 2
 		job_serf_add = 1
-		planet_housing_add = 5
+		planet_housing_add = 4
 	}
 	
 	resources = {
@@ -61,6 +61,10 @@ building_noble_estates = {
 	
 	triggered_desc = {
 		text = job_knight_errant_effect_desc
+	}
+	
+	upgrades = {
+		"building_grand_noble_estates"
 	}
 	
 }
