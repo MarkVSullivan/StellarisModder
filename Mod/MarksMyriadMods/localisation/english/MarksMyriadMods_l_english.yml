@@ -32,13 +32,16 @@
  building_naval_2_desc:0 "The naval college handles ship coordination in the sector, greatly increasing naval capacity."
 
  building_mineral_capital:0 "Minerals Capital"
- building_mineral_capital_desc:0 "This is the capital of mineral production for an empire"
+ building_mineral_capital_desc:0 "Mineral production is doubled and more miner jobs are provided at your minerals capital, but only one can be built within your empire."
 
  building_research_capital:0 "Research Capital"
- building_research_capital_desc:0 "Research capital for your empire"
+ building_research_capital_desc:0 "Research is doubled and more research jobs are provided at your research capital, but only one can be built within your empire."
 
  building_credits_capital:0 "Energy Capital"
- building_credits_capital_desc:0 "Energy capital for your empire"
+ building_credits_capital_desc:0 "Energy production is doubled and more energy jobs are provided at your energy capital, but only one can be built within your empire."
+
+ building_farm_capital:0 "Farming Capital"
+ building_farm_capital_desc:0 "Food production is doubled and more farmer jobs are provided at your farmin capital, but only one can be built within your empire."
 
  tech_advanced_cloning_1:0 "Advanced Cloning 1"
  tech_advanced_cloning_1_desc:0 "Additional advances in cloning improves population growth on all your colonies"
@@ -54,3 +57,6 @@
 
  tech_advanced_cloning_5:0 "Advanced Cloning 5"
  tech_advanced_cloning_5_desc:0 "Additional advances in cloning improves population growth on all your colonies"
+
+ tech_resource_centralization:0 "Resource Centralization"
+ tech_resource_centralization_desc:0 "Allows resource production to be centralized within your empire for a large one-planet bonus"

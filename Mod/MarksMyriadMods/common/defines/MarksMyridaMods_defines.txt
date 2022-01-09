@@ -1,0 +1,6 @@
+	NGameplay = {
+		TECH_COST_DEFAULT = 1.75
+		LOGISTIC_CEILING_DEFAULT = 1.0
+		GROWTH_SCALE_DEFAULT = 0.10
+		BASE_ENVOYS_REGULAR_EMPIRE			= 4			# The starting number of envoys for regular empires
+	}

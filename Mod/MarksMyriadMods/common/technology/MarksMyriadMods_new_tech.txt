@@ -73,7 +73,7 @@ tech_planetary_infrastructure_3 = {
 
 #Advanced Cloning 1
 tech_advanced_cloning_1 = {
-	cost = @tier5cost1
+	cost = 48000
 	area = society
 	tier = 1
 	category = { biology }
@@ -125,7 +125,7 @@ tech_advanced_cloning_1 = {
 
 #Advanced Cloning 2
 tech_advanced_cloning_2 = {
-	cost = @tier5cost1
+	cost = 52000
 	area = society
 	tier = 1
 	category = { biology }
@@ -178,7 +178,7 @@ tech_advanced_cloning_2 = {
 
 #Advanced Cloning 3
 tech_advanced_cloning_3 = {
-	cost = @tier5cost1
+	cost = 57000
 	area = society
 	tier = 1
 	category = { biology }
@@ -231,7 +231,7 @@ tech_advanced_cloning_3 = {
 
 #Advanced Cloning 4
 tech_advanced_cloning_4 = {
-	cost = @tier5cost1
+	cost = 62000
 	area = society
 	tier = 1
 	category = { biology }
@@ -284,7 +284,7 @@ tech_advanced_cloning_4 = {
 
 #Advanced Cloning 5
 tech_advanced_cloning_5 = {
-	cost = @tier5cost1
+	cost = 70000
 	area = society
 	tier = 1
 	category = { biology }
@@ -330,6 +330,40 @@ tech_advanced_cloning_5 = {
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+}
+
+#Resource Centralization
+tech_resource_centralization = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { new_worlds }
+	prerequisites = { "tech_planetary_unification" }
+	weight = @tier2weight2
+
+	gateway = capital
+
+	weight_modifier = {
+		factor = 4
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
 	}

@@ -201,7 +201,7 @@ building_mineral_capital = {
 	}
 
 	prerequisites = {
-		"tech_colonial_centralization"
+		"tech_resource_centralization"
 	}
 
 	resources = {
@@ -439,16 +439,13 @@ building_credits_capital = {
 	}
 
 	prerequisites = {
-		"tech_colonial_centralization"
+		"tech_resource_centralization"
 	}
 
 	resources = {
 		category = planet_buildings
 		cost = {
 			minerals = @b3_minerals
-		}
-		upkeep = {
-			energy = @b3_upkeep
 		}
 	}
 
@@ -504,6 +501,107 @@ building_credits_capital = {
 		}
 		modifier = {
 			district_generator_max = 4
+		}
+	}
+
+	on_queued = {
+		owner = { set_country_flag = building_credits_capital } 
+	}
+	
+	on_unqueued = {
+		owner = { remove_country_flag = building_credits_capital } 
+	}
+	
+	on_built = {
+		owner = { set_country_flag = building_credits_capital } 
+	}
+	
+	on_destroy = {
+		owner = { remove_country_flag = building_credits_capital } 
+	}
+}
+
+building_farm_capital = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	position_priority = 100
+	icon = "building_imperial_machine_capital"
+	category = resource
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	potential = {
+		buildings_simple_allow = yes
+		NOT = { owner = { has_country_flag = building_farm_capital }}
+	}
+
+	prerequisites = {
+		"tech_resource_centralization"
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+
+	planet_modifier = {
+		planet_jobs_food_produces_mult = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_farmer_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_acolyte_farm_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_agri_drone_add = @b3_jobs
+		}
+	}
+
+	ai_resource_production = {
+		food = 6
+		trigger = {
+			always = yes
+		}
+	}
+	ai_resource_production = {
+		food = 10
+		trigger = {
+			planet_resource_compare = {
+				resource = food
+				value >= 32
+				type = produces
+			}
 		}
 	}
 
