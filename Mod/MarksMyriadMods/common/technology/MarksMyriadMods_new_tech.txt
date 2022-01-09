@@ -344,8 +344,6 @@ tech_resource_centralization = {
 	prerequisites = { "tech_planetary_unification" }
 	weight = @tier2weight2
 
-	gateway = capital
-
 	weight_modifier = {
 		factor = 4
 		modifier = {
