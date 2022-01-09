@@ -668,7 +668,7 @@ building_embassy = {
 		}
 	}
 	country_modifier = {
-		envoys_add = 1
+		envoys_add = 2
 	}
 	resources = {
 		category = planet_buildings
@@ -714,7 +714,7 @@ building_grand_embassy = {
 		}
 	}
 	country_modifier = {
-		envoys_add = 2
+		envoys_add = 4
 	}
 	resources = {
 		category = planet_buildings

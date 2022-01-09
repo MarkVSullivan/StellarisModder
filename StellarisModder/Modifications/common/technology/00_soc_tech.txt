@@ -1,0 +1,13 @@
+﻿# Add more envoys with techs
+@LINEREPLACE tech_autonomous_agents
+envoys_add = 1
+@WITH
+envoys_add = 2
+@LINEREPLACE tech_embodied_dynamism
+envoys_add = 1
+@WITH
+envoys_add = 2
+@ADD tech_living_state
+	modifier = {
+		envoys_add = 1
+	}
