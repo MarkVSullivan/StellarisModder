@@ -51,10 +51,6 @@ building_noble_estates = {
 		text = job_noble_effect_desc
 	}
 	
-	country_modifier = {
-		envoys_add = 1
-	}
-	
 	triggered_desc = {
 		text = job_serf_effect_desc
 	}

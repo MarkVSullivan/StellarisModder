@@ -7,10 +7,6 @@
 		planet_housing_add = 4
 	}
 @ADD building_noble_estates
-	country_modifier = {
-		envoys_add = 1
-	}
-@ADD building_noble_estates
 	triggered_desc = {
 		text = job_serf_effect_desc
 	}

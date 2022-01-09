@@ -35,7 +35,7 @@ building_grand_noble_estates = {
 		job_serf_add = 2
 		planet_housing_add = 7
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -47,15 +47,11 @@ building_grand_noble_estates = {
 	}
 
 	prerequisites = {
-		tech_alloys_1
+		"tech_colonial_centralization"
 	}
 	
 	triggered_desc = {
 		text = job_noble_effect_desc
-	}
-	
-	country_modifier = {
-		envoys_add = 1
 	}
 	
 	triggered_desc = {
@@ -222,10 +218,6 @@ building_mineral_capital = {
 		planet_jobs_minerals_produces_mult = 1
 	}
 
-	country_modifier = {
-		country_minerals_produces_mult = 0.10
-	}
-
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { is_planet_class = pc_shattered_ring_habitable }
@@ -353,10 +345,6 @@ building_research_capital = {
 		job_head_researcher_add = 1
 	}
 
-	country_modifier = {
-		all_technology_research_speed = 0.10
-	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -466,10 +454,6 @@ building_credits_capital = {
 
 	planet_modifier = {
 		planet_jobs_energy_produces_mult = 1
-	}
-
-	country_modifier = {
-		country_energy_produces_mult = 0.10
 	}
 
 	triggered_planet_modifier = {
