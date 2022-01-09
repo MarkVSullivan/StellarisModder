@@ -1,0 +1,27 @@
+﻿# Deposit buildings (mote traps, gas extractors, and crystal mines) have two jobs, rather than one
+@LINEREPLACE building_mote_harvesters
+job_mote_harvester_add = 1
+@WITH
+job_mote_harvester_add = 2
+@LINEREPLACE building_mote_harvesters
+job_mote_harvesting_drone_add = 1
+@WITH
+job_mote_harvesting_drone_add = 2
+
+@LINEREPLACE building_gas_extractors
+job_gas_extractor_add = 1
+@WITH
+job_gas_extractor_add = 2
+@LINEREPLACE building_gas_extractors
+job_gas_extraction_drone_add = 1
+@WITH
+job_gas_extraction_drone_add = 2
+
+@LINEREPLACE building_crystal_mines
+job_crystal_miner_add = 1
+@WITH
+job_crystal_miner_add = 2
+@LINEREPLACE building_crystal_mines
+job_crystal_mining_drone_add = 1
+@WITH
+job_crystal_mining_drone_add = 2

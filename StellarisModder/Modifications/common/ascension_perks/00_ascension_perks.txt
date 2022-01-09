@@ -4,7 +4,7 @@
 		pc_habitat_habitability = 0.35
 		habitat_jobs_produces_mult = 0.15
 	}
-# Make psionic ascension provide worker productivity as well
+# Make psionic ascension perks provide worker productivity as well
 @ADD ap_mind_over_matter
 	modifier = {
 		planet_jobs_worker_produces_mult = 0.05
@@ -13,7 +13,7 @@
 	modifier = {
 		planet_jobs_worker_produces_mult = 0.05
 	}
-# Fully psionic ascended get access to two special techs
+# Fully psionic ascended automatically get access to two special techs
 @ADD ap_transcendence>on_enabled
 		add_research_option = tech_psionic_shield
 		add_research_option = tech_precognition_interface

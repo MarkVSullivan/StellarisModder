@@ -10,5 +10,6 @@ tags={
 	"Gameplay"
 }
 name="Marks Myriad Mods"
+picture="thumbnail.jpg"
 supported_version="3.2.2"
 remote_file_id="2691628726"

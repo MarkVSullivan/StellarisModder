@@ -18,6 +18,7 @@
 	upgrades = {
 		"building_grand_noble_estates"
 	}
+# Embassy and Grand Embassy buildings add twice as many new envoys
 @LINEREPLACE building_embassy
 envoys_add = 1
 @WITH

@@ -7,6 +7,7 @@ set_planet_size = 9
 set_planet_size = 4
 @WITH
 set_planet_size = 6
+
 # Non-AI players get a small boost of resources to start, better leaders
 @REPLACE give_starting_resources_effect
 give_starting_resources_effect = {
