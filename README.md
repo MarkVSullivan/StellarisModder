@@ -73,6 +73,7 @@ Other Changes
 - Make lower difficulties harder to fix too simple early game with scaling
 - Conquering capital planet of an empire with a relic gives relic 100% of the time
 - Empires start with 4 envoys, rather than 2
+- Reduced influence cost to rig your own election
 
 Cheat
 - Non-AI players get a small boost of resources to start, better initial leaders
