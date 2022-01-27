@@ -1,5 +1,0 @@
-﻿# Nobles now produce some admin points
-@ADD noble
-	country_modifier = {
-		country_admin_cap_add = 2
-	}

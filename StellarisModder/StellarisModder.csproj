@@ -79,7 +79,6 @@
     <Content Include="Modifications\common\megastructures\11_mega_shipyard.txt" />
     <Content Include="Modifications\common\megastructures\habitats.txt" />
     <Content Include="Modifications\common\planet_classes\00_planet_classes.txt" />
-    <Content Include="Modifications\common\pop_jobs\01_ruler_jobs.txt" />
     <Content Include="Modifications\common\pop_jobs\02_specialist_jobs.txt" />
     <Content Include="Modifications\common\pop_jobs\03_worker_jobs.txt" />
     <Content Include="Modifications\common\scripted_effects\01_start_of_game_effects.txt" />
