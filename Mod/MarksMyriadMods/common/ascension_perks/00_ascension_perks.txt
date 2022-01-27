@@ -1072,7 +1072,7 @@ ap_mastery_of_nature = {
 
 ap_imperial_prerogative = {
 	modifier = {
-		country_admin_cap_mult = 0.20
+		empire_size_colonies_mult = -0.50
 	}
 	potential = {
 		NOT = {
@@ -1090,7 +1090,7 @@ ap_imperial_prerogative = {
 
 ap_executive_vigor = {
 	modifier = {
-		country_edict_cap_add = 2
+		country_edict_fund_add = 100
 	}
 	potential = {
 		NOT = {

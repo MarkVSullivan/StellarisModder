@@ -10,10 +10,11 @@ mega_shipyard_0 = {
 		category = megastructures
 		cost = {
 			alloys = 3000
-			influence = 300
+			unity = 2500
 		}
 		upkeep = {
 			energy = 5
+			unity = 10
 		}
 	}
 	prerequisites = { "tech_mega_shipyard" }
@@ -127,9 +128,11 @@ mega_shipyard_1 = {
 		category = megastructures
 		cost = {
 			alloys = 10000
+			unity = 2500
 		}
 		upkeep = {
 			energy = 10
+			unity = 25
 		}
 	}
 	upgrade_from = {
@@ -162,9 +165,11 @@ mega_shipyard_2 = {
 		category = megastructures
 		cost = {
 			alloys = 10000
+			unity = 2500
 		}
 		upkeep = {
 			energy = 20
+			unity = 50
 		}
 	}
 	upgrade_from = {
@@ -197,9 +202,11 @@ mega_shipyard_3 = {
 		category = megastructures
 		cost = {
 			alloys = 10000
+			unity = 2500
 		}
 		upkeep = {
 			energy = 40
+			unity = 100
 		}
 	}
 	upgrade_from = {
@@ -265,9 +272,11 @@ mega_shipyard_restored = {
 		category = megastructures
 		cost = {
 			alloys = 10000
+			unity = 3200
 		}
 		upkeep = {
 			energy = 40
+			unity = 100
 		}
 	}
 	upgrade_from = {

@@ -746,14 +746,22 @@ generate_earth_deposits_and_blockers = {
 	add_deposit = d_pearl_river_agglomerate
 	add_deposit = d_great_pacific_garbage_patch
 	add_deposit = d_failing_infrastructure_earth
-	add_deposit = d_decrepit_dwellings
 	if = {
-		limit = { owner = { is_machine_empire = yes } }
+		limit = {
+			owner = { is_machine_empire = yes }
+		}
 		add_deposit = d_rushing_waterfalls
 	}
 	if = {
-		limit = { owner = { has_valid_civic = civic_machine_servitor } }
+		limit = {
+			owner = { has_valid_civic = civic_machine_servitor }
+		}
 		add_deposit = d_hot_springs
+		add_deposit = d_strip_mine
+		add_deposit = d_unsupervised_settlement
+	}
+	else = {
+		add_deposit = d_decrepit_dwellings
 	}
 	if = {
 		limit = {
@@ -943,7 +951,36 @@ generate_start_buildings_and_districts = {
 			# 3 jobs
 			add_building = building_capital
 			# 2 jobs
-			add_building = building_bureaucratic_1
+			if = {
+				limit = { owner = { is_spiritualist = no } }
+				add_building = building_bureaucratic_1
+			}
+			# 2 jobs
+			if = {
+				limit = {
+					owner = {
+						is_spiritualist = yes
+						OR = {
+							has_valid_civic = civic_death_cult
+							has_valid_civic = civic_death_cult_corporate
+						}
+					}
+				}
+				add_building = building_sacrificial_temple_1
+			}
+			# 2 jobs
+			if = {
+				limit = {
+					owner = {
+						is_spiritualist = yes
+						NOR = {
+							has_valid_civic = civic_death_cult
+							has_valid_civic = civic_death_cult_corporate
+						}
+					}
+				}
+				add_building = building_temple
+			}
 			# 2 jobs
 			if = {
 				limit = {
@@ -969,6 +1006,15 @@ generate_start_buildings_and_districts = {
 			else = {
 				add_building = building_research_lab_1
 			}
+			# 1 job
+			if = {
+				limit = {
+					owner = {
+						has_valid_civic = civic_permanent_employment
+					}
+				}
+				add_building = building_posthumous_employment_center
+			}
 			# 4-5 jobs
 			if = {
 				limit = {
@@ -992,7 +1038,10 @@ generate_start_buildings_and_districts = {
 					limit = {
 						owner = {
 							is_spiritualist = yes
-							has_valid_civic = civic_death_cult
+							OR = {
+								has_valid_civic = civic_death_cult
+								has_valid_civic = civic_death_cult_corporate
+							}
 						}
 					}
 					add_building = building_sacrificial_temple_1
@@ -1491,7 +1540,33 @@ generate_start_buildings_and_districts = {
 			# 3 jobs
 			add_building = building_capital
 			# 2 jobs
-			add_building = building_bureaucratic_1
+			if = {
+				limit = { owner = { is_spiritualist = no } }
+				add_building = building_bureaucratic_1
+			}
+			# 2 jobs
+			if = {
+				limit = {
+					owner = {
+						is_spiritualist = yes
+						OR = {
+							has_valid_civic = civic_death_cult
+							has_valid_civic = civic_death_cult_corporate
+						}
+					}
+				}
+				add_building = building_sacrificial_temple_1
+			}
+			# 2 jobs
+			if = {
+				limit = {
+					owner = {
+						is_spiritualist = yes
+						NOT = { has_valid_civic = civic_death_cult }
+					}
+				}
+				add_building = building_temple
+			}
 			# 2 jobs
 			if = {
 				limit = {
@@ -1513,6 +1588,14 @@ generate_start_buildings_and_districts = {
 			}
 			else = {
 				add_building = building_research_lab_1
+			}
+			if = {
+				limit = {
+					owner = {
+						has_valid_civic = civic_permanent_employment
+					}
+				}
+				add_building = building_posthumous_employment_center
 			}
 			# 4-5 jobs
 			if = {
@@ -1537,7 +1620,10 @@ generate_start_buildings_and_districts = {
 					limit = {
 						owner = {
 							is_spiritualist = yes
-							has_valid_civic = civic_death_cult
+							OR = {
+								has_valid_civic = civic_death_cult
+								has_valid_civic = civic_death_cult_corporate
+							}
 						}
 					}
 					add_building = building_sacrificial_temple_1
@@ -2005,6 +2091,32 @@ generate_start_pops = {
 			}
 		}
 	}
+	if = {
+		limit = {
+			owner = {
+				has_civic = civic_permanent_employment
+			}
+		}
+		while = {
+			count = 4
+			random_owned_pop = {
+				limit = {
+					OR = {
+						has_job = clerk
+						has_job = technician
+						has_job = miner
+						has_job = farmer
+					}
+					is_robotic_species = no
+				}
+				modify_species = {
+					species = this
+					add_trait = trait_zombie
+					add_traits_at_start_of_list = yes
+				}
+			}
+		}
+	}
 }
 
 generate_home_planet_final_pass = {
@@ -2223,13 +2335,33 @@ void_dweller_home_planet_setup = {
 		district = district_hab_industrial
 	}
 	add_building = building_hab_major_capital
+	# 2 jobs
+	if = {
+		limit = { owner = { is_spiritualist = no } }
+		add_building = building_bureaucratic_1
+	}
+	# 2 jobs
 	if = {
 		limit = {
 			owner = {
-				is_lithoid_empire = no
+				is_spiritualist = yes
+				OR = {
+					has_valid_civic = civic_death_cult
+					has_valid_civic = civic_death_cult_corporate
+				}
 			}
 		}
-		add_building = building_bureaucratic_1
+		add_building = building_sacrificial_temple_1
+	}
+	# 2 jobs
+	if = {
+		limit = {
+			owner = {
+				is_spiritualist = yes
+				NOT = { has_valid_civic = civic_death_cult }
+			}
+		}
+		add_building = building_temple
 	}
 	else = {
 		add_building = building_holo_theatres
@@ -2336,8 +2468,64 @@ void_dweller_home_planet_setup = {
 				}
 				add_building = building_hydroponics_farm
 			}
-			else = {
+			if = {
+				limit = {
+					owner = {
+						is_lithoid_empire = yes
+						is_spiritualist = no
+					}
+				}
 				add_building = building_bureaucratic_1
+			}
+			if = {
+				limit = {
+					owner = {
+						is_lithoid_empire = yes
+						is_spiritualist = yes
+						NOT = { has_valid_civic = civic_death_cult }
+					}
+				}
+				add_building = building_temple
+			}
+			if = {
+				limit = {
+					owner = {
+						is_lithoid_empire = yes
+						is_spiritualist = yes
+						OR = {
+							has_valid_civic = civic_death_cult
+							has_valid_civic = civic_death_cult_corporate
+						}
+					}
+				}
+				add_building = building_sacrificial_temple_1
+			}
+			if = {
+				limit = {
+					owner = {
+						has_valid_civic = civic_permanent_employment
+					}
+				}
+				add_building = building_posthumous_employment_center
+				while = {
+					count = 4
+					random_owned_pop = {
+						limit = {
+							OR = {
+								has_job = clerk
+								has_job = technician
+								has_job = miner
+								has_job = farmer
+							}
+							is_robotic_species = no
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_zombie
+							add_traits_at_start_of_list = yes
+						}
+					}
+				}
 			}
 		}
 		every_system_planet = {
