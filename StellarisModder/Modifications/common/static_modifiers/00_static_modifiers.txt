@@ -29,3 +29,8 @@ difficulty_ensign = {
 	pop_resettlement_cost_mult = -0.25
 	planet_stability_add = 5
 }
+# Make edict upkeep scale more reasonably with sprawl
+@REPLACE empire_size
+empire_size = {
+	edicts_upkeep_mult = 0.001
+}

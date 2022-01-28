@@ -36,7 +36,7 @@ empire_size_over_cap = {
 
 # Per empire size (ignores admin cap)
 empire_size = {
-	edicts_upkeep_mult = 0.01
+	edicts_upkeep_mult = 0.001
 }
 
 # Per navy size
