@@ -154,19 +154,6 @@ trait_aquatic = {
 			limit = {
 				exists = from
 			}
-			if = {
-				limit = { NOT = { from = { has_ascension_perk = ap_hydrocentric } } }
-				custom_tooltip = {
-					fail_text = trait_aquatic_remove_evolutionary_mastery
-					from = { has_ascension_perk = ap_evolutionary_mastery }
-				}
-			}
-			else = {
-				custom_tooltip = {
-					fail_text = trait_aquatic_remove_hydrocentric
-					always = no
-				}
-			}
 		}
 	}
 	
