@@ -14,7 +14,6 @@ mega_shipyard_0 = {
 		}
 		upkeep = {
 			energy = 5
-			unity = 10
 		}
 	}
 	prerequisites = { "tech_mega_shipyard" }
@@ -132,7 +131,6 @@ mega_shipyard_1 = {
 		}
 		upkeep = {
 			energy = 10
-			unity = 25
 		}
 	}
 	upgrade_from = {
@@ -169,7 +167,6 @@ mega_shipyard_2 = {
 		}
 		upkeep = {
 			energy = 20
-			unity = 50
 		}
 	}
 	upgrade_from = {
@@ -206,7 +203,6 @@ mega_shipyard_3 = {
 		}
 		upkeep = {
 			energy = 40
-			unity = 100
 		}
 	}
 	upgrade_from = {
@@ -276,7 +272,6 @@ mega_shipyard_restored = {
 		}
 		upkeep = {
 			energy = 40
-			unity = 100
 		}
 	}
 	upgrade_from = {

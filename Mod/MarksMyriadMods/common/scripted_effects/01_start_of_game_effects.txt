@@ -2114,6 +2114,15 @@ generate_start_pops = {
 					add_trait = trait_zombie
 					add_traits_at_start_of_list = yes
 				}
+				if = {
+					limit = {
+						has_trait = trait_syncretic_proles
+					}
+					modify_species = {
+						species = this
+						remove_trait = trait_syncretic_proles
+					}
+				}
 			}
 		}
 	}
@@ -2134,7 +2143,10 @@ generate_home_planet_final_pass = {
 				remove_all_buildings = yes
 				destroy_colony = yes
 			}
-			change_dominant_species = { species = last_created_species change_all = yes }
+			if = {
+				limit = { NOT = { has_valid_civic = civic_permanent_employment } }
+				change_dominant_species = { species = last_created_species change_all = yes }
+			}
 		}
 	}
 	if = {
@@ -2369,6 +2381,15 @@ void_dweller_home_planet_setup = {
 	if = {
 		limit = {
 			owner = {
+				has_valid_civic = civic_permanent_employment
+			}
+			free_building_slots > 0
+		}
+		add_building = building_posthumous_employment_center
+	}
+	if = {
+		limit = {
+			owner = {
 				has_valid_civic = civic_reanimated_armies
 			}
 		}
@@ -2506,7 +2527,6 @@ void_dweller_home_planet_setup = {
 						has_valid_civic = civic_permanent_employment
 					}
 				}
-				add_building = building_posthumous_employment_center
 				while = {
 					count = 4
 					random_owned_pop = {
@@ -2523,6 +2543,15 @@ void_dweller_home_planet_setup = {
 							species = this
 							add_trait = trait_zombie
 							add_traits_at_start_of_list = yes
+						}
+						if = {
+							limit = {
+								has_trait = trait_syncretic_proles
+							}
+							modify_species = {
+								species = this
+								remove_trait = trait_syncretic_proles
+							}
 						}
 					}
 				}

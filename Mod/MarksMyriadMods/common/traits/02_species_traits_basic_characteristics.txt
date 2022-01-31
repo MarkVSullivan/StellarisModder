@@ -16,16 +16,10 @@ trait_hive_mind = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	modifier = {}
 	leader_age_min = 10
@@ -46,16 +40,10 @@ trait_machine_unit = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	immortal_leaders = yes
 	icon = "gfx/interface/icons/traits/trait_machine_unit.dds"
@@ -75,16 +63,10 @@ trait_mechanical = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	immortal_leaders = yes
 	allowed_archetypes = { ROBOT }
@@ -102,16 +84,10 @@ trait_syncretic_proles = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_potential_add = { always = no }
 	icon = "gfx/interface/icons/traits/trait_primitive.dds"
@@ -133,16 +109,10 @@ trait_lithoid = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	forced_happiness = no
 	immortal_leaders = no
@@ -339,16 +309,10 @@ trait_necrophage = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	forced_happiness = no
 	immortal_leaders = no
@@ -383,16 +347,10 @@ trait_clone_soldier_infertile = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	forced_happiness = no
 	immortal_leaders = no
@@ -426,16 +384,10 @@ trait_clone_soldier_infertile_full_potential = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	forced_happiness = no
 	immortal_leaders = no
@@ -470,16 +422,10 @@ trait_clone_soldier_fertile = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	forced_happiness = no
 	immortal_leaders = no

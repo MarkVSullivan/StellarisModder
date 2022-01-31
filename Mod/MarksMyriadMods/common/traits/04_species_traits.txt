@@ -387,16 +387,10 @@ trait_uplifted = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	randomized = no
 	allowed_archetypes = { BIOLOGICAL LITHOID }
@@ -522,16 +516,10 @@ trait_cybernetic = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
@@ -552,16 +540,10 @@ trait_latent_psionic = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
@@ -584,16 +566,10 @@ trait_psionic = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
@@ -614,16 +590,10 @@ trait_self_modified = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
@@ -1040,16 +1010,10 @@ trait_zombie = {
 		always = no
 	}
 	species_possible_remove = {
-		custom_tooltip = {
-			text = cannot_remove_this_trait
-			always = no
-		}
+		always = no
 	}
 	species_possible_merge_add = {
-		custom_tooltip = {
-			text = cannot_add_this_trait
-			always = no
-		}
+		always = no
 	}
 	infertile = yes
 	allowed_archetypes = { BIOLOGICAL LITHOID }

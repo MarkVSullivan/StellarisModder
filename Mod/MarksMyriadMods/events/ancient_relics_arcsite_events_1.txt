@@ -789,15 +789,17 @@ fleet_event = {
 					max_jumps = 0
 					initializer = "Zrocursor_system"
 				}
-				if = {
-					limit = { last_created_system = { NOT = { has_hyperlane_to = prev } } }
-					add_hyperlane = {
-						from = this
-						to = last_created_system
+				hidden_effect = {
+					if = {
+						limit = { last_created_system = { NOT = { has_hyperlane_to = prev } } }
+						add_hyperlane = {
+							from = this
+							to = last_created_system
+						}
 					}
-				}
-				else = {
-					add_extra_hyperlane_to_spawned_system_effect = yes
+					else = {
+						add_extra_hyperlane_to_spawned_system_effect = yes
+					}
 				}
 			}
 		}

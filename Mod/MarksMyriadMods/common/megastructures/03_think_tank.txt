@@ -19,7 +19,6 @@ think_tank_0 = {
 		}
 		upkeep = {
 			energy = 5
-			unity = 10
 		}
 	}
 	prerequisites = { "tech_science_nexus" }
@@ -133,7 +132,6 @@ think_tank_1 = {
 		}
 		upkeep = {
 			energy = 25
-			unity = 25
 		}
 		produces = {
 			society_research = @stage_1_research_bonus
@@ -165,7 +163,6 @@ think_tank_2 = {
 		}
 		upkeep = {
 			energy = 50
-			unity = 50
 		}
 		produces = {
 			society_research = @stage_2_research_bonus
@@ -197,7 +194,6 @@ think_tank_3 = {
 		}
 		upkeep = {
 			energy = 75
-			unity = 100
 		}
 		produces = {
 			society_research = @stage_3_research_bonus
@@ -232,7 +228,6 @@ think_tank_4 = {
 		category = megastructures
 		upkeep = {
 			energy = 100
-			unity = 200
 		}
 		produces = {
 			society_research = @stage_4_research_bonus
@@ -295,7 +290,6 @@ think_tank_restored = {
 		}
 		upkeep = {
 			energy = 75
-			unity = 200
 		}
 		produces = {
 			society_research = @stage_3_research_bonus

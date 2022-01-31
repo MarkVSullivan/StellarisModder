@@ -14,7 +14,6 @@ dyson_sphere_0 = {
 		}
 		upkeep = {
 			energy = 5
-			unity = 100
 		}
 	}
 	prerequisites = { "tech_dyson_sphere" }
@@ -146,9 +145,6 @@ dyson_sphere_1 = {
 			alloys = 10000
 			unity = 5000
 		}
-		upkeep = {
-			unity = 10
-		}
 	}
 	upgrade_from = {
 		dyson_sphere_0
@@ -178,9 +174,6 @@ dyson_sphere_2 = {
 		}
 		produces = {
 			energy = 1000
-		}
-		upkeep = {
-			unity = 25
 		}
 	}
 	upgrade_from = {
@@ -212,9 +205,6 @@ dyson_sphere_3 = {
 		produces = {
 			energy = 2000
 		}
-		upkeep = {
-			unity = 50
-		}
 	}
 	upgrade_from = {
 		dyson_sphere_2
@@ -245,9 +235,6 @@ dyson_sphere_4 = {
 		produces = {
 			energy = 3000
 		}
-		upkeep = {
-			unity = 100
-		}
 	}
 	upgrade_from = {
 		dyson_sphere_3
@@ -277,9 +264,6 @@ dyson_sphere_5 = {
 		}
 		produces = {
 			energy = 4000
-		}
-		upkeep = {
-			unity = 200
 		}
 	}
 	upgrade_from = {
@@ -347,9 +331,6 @@ dyson_sphere_restored = {
 		}
 		produces = {
 			energy = 4000
-		}
-		upkeep = {
-			unity = 200
 		}
 	}
 	upgrade_from = {

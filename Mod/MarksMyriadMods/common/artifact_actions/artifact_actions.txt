@@ -388,6 +388,7 @@ artifact_sell_collector = {
 			minor_artifacts = 1
 		}
 	}
+	
 	ai_weight = {
 		weight = 100
 		modifier = {
@@ -399,16 +400,27 @@ artifact_sell_collector = {
 			has_resource = { type = minor_artifacts amount < @minor_artifact_ai_threshold }
 		}
 	}
+	
 	potential = { is_gestalt = no }
 	effect = {
-		add_resource = { energy = 500 }
+		add_resource =
+		{
+			energy = 1000
+			#energy = 35000
+			#alloys = 5000
+			#influence = 250
+			#consumer_goods = 5000
+			#minor_artifacts = 150
+		}
 		hidden_effect = {
 			add_modifier = {
 				modifier = "artifact_sell_cooldown"
-				days = 180
+				days = 30 #180
 			}
 		}
+		#add_research_option = tech_battleships
 	}
+	
 	allow = { NOT = { has_modifier = artifact_sell_cooldown } }
 }
 
