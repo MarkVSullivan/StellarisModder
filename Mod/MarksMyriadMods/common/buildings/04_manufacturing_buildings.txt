@@ -229,7 +229,7 @@ building_foundry_2 = {
 			}
 		}
 		modifier = {
-			job_foundry_add = @b1_jobs
+			job_foundry_add = @b2_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -242,7 +242,7 @@ building_foundry_2 = {
 		}
 		modifier = {
 			planet_metallurgists_food_upkeep_add = 3
-			job_catalytic_technician_add = @b1_jobs
+			job_catalytic_technician_add = @b2_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -254,7 +254,7 @@ building_foundry_2 = {
 			}
 		}
 		modifier = {
-			job_alloy_drone_add = @b1_jobs
+			job_alloy_drone_add = @b2_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -266,7 +266,7 @@ building_foundry_2 = {
 			}
 		}
 		modifier = {
-			job_fabricator_add = @b1_jobs
+			job_fabricator_add = @b2_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -279,7 +279,7 @@ building_foundry_2 = {
 		}
 		modifier = {
 			planet_metallurgists_food_upkeep_add = 3
-			job_catalytic_drone_add = @b1_jobs
+			job_catalytic_drone_add = @b2_jobs
 		}
 	}
 	triggered_desc = {
@@ -394,7 +394,7 @@ building_foundry_3 = {
 			}
 		}
 		modifier = {
-			job_foundry_add = @b1_jobs
+			job_foundry_add = @b3_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -407,7 +407,7 @@ building_foundry_3 = {
 		}
 		modifier = {
 			planet_metallurgists_food_upkeep_add = 6
-			job_catalytic_technician_add = @b1_jobs
+			job_catalytic_technician_add = @b3_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -419,7 +419,7 @@ building_foundry_3 = {
 			}
 		}
 		modifier = {
-			job_alloy_drone_add = @b1_jobs
+			job_alloy_drone_add = @b3_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -431,7 +431,7 @@ building_foundry_3 = {
 			}
 		}
 		modifier = {
-			job_fabricator_add = @b1_jobs
+			job_fabricator_add = @b3_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -444,7 +444,7 @@ building_foundry_3 = {
 		}
 		modifier = {
 			planet_metallurgists_food_upkeep_add = 6
-			job_catalytic_drone_add = @b1_jobs
+			job_catalytic_drone_add = @b3_jobs
 		}
 	}
 	triggered_desc = {
@@ -669,7 +669,7 @@ building_factory_2 = {
 			}
 		}
 		modifier = {
-			job_artisan_add = @b1_jobs
+			job_artisan_add = @b2_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -681,7 +681,7 @@ building_factory_2 = {
 			}
 		}
 		modifier = {
-			job_artificer_add = @b1_jobs
+			job_artificer_add = @b2_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -690,7 +690,7 @@ building_factory_2 = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_artisan_drone_add = @b1_jobs
+			job_artisan_drone_add = @b2_jobs
 		}
 	}
 	resources = {
@@ -789,7 +789,7 @@ building_factory_3 = {
 			}
 		}
 		modifier = {
-			job_artisan_add = @b1_jobs
+			job_artisan_add = @b3_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -801,7 +801,7 @@ building_factory_3 = {
 			}
 		}
 		modifier = {
-			job_artificer_add = @b1_jobs
+			job_artificer_add = @b3_jobs
 		}
 	}
 	triggered_planet_modifier = {
@@ -810,7 +810,7 @@ building_factory_3 = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_artisan_drone_add = @b1_jobs
+			job_artisan_drone_add = @b3_jobs
 		}
 	}
 	resources = {
