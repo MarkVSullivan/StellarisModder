@@ -23,3 +23,69 @@ job_translucer_add = 2
 job_translucer_drone_add = 1
 @WITH
 job_translucer_drone_add = 2
+# More advanced alloy foundries provide more jobs
+@LINEREPLACE building_foundry_2
+job_foundry_add = @b1_jobs
+@WITH
+job_foundry_add = @b2_jobs
+@LINEREPLACE building_foundry_2
+job_catalytic_technician_add = @b1_jobs
+@WITH
+job_catalytic_technician_add = @b2_jobs
+@LINEREPLACE building_foundry_2
+job_alloy_drone_add = @b1_jobs
+@WITH
+job_alloy_drone_add = @b2_jobs
+@LINEREPLACE building_foundry_2
+job_fabricator_add = @b1_jobs
+@WITH
+job_fabricator_add = @b2_jobs
+@LINEREPLACE building_foundry_2
+job_catalytic_drone_add = @b1_jobs
+@WITH
+job_catalytic_drone_add = @b2_jobs
+@LINEREPLACE building_foundry_3
+job_foundry_add = @b1_jobs
+@WITH
+job_foundry_add = @b3_jobs
+@LINEREPLACE building_foundry_3
+job_catalytic_technician_add = @b1_jobs
+@WITH
+job_catalytic_technician_add = @b3_jobs
+@LINEREPLACE building_foundry_3
+job_alloy_drone_add = @b1_jobs
+@WITH
+job_alloy_drone_add = @b3_jobs
+@LINEREPLACE building_foundry_3
+job_fabricator_add = @b1_jobs
+@WITH
+job_fabricator_add = @b3_jobs
+@LINEREPLACE building_foundry_3
+job_catalytic_drone_add = @b1_jobs
+@WITH
+job_catalytic_drone_add = @b3_jobs
+# More advanced consumer good factories provide more jobs
+@LINEREPLACE building_factory_2
+job_artisan_add = @b1_jobs
+@WITH
+job_artisan_add = @b2_jobs
+@LINEREPLACE building_factory_2
+job_artificer_add = @b1_jobs
+@WITH
+job_artificer_add = @b2_jobs
+@LINEREPLACE building_factory_2
+job_artisan_drone_add = @b1_jobs
+@WITH
+job_artisan_drone_add = @b2_jobs
+@LINEREPLACE building_factory_3
+job_artisan_add = @b1_jobs
+@WITH
+job_artisan_add = @b3_jobs
+@LINEREPLACE building_factory_3
+job_artificer_add = @b1_jobs
+@WITH
+job_artificer_add = @b3_jobs
+@LINEREPLACE building_factory_3
+job_artisan_drone_add = @b1_jobs
+@WITH
+job_artisan_drone_add = @b3_jobs

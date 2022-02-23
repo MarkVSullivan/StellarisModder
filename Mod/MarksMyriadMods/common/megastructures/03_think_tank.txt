@@ -15,7 +15,7 @@ think_tank_0 = {
 		category = megastructures
 		cost = {
 			alloys = 5000
-			influence = 300
+			unity = 5000
 		}
 		upkeep = {
 			energy = 5
@@ -128,6 +128,7 @@ think_tank_1 = {
 		category = megastructures
 		cost = {
 			alloys = 15000
+			unity = 5000
 		}
 		upkeep = {
 			energy = 25
@@ -158,6 +159,7 @@ think_tank_2 = {
 		category = megastructures
 		cost = {
 			alloys = 15000
+			unity = 5000
 		}
 		upkeep = {
 			energy = 50
@@ -188,6 +190,7 @@ think_tank_3 = {
 		category = megastructures
 		cost = {
 			alloys = 15000
+			unity = 5000
 		}
 		upkeep = {
 			energy = 75
@@ -283,6 +286,7 @@ think_tank_restored = {
 		category = megastructures
 		cost = {
 			alloys = 15000
+			unity = 3200
 		}
 		upkeep = {
 			energy = 75
