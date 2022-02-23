@@ -1202,7 +1202,10 @@ generate_start_buildings_and_districts = {
 			# 1 job
 			add_building = building_machine_assembly_plant
 			# 2 job
-			add_building = building_uplink_node
+			if = {
+				limit = { owner = { NOT = { has_valid_civic = civic_machine_servitor } } }
+				add_building = building_uplink_node
+			}
 			# 2 jobs
 			add_building = building_research_lab_1
 			if = {
@@ -1726,7 +1729,10 @@ generate_start_buildings_and_districts = {
 			# 1 job
 			add_building = building_machine_assembly_plant
 			# 2 job
-			add_building = building_uplink_node
+			if = {
+				limit = { owner = { NOT = { has_valid_civic = civic_machine_servitor } } }
+				add_building = building_uplink_node
+			}
 			# 2 jobs
 			add_building = building_research_lab_1
 			# 4 jobs

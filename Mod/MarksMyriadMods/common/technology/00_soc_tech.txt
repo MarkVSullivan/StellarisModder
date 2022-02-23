@@ -1924,6 +1924,10 @@ tech_terrestrial_sculpting = {
 			has_trait = trait_aquatic
 		}
 		modifier = {
+			factor = 1.25
+			has_origin = origin_life_seeded
+		}
+		modifier = {
 			factor = value:tech_weight_likelihood
 			research_leader = {
 				area = society
@@ -1967,6 +1971,10 @@ tech_terrestrial_sculpting = {
 		modifier = { #Hydrocentric is really good and needs this
 			factor = 1000
 			has_trait = trait_aquatic
+		}
+		modifier = {
+			factor = 100
+			has_origin = origin_life_seeded
 		}
 		modifier = {
 			factor = 2
@@ -2029,6 +2037,10 @@ tech_ecological_adaptation = {
 			}
 		}
 		modifier = {
+			factor = 5
+			has_origin = origin_life_seeded
+		}
+		modifier = {
 			factor = 2
 			is_ai = no #auto-research
 		}
@@ -2071,6 +2083,10 @@ tech_climate_restoration = {
 				area = society
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
+		}
+		modifier = {
+			factor = 5
+			has_origin = origin_life_seeded
 		}
 		modifier = {
 			factor = 5
@@ -5428,7 +5444,10 @@ tech_cultural_heritage = {
 	category = { statecraft }
 	tier = 0
 	potential = {
-		is_hive_empire = no
+		OR = {
+			is_hive_empire = no
+			is_memorialist_empire = yes
+		}
 	}
 	weight_modifier = {
 		modifier = {
@@ -5458,11 +5477,6 @@ tech_heritage_site = {
 	prerequisites = { "tech_cultural_heritage" }
 	weight = @tier1weight3
 	#unlocks upgraded culture building
-	potential = {
-		NOT = {
-			has_valid_civic = civic_machine_servitor
-		}
-	}
 	weight_modifier = {
 		modifier = {
 			factor = value:tech_weight_likelihood
@@ -5499,11 +5513,6 @@ tech_hypercomms_forum = {
 	prerequisites = { "tech_heritage_site" "tech_colonial_centralization" }
 	weight = @tier3weight1
 	#unlocks 2nd upgraded culture building
-	potential = {
-		NOT = {
-			has_valid_civic = civic_machine_servitor
-		}
-	}
 	weight_modifier = {
 		modifier = {
 			factor = value:tech_weight_likelihood
