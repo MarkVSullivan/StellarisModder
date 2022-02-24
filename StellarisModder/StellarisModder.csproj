@@ -76,12 +76,10 @@
     <Content Include="Modifications\common\districts\03_habitat_districts.txt" />
     <Content Include="Modifications\common\megastructures\01_dyson_sphere.txt" />
     <Content Include="Modifications\common\megastructures\03_think_tank.txt" />
-    <Content Include="Modifications\common\megastructures\05_gateways.txt" />
     <Content Include="Modifications\common\megastructures\06_matter_decompressor.txt" />
     <Content Include="Modifications\common\megastructures\11_mega_shipyard.txt" />
     <Content Include="Modifications\common\megastructures\habitats.txt" />
     <Content Include="Modifications\common\planet_classes\00_planet_classes.txt" />
-    <Content Include="Modifications\common\pop_jobs\01_ruler_jobs.txt" />
     <Content Include="Modifications\common\pop_jobs\02_specialist_jobs.txt" />
     <Content Include="Modifications\common\pop_jobs\03_worker_jobs.txt" />
     <Content Include="Modifications\common\scripted_effects\01_start_of_game_effects.txt" />

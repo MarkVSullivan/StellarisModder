@@ -1358,7 +1358,6 @@ building_hab_capital = {
 		planet_housing_add = 3
 		planet_amenities_add = 3
 		planet_max_buildings_add = @buildings_t1
-		job_bureaucrat_add = @b1_jobs
 	}
 	
 	triggered_planet_modifier = {
@@ -1564,7 +1563,6 @@ building_hab_major_capital = {
 		planet_amenities_add = 5
 		planet_max_buildings_add = @buildings_t2
 		planet_max_branch_office_buildings_add = 1
-		job_bureaucrat_add = @b2_jobs
 	}
 	
 	triggered_planet_modifier = {

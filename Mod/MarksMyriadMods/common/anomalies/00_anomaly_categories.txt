@@ -617,7 +617,7 @@ terraforming_candidate_category = {
 	level = 2
 	spawn_chance = {
 		modifier = {
-			add = 3
+			add = 10
 			NOR = {
 				has_modifier = terraforming_candidate
 				has_deposit = d_nanites_deposit
@@ -641,7 +641,7 @@ terraforming_candidate_category = {
 			}
 		}
 		modifier = {
-			factor = 5
+			factor = 20
 			years_passed < 30
 		}
 	}
