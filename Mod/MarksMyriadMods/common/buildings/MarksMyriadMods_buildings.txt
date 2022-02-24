@@ -100,10 +100,10 @@ building_naval_1 = {
 	}
 
 	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
 		modifier = {
 			job_quartermaster_add = 2
 		}

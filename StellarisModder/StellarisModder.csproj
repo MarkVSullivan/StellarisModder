@@ -72,6 +72,7 @@
     <Content Include="Modifications\common\buildings\02_government_buildings.txt" />
     <Content Include="Modifications\common\buildings\04_manufacturing_buildings.txt" />
     <Content Include="Modifications\common\buildings\10_deposit_buildings.txt" />
+    <Content Include="Modifications\common\bypass\00_bypasses.txt" />
     <Content Include="Modifications\common\decisions\02_special_decisions.txt" />
     <Content Include="Modifications\common\districts\03_habitat_districts.txt" />
     <Content Include="Modifications\common\megastructures\01_dyson_sphere.txt" />
