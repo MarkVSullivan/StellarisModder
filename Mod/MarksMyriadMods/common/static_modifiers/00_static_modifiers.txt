@@ -36,6 +36,7 @@ empire_size_over_cap = {
 
 # Per empire size (ignores admin cap)
 empire_size = {
+	edicts_upkeep_mult = 0.001
 }
 
 # Per navy size
@@ -111,13 +112,14 @@ difficulty_admiral = {
 }
 
 difficulty_commodore = {
-	stations_produces_mult = 0.5
-	planet_jobs_produces_mult = 0.5
-	country_naval_cap_mult = 0.3
-	ships_upkeep_mult = -0.2
-	starbase_shipyard_build_cost_mult = -0.2
-	pop_resettlement_cost_mult = -0.50
-	planet_stability_add = 10
+	stations_produces_mult = 0.75
+	planet_jobs_produces_mult = 0.75
+	country_naval_cap_mult = 0.45
+	ships_upkeep_mult = -0.3
+	starbase_shipyard_build_cost_mult = -0.3
+	pop_resettlement_cost_mult = -0.75
+	planet_stability_add = 15
+	trade_value_mult = 0.75
 }
 
 difficulty_captain = {
@@ -128,6 +130,7 @@ difficulty_captain = {
 	starbase_shipyard_build_cost_mult = -0.2
 	pop_resettlement_cost_mult = -0.50
 	planet_stability_add = 10
+	trade_value_mult = 0.5
 }
 
 difficulty_ensign = {
@@ -138,6 +141,7 @@ difficulty_ensign = {
 	starbase_shipyard_build_cost_mult = -0.1
 	pop_resettlement_cost_mult = -0.25
 	planet_stability_add = 5
+	trade_value_mult = 0.25
 }
 
 difficulty_cadet_player = {

@@ -76,6 +76,7 @@
     <Content Include="Modifications\common\districts\03_habitat_districts.txt" />
     <Content Include="Modifications\common\megastructures\01_dyson_sphere.txt" />
     <Content Include="Modifications\common\megastructures\03_think_tank.txt" />
+    <Content Include="Modifications\common\megastructures\05_gateways.txt" />
     <Content Include="Modifications\common\megastructures\06_matter_decompressor.txt" />
     <Content Include="Modifications\common\megastructures\11_mega_shipyard.txt" />
     <Content Include="Modifications\common\megastructures\habitats.txt" />
