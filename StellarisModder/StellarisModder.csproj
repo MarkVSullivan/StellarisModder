@@ -76,6 +76,7 @@
     <Content Include="Modifications\common\decisions\02_special_decisions.txt" />
     <Content Include="Modifications\common\districts\03_habitat_districts.txt" />
     <Content Include="Modifications\common\edicts\02_ambitions.txt" />
+    <Content Include="Modifications\common\governments\civics\00_civics.txt" />
     <Content Include="Modifications\common\megastructures\01_dyson_sphere.txt" />
     <Content Include="Modifications\common\megastructures\03_think_tank.txt" />
     <Content Include="Modifications\common\megastructures\05_gateways.txt" />
