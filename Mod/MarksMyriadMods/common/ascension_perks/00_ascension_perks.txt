@@ -1109,6 +1109,7 @@ ap_imperial_prerogative = {
 	modifier = {
 		empire_size_colonies_mult = -0.50
 	}
+	
 	potential = {
 		NOT = {
 			has_ascension_perk = ap_imperial_prerogative
@@ -1119,12 +1120,15 @@ ap_imperial_prerogative = {
 		NOT = { has_authority = auth_corporate }
 		NOT = { has_civic = civic_build_tall }
 	}
+	
 	ai_weight = {
 		factor = 15
 	}
+	
 	on_enabled = {
 		run_ai_strategic_data = yes
 	}
+	
 }
 
 ap_executive_vigor = {

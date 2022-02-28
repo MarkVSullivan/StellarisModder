@@ -655,6 +655,7 @@ civic_aristocratic_elite = {
 			NOR = {
 				value = civic_merchant_guilds
 				value = civic_exalted_priesthood
+				value = civic_technocracy
 			}
 		}
 	}

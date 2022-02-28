@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Modifications\interface\ascension_perks.gfx" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
