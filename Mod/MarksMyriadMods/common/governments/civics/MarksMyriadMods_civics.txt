@@ -1,0 +1,23 @@
+civic_build_tall = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		
+	}
+	random_weight = {
+		base = 0
+	}
+	modifier = {
+		empire_size_pops_mult = -0.5
+		planet_stability_add = 5
+ 		planet_housing_mult = 0.25
+  		planet_amenities_mult = 0.25
+		pop_growth_speed = 0.25
+		empire_size_systems_mult = 2.5	
+		empire_size_colonies_mult = 1.75
+  		#empire_size_penalty_mult = 1
+	}
+	description = "civic_tooltip_build_tall_effects"
+}

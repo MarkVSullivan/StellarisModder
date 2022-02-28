@@ -4,4 +4,5 @@
 		GROWTH_SCALE_DEFAULT = 0.15
 		BASE_ENVOYS_REGULAR_EMPIRE			= 4			# The starting number of envoys for regular empires
 		ELECTION_COST						= 50	# Base cost of electing a candidate
+		EMPIRE_SIZE_BASE					= 200
 	}

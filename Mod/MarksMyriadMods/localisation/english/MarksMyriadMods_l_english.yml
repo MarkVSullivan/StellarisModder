@@ -60,3 +60,10 @@
 
  tech_resource_centralization:0 "Resource Centralization"
  tech_resource_centralization_desc:0 "Allows resource production to be centralized within your empire for a large one-planet bonus"
+
+ civic_build_tall:0 "Build Tall"
+ civic_build_tall_desc:2 "This empire prefers to build very populous colonies and have less colonies in general, and get bonuses to stability and amenities, while having a draconian penalty for too many systems."
+ civic_tooltip_build_tall_effects:3 "Empire gets bonuses for building tall"
+
+ ap_manifest_destiny:0 "Manifest Destiny"
+ ap_manifest_destiny_desc:0 "Although the empire still prefers to build tall, this is somewhat relaxed by a desire to spread to new frontiers, allowing your empire to control more colonies with less penalty."

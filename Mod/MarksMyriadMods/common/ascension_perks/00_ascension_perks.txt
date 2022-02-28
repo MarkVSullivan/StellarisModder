@@ -1113,7 +1113,11 @@ ap_imperial_prerogative = {
 		NOT = {
 			has_ascension_perk = ap_imperial_prerogative
 		}
+		NOT = {
+			has_ascension_perk = ap_manifest_destiny
+		}
 		NOT = { has_authority = auth_corporate }
+		NOT = { has_civic = civic_build_tall }
 	}
 	ai_weight = {
 		factor = 15
