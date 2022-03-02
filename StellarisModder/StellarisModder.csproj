@@ -63,6 +63,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Modifications\interface\ascension_perks.gfx" />
+    <None Include="Modifications\interface\traditions.gfx" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -91,6 +92,7 @@
     <Content Include="Modifications\common\species_archetypes\00_species_archetypes.txt" />
     <Content Include="Modifications\common\static_modifiers\00_static_modifiers.txt" />
     <Content Include="Modifications\common\technology\00_soc_tech.txt" />
+    <Content Include="Modifications\common\tradition_categories\00_expansion.txt" />
     <Content Include="Modifications\common\traits\02_species_traits_basic_characteristics.txt" />
     <Content Include="Modifications\common\traits\04_species_traits.txt" />
     <Content Include="Modifications\common\war_goals\00_war_goals.txt" />

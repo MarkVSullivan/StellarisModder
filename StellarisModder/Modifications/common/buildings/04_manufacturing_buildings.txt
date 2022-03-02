@@ -89,3 +89,129 @@ job_artificer_add = @b3_jobs
 job_artisan_drone_add = @b1_jobs
 @WITH
 job_artisan_drone_add = @b3_jobs
+@ADD building_factory_1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_crafter_empire = no
+				has_active_tradition = tr_urbanization_civilian_architecture
+			}
+		}
+		modifier = {
+			job_artisan_add = @b1_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_crafter_empire = yes
+				has_active_tradition = tr_urbanization_civilian_architecture
+			}
+		}
+		modifier = {
+			job_artificer_add = @b1_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = 
+			{ 
+				is_gestalt = yes 
+				has_active_tradition = tr_urbanization_civilian_architecture
+			}
+		}
+		modifier = {
+			job_artisan_drone_add = @b1_jobs
+		}
+	}
+@ADD building_factory_2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_crafter_empire = no
+				has_active_tradition = tr_urbanization_civilian_architecture
+			}
+		}
+		modifier = {
+			job_artisan_add = @b1_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_crafter_empire = yes
+				has_active_tradition = tr_urbanization_civilian_architecture
+			}
+		}
+		modifier = {
+			job_artificer_add = @b1_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = 
+			{ 
+				is_gestalt = yes 
+				has_active_tradition = tr_urbanization_civilian_architecture
+			}
+		}
+		modifier = {
+			job_artisan_drone_add = @b1_jobs
+		}
+	}
+@ADD building_factory_3
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_crafter_empire = no
+				has_active_tradition = tr_urbanization_civilian_architecture
+			}
+		}
+		modifier = {
+			job_artisan_add = @b1_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_crafter_empire = yes
+				has_active_tradition = tr_urbanization_civilian_architecture
+			}
+		}
+		modifier = {
+			job_artificer_add = @b1_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = 
+			{ 
+				is_gestalt = yes 
+				has_active_tradition = tr_urbanization_civilian_architecture
+			}
+		}
+		modifier = {
+			job_artisan_drone_add = @b1_jobs
+		}
+	}

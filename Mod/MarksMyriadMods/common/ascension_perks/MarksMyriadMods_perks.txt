@@ -1,6 +1,7 @@
 ap_manifest_destiny = {
 	modifier = {
-		empire_size_colonies_mult = -1.00
+		empire_size_colonies_mult = -0.75
+		empire_size_systems_mult = -0.75
 	}
 	potential = {
 		NOT = {
