@@ -1,3 +1,13 @@
+# Update initial home habitat sizes for void dwellers origin
+@LINEREPLACE void_dweller_home_planet_setup
+set_planet_size = 6
+@WITH
+set_planet_size = 9
+@LINEREPLACE void_dweller_home_planet_setup
+set_planet_size = 4
+@WITH
+set_planet_size = 6
+
 # Non-AI players get a small boost of resources to start, better leaders
 @REPLACE give_starting_resources_effect
 give_starting_resources_effect = {
@@ -52,6 +62,14 @@ give_starting_resources_effect = {
 			}
 			give_technology = {
 				tech = tech_habitat_1
+				message = no
+			}
+			give_technology = {
+				tech = tech_gateway_activation
+				message = no
+			}
+			give_technology = {
+				tech = tech_gateway_construction
 				message = no
 			}
 			add_research_option = tech_habitat_2
