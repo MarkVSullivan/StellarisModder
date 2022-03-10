@@ -1,8 +1,0 @@
-﻿# Allow gateway travel with gateway construction tech (not just activation)
-@REPLACE gateway>prerequisites
-	prerequisites = {
-	  	OR = {
-  			has_technology = tech_gateway_activation
-  			has_technology = tech_gateway_construction
-   		}
-	}

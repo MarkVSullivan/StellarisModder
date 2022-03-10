@@ -74,10 +74,10 @@
     <Content Include="Modifications\common\buildings\02_government_buildings.txt" />
     <Content Include="Modifications\common\buildings\04_manufacturing_buildings.txt" />
     <Content Include="Modifications\common\buildings\10_deposit_buildings.txt" />
-    <Content Include="Modifications\common\bypass\00_bypasses.txt" />
     <Content Include="Modifications\common\decisions\02_special_decisions.txt" />
     <Content Include="Modifications\common\districts\03_habitat_districts.txt" />
     <Content Include="Modifications\common\edicts\02_ambitions.txt" />
+    <Content Include="Modifications\common\federation_perks\00_perks.txt" />
     <Content Include="Modifications\common\governments\civics\00_civics.txt" />
     <Content Include="Modifications\common\megastructures\01_dyson_sphere.txt" />
     <Content Include="Modifications\common\megastructures\03_think_tank.txt" />
@@ -88,9 +88,11 @@
     <Content Include="Modifications\common\planet_classes\00_planet_classes.txt" />
     <Content Include="Modifications\common\pop_jobs\02_specialist_jobs.txt" />
     <Content Include="Modifications\common\pop_jobs\03_worker_jobs.txt" />
+    <Content Include="Modifications\common\resolutions\00_resolutions.txt" />
     <Content Include="Modifications\common\scripted_effects\01_start_of_game_effects.txt" />
     <Content Include="Modifications\common\species_archetypes\00_species_archetypes.txt" />
     <Content Include="Modifications\common\static_modifiers\00_static_modifiers.txt" />
+    <Content Include="Modifications\common\static_modifiers\04_static_modifiers_factions.txt" />
     <Content Include="Modifications\common\technology\00_soc_tech.txt" />
     <Content Include="Modifications\common\tradition_categories\00_expansion.txt" />
     <Content Include="Modifications\common\traits\02_species_traits_basic_characteristics.txt" />

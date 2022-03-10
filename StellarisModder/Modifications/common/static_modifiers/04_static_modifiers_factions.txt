@@ -1,0 +1,33 @@
+﻿# Promoting a faction works slightly better
+@REPLACE promoted_xenophobe
+promoted_xenophobe = {
+	pop_ethic_xenophobe_attraction_mult = 2
+}
+@REPLACE promoted_xenophile
+promoted_xenophile = {
+	pop_ethic_xenophile_attraction_mult = 2
+}
+@REPLACE promoted_spiritualist
+promoted_spiritualist = {
+	pop_ethic_spiritualist_attraction_mult = 2
+}
+@REPLACE promoted_materialist
+promoted_materialist = {
+	pop_ethic_materialist_attraction_mult = 2
+}
+@REPLACE promoted_pacifist
+promoted_pacifist = {
+	pop_ethic_pacifist_attraction_mult = 2
+}
+@REPLACE promoted_militarist
+promoted_militarist = {
+	pop_ethic_militarist_attraction_mult = 2
+}
+@REPLACE promoted_egalitarian
+promoted_egalitarian = {
+	pop_ethic_egalitarian_attraction_mult = 2
+}
+@REPLACE promoted_authoritarian
+promoted_authoritarian = {
+	pop_ethic_authoritarian_attraction_mult = 2
+}
