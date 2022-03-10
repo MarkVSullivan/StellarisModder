@@ -160,7 +160,10 @@ trait_aquatic = {
 	species_potential_add = {
 		exists = from
 		from = {
-			has_ascension_perk = ap_evolutionary_mastery
+			OR = {
+				has_ascension_perk = ap_evolutionary_mastery
+				has_ascension_perk = ap_hydrocentric
+			}
 		}
 	}
 	
@@ -181,6 +184,7 @@ trait_aquatic = {
 			planet = {
 				OR = {
 					is_planet_class = pc_ocean
+					is_planet_class = pc_relic
 					has_modifier = flooded_habitat
 				}
 			}
@@ -197,6 +201,7 @@ trait_aquatic = {
 			planet = {
 				OR = {
 					is_planet_class = pc_ocean
+					is_planet_class = pc_relic
 					has_modifier = flooded_habitat
 				}
 				exists = owner
@@ -215,6 +220,7 @@ trait_aquatic = {
 			planet = {
 				NOR = {
 					has_climate = wet
+					is_planet_class = pc_relic
 					has_modifier = flooded_habitat
 				}
 				is_ideal = no
@@ -229,6 +235,7 @@ trait_aquatic = {
 			planet = {
 				NOR = {
 					has_climate = wet
+					is_planet_class = pc_relic
 					has_modifier = flooded_habitat
 				}
 				is_ideal = no
@@ -245,6 +252,7 @@ trait_aquatic = {
 			NOR = {
 				has_climate = wet
 				has_modifier = flooded_habitat
+				is_planet_class = pc_relic
 			}
 			is_ideal = no
 		}
@@ -256,6 +264,7 @@ trait_aquatic = {
 			NOR = {
 				has_climate = wet
 				has_modifier = flooded_habitat
+				is_planet_class = pc_relic
 			}
 			is_ideal = no
 			exists = owner

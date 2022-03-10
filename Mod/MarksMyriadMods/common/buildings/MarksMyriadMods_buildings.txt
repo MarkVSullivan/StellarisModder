@@ -109,6 +109,16 @@ building_naval_1 = {
 		}
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_urbanization_efficient_docks }
+		}
+		modifier = {
+			job_quartermaster_add = 2
+		}
+	}
+
 	prerequisites = {
 		"tech_planetary_defenses"
 	}
@@ -118,11 +128,11 @@ building_naval_1 = {
 	}
 
 	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_quartermaster_effect_desc
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	text = job_quartermaster_effect_desc
 	}
 }
 
@@ -170,6 +180,17 @@ building_naval_2 = {
 			job_quartermaster_add = @b2_jobs
 		}
 	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_urbanization_efficient_docks }
+		}
+		modifier = {
+			job_quartermaster_add = @b2_jobs
+		}
+	}
+
 
 	prerequisites = {
 		"tech_global_defense_grid"

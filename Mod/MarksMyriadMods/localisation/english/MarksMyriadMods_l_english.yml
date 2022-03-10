@@ -67,3 +67,50 @@
 
  ap_manifest_destiny:0 "Manifest Destiny"
  ap_manifest_destiny_desc:0 "Although the empire still prefers to build tall, this is somewhat relaxed by a desire to spread to new frontiers, allowing your empire to control more colonies with less penalty."
+
+ tradition_urbanization:0 "Urbanization"
+ tradition_urbanization_desc:0 "We must build better and larger cities to please our urban citizens."
+ tradition_urbanization_machine_desc:0 "Growth projections indicate we will soon exceed the maximum storage capacity of our home systems. We must expand, or stagnate."
+ tradition_urbanization_hive_desc:0 "There are only two possible states for the hive: growth, or death."
+ tradition_urbanization_void_desc:0 "We must expand our civilization to new systems and habitats or risk eventual extinction."
+ tr_urbanization_adopt:0 "Urbanization Traditions"
+
+ tr_urbanization_civilian_architecture:0 "Civilian Architecture"
+ tr_urbanization_civilian_architecture_desc:1 "Consumer goods factories support twice as many $job_artisan_plural$"
+ tr_urbanization_civilian_architecture_delayed:0 "Advances in civilian architecture allow consumer goods factories to support twice as many artisan jobs, boosting consumer good output for your colonies."
+
+ tr_urbanization_vibrant_districts:0 "Vibrant Districts"
+ tr_urbanization_vibrant_districts_desc:3 "§Y$EMPIRE_SIZE$§! from §YDistricts§! is reduced by §G25%§!.\n§Y$EMPIRE_SIZE$§! from §YColonies§! is reduced by §G50%§!."
+ tr_urbanization_vibrant_districts_delayed:0 "Vibrant districts reduces the perceived size of districts, linking colonies together in a seamless say. This reduces overall empire size."
+
+ tr_urbanization_urban_populace:0 "Urban Populace"
+ tr_urbanization_urban_populace_desc:5 "Population requires 25% less housing."
+ tr_urbanization_urban_populace_delayed:0 "Your population is used to closer living in packed cities, and have adapted to require less personal space and less housing."
+
+ tr_urbanization_cultured_populace:0 "Cultured Populace"
+ tr_urbanization_cultured_populace_desc:4 "Population requires 25% less amenities."
+ tr_urbanization_cultured_populace_delayed:0 "Your cities are increasingly cultured, and as a result the populace requires fewer amenities to be happy."
+
+ tr_urbanization_efficient_docks:0 "Efficient Docks"
+ tr_urbanization_efficient_docks_desc:7 "Naval capacity buildings support twice as many quartermaster jobs"
+ tr_urbanization_efficient_docks_delayed:0 "Technological advances improve naval capacity by allowing more quartermaster jobs in each naval capacity building."
+
+ tr_urbanization_finish:0 "Urbanization Traditions Finished"
+ tr_urbanization_finish_machine:0 "Urbanization Traditions Finished"
+
+ decision_urbanization_energy_districts:0 "Expand Energy Capacity"
+ decision_urbanization_energy_districts_desc:0 "By miniaturization of energy districts, [Root.GetName] can support additional energy districts."
+
+ decision_urbanization_mineral_districts:0 "Expand Mineral Capacity"
+ decision_urbanization_mineral_districts_desc:0 "Expanding the subterranean network under [Root.GetName] allows the colony to support additional mineral districts."
+
+ d_urban_mining:0 "Urban Mining"
+ d_urban_mining_desc:0 "Unused underground transportation tunnels have been converted to mining stations, increasing the amount of mining districts this colony can support"
+
+ d_urban_energy:0 "Urban Energy"
+ d_urban_mining_desc:0 "Increases in energy production and miniaturization allow your colony to support more energy districts."
+
+ decision_arcology_project_urban:1 "Build Ecumenopolis"
+ decision_arcology_project_urban_effects:0 "$decision_arcology_project_effects$"
+ decision_arcology_project_urban_effects_short:0 "$decision_arcology_project_effects_short$"
+ decision_arcology_project_urban_desc:0 "This sprawling urban planet could be turned into a gigantic city, a glorious ecumenopolis."

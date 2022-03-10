@@ -1,0 +1,43 @@
+tradition_urbanization = {
+	desc = {
+		trigger = {
+			is_regular_empire = yes
+			NOT = { has_origin = origin_void_dwellers }
+		}
+		text =  tradition_urbanization_desc
+	}
+	desc = {
+		trigger = { is_hive_empire = yes }
+		text =  tradition_urbanization_hive_desc
+	}
+	desc = {
+		trigger = { is_machine_empire = yes }
+		text =  tradition_urbanization_machine_desc
+	}
+	desc = {
+		trigger = { has_origin = origin_void_dwellers }
+		text =  tradition_urbanization_void_desc
+	}
+	tree_template = "tree_12_11"
+	adoption_bonus = "tr_urbanization_adopt"
+	finish_bonus = "tr_urbanization_finish"
+	traditions = {
+		"tr_urbanization_civilian_architecture"
+		"tr_urbanization_vibrant_districts"
+		"tr_urbanization_urban_populace"
+		"tr_urbanization_cultured_populace"
+		"tr_urbanization_efficient_docks"
+	}
+
+	potential = {
+		has_civic = civic_build_tall
+	}
+
+	ai_weight = {
+		factor = 20
+		modifier = {
+			factor = 5
+			years_passed < 20
+		}
+	}
+}
