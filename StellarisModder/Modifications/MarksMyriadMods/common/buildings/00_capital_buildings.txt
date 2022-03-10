@@ -1,0 +1,22 @@
+# Functional architecture should work for habitats as well
+@ADD building_hab_capital
+	triggered_planet_modifier = {
+    	potential = {
+	        exists = owner
+    	    owner = { has_civic = civic_functional_architecture }
+	    }
+    	modifier = {
+        	planet_max_buildings_add = 1
+	    }
+	} 
+
+@ADD building_hab_major_capital
+	triggered_planet_modifier = {
+    	potential = {
+	        exists = owner
+    	    owner = { has_civic = civic_functional_architecture }
+	    }
+    	modifier = {
+        	planet_max_buildings_add = 1
+	    }
+	} 	

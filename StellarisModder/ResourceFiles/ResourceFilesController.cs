@@ -18,11 +18,32 @@ namespace StellarisModder
             string mod_folder = Stellaris_Constants.Instructions_Folder;
             string output_folder = Stellaris_Constants.Mod_Output_Folder;
 
-            recurse_through_instructions(mod_folder, output_folder, Stellaris_Constants.Stellaris_Folder, String.Empty);
+            // Step through each separate mod, creating them
+            string[] mod_dirs = Directory.GetDirectories(mod_folder);
+            foreach( string thisModDir in mod_dirs )
+            {
+                // Clear any existing change documentation
+                ChangeDocumentation.Clear();
 
-            // Show the change log
-            Console.WriteLine();
-            Console.WriteLine(ChangeDocumentation.AllChanges());
+                // Find the directory name
+                string dirName = Path.GetFileName(thisModDir);
+                Console.WriteLine(dirName.ToUpper());
+
+                // Find the write folders
+                string modOutputFolder = Path.Combine(output_folder, dirName);
+                if (!Directory.Exists(modOutputFolder))
+                    Directory.CreateDirectory(modOutputFolder);
+
+
+                recurse_through_instructions(thisModDir, modOutputFolder, Stellaris_Constants.Stellaris_Folder, String.Empty);
+
+                // Show the change log
+                Console.WriteLine();
+                Console.WriteLine(ChangeDocumentation.AllChanges());
+                Console.WriteLine();
+                Console.WriteLine();
+            }
+
         }
 
         private static void recurse_through_instructions(string instruction_folder, string output_folder, string source_folder, string relative)

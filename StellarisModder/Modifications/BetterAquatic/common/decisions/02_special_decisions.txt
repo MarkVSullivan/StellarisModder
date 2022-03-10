@@ -1,0 +1,5 @@
+# Each time the hydrocentric player expands planetary sea, increase planet size by 3 (not 1)
+@LINEREPLACE decision_expand_planetary_sea>effect
+change_planet_size = 1
+@WITH
+change_planet_size = 3

@@ -1,0 +1,29 @@
+# Using minor artifacts for precursor clue is cheaper and has shorter cooldown
+@LINEREPLACE artifact_precursor_clue
+minor_artifacts = 25
+@WITH
+minor_artifacts = 10
+@LINEREPLACE artifact_precursor_clue
+days = 1800
+@WITH
+days = 360
+# Selling minor artifacts provides more energy and available more often
+@REPLACE artifact_sell_collector>effect
+	effect = {
+		add_resource = 
+			{ 
+				energy = 1000
+				#energy = 35000 
+				#alloys = 5000
+				#influence = 250
+				#consumer_goods = 5000
+				#minor_artifacts = 150
+			}
+		hidden_effect = {
+			add_modifier = {
+				modifier = "artifact_sell_cooldown"
+				days = 30 #180
+			}
+		}
+		#add_research_option = tech_battleships
+	}

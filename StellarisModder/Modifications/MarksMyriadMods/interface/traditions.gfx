@@ -1,0 +1,39 @@
+﻿@ADD spriteTypes
+	spriteType = {
+		name = "GFX_tr_urbanization_civilian_architecture"
+		textureFile = "gfx/interface/icons/traditions/tradition_urbanization_civilian_architecture.dds"
+	}
+
+@ADD spriteTypes
+	spriteType = {
+		name = "GFX_tr_urbanization_vibrant_districts"
+		textureFile = "gfx/interface/icons/traditions/tradition_urbanization_vibrant_districts.dds"
+	}
+
+@ADD spriteTypes
+	spriteType = {
+		name = "GFX_tr_urbanization_urban_populace"
+		textureFile = "gfx/interface/icons/traditions/tradition_urbanization_urban_populace.dds"
+	}
+
+@ADD spriteTypes
+	spriteType = {
+		name = "GFX_tr_urbanization_cultured_populace"
+		textureFile = "gfx/interface/icons/traditions/tradition_urbanization_cultured_populace.dds"
+	}
+
+@ADD spriteTypes
+	spriteType = {
+		name = "GFX_tr_urbanization_efficient_docks"
+		textureFile = "gfx/interface/icons/traditions/tradition_urbanization_efficient_docks.dds"
+	}
+
+@ADD spriteTypes
+	spriteType = {
+   		name = "GFX_tradition_category_icon_tradition_urbanization"
+   		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_urbanization.dds"
+   	}
+
+
+
+

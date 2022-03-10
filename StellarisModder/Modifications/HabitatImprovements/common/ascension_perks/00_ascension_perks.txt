@@ -1,0 +1,6 @@
+# Make void borne ascension perk better to make up for reduced habitat habitability
+@REPLACE ap_voidborn>modifier
+	modifier = {
+		pc_habitat_habitability = 0.35
+		habitat_jobs_produces_mult = 0.15
+	}

@@ -1,0 +1,9 @@
+# Update initial home habitat sizes for void dwellers origin
+@LINEREPLACE void_dweller_home_planet_setup
+set_planet_size = 6
+@WITH
+set_planet_size = 9
+@LINEREPLACE void_dweller_home_planet_setup
+set_planet_size = 4
+@WITH
+set_planet_size = 6
