@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Modifications\AquaticsTallCompatibility\common\pop_jobs\02_specialist_jobs.txt" />
     <Content Include="Modifications\BetterAquatic\common\decisions\02_special_decisions.txt" />
     <Content Include="Modifications\BetterAquatic\common\pop_jobs\02_specialist_jobs.txt" />
     <Content Include="Modifications\BuildTall\common\ascension_perks\00_ascension_perks.txt" />

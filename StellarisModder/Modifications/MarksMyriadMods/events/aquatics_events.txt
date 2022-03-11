@@ -10,7 +10,7 @@
 						is_colony = no
 						has_planet_flag = prescripted_ideal
 					}
-					change_planet_size = 15
+					change_planet_size = 12
 					add_deposit = d_submerged_ore_veins
 					add_deposit = d_submerged_ore_veins
 					add_deposit = d_submerged_ore_veins
@@ -35,7 +35,7 @@
 						is_colony = no
 						has_planet_flag = prescripted_ideal
 					}
-					change_planet_size = 15
+					change_planet_size = 12
 					add_deposit = d_submerged_ore_veins
 					add_deposit = d_submerged_ore_veins
 					add_deposit = d_submerged_ore_veins
