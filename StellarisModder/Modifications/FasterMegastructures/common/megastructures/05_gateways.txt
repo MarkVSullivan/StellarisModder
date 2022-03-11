@@ -1,8 +1,0 @@
-﻿# Either gateway activation OR gateway construction allows final gateway stage
-@REPLACE gateway_final>potential
-	potential = {
-	  	OR = {
-  			has_technology = tech_gateway_activation
-  			has_technology = tech_gateway_construction
-   		}
-	}

@@ -75,7 +75,6 @@
     <Content Include="Modifications\BuildTall\common\ascension_perks\00_ascension_perks.txt" />
     <Content Include="Modifications\FasterMegastructures\common\megastructures\01_dyson_sphere.txt" />
     <Content Include="Modifications\FasterMegastructures\common\megastructures\03_think_tank.txt" />
-    <Content Include="Modifications\FasterMegastructures\common\megastructures\05_gateways.txt" />
     <Content Include="Modifications\FasterMegastructures\common\megastructures\06_matter_decompressor.txt" />
     <Content Include="Modifications\FasterMegastructures\common\megastructures\11_mega_shipyard.txt" />
     <Content Include="Modifications\HabitatImprovements\common\scripted_effects\01_start_of_game_effects.txt" />
@@ -113,7 +112,6 @@
     <Content Include="Modifications\MarksMyriadMods\common\governments\civics\00_civics.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\01_dyson_sphere.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\03_think_tank.txt" />
-    <Content Include="Modifications\MarksMyriadMods\common\megastructures\05_gateways.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\06_matter_decompressor.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\11_mega_shipyard.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\habitats.txt" />
