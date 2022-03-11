@@ -1,0 +1,579 @@
+building_naval_1 = {
+	base_buildtime = 240
+	position_priority = 100
+	icon = "building_primitive_labs"
+	category = army
+
+	potential = {
+		buildings_simple_allow = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_ai = yes }
+		AND = {
+			OR = {
+				num_buildings = { type = building_naval_1 value > 1 }
+				has_building = building_naval_2
+			}
+			free_building_slots = 0
+			owner = {
+				used_naval_capacity_percent < 0.6
+				is_at_war = no # don't destroy while at war
+			}
+		}
+	}
+
+	triggered_planet_modifier = {
+	#	potential = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+		modifier = {
+			job_quartermaster_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_urbanization_efficient_docks }
+		}
+		modifier = {
+			job_quartermaster_add = 2
+		}
+	}
+
+	prerequisites = {
+		"tech_planetary_defenses"
+	}
+
+	upgrades = {
+		"building_naval_2"
+	}
+
+	triggered_desc = {
+	#	trigger = {
+	#		exists = owner
+	#		owner = { is_gestalt = no }
+	#	}
+	#	text = job_quartermaster_effect_desc
+	}
+}
+
+building_naval_2 = {
+	base_buildtime = @b1_time
+	can_build = no
+	planetary_ftl_inhibitor = yes
+	position_priority = 100
+	icon = "building_illicit_research_labs"
+	category = army
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_ai = yes }
+		OR = {
+			AND = {
+				num_buildings = { type = building_fortress value > 1 }
+				free_building_slots = 0
+				owner = { used_naval_capacity_percent < 0.4	}
+			}
+			buildings_no_motes = yes
+		}
+	}
+
+	triggered_planet_modifier = {
+		#potential = {
+		#	exists = owner
+		#	owner = { is_gestalt = no }
+		#}
+		modifier = {
+			job_quartermaster_add = @b2_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_active_tradition = tr_urbanization_efficient_docks }
+		}
+		modifier = {
+			job_quartermaster_add = @b2_jobs
+		}
+	}
+
+
+	prerequisites = {
+		"tech_global_defense_grid"
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_quartermaster_effect_desc
+	}
+}
+
+building_mineral_capital = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	position_priority = 100
+	icon = "building_imperial_machine_capital"
+	category = resource
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	potential = {
+		buildings_simple_allow = yes
+		NOT = { owner = { has_country_flag = building_minerals_capital }}
+	}
+
+	prerequisites = {
+		"tech_resource_centralization"
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+
+	planet_modifier = {
+		planet_jobs_minerals_produces_mult = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { is_planet_class = pc_shattered_ring_habitable }
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_miner_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { is_planet_class = pc_shattered_ring_habitable }
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_acolyte_mine_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { is_planet_class = pc_shattered_ring_habitable }
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_mining_drone_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			is_planet_class = pc_shattered_ring_habitable
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_scrap_miner_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			is_planet_class = pc_shattered_ring_habitable
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_scrap_miner_drone_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_robot_empire = yes
+			}
+			NOR = {
+				is_planet_class = pc_habitat
+				is_planet_class = pc_machine
+				is_planet_class = pc_hive
+				is_planet_class = pc_city
+			}
+		}
+		modifier = {
+			district_mining_max = 4
+		}
+	}
+
+	on_queued = {
+		owner = { set_country_flag = building_minerals_capital } 
+	}
+	
+	on_unqueued = {
+		owner = { remove_country_flag = building_minerals_capital } #an action when unqueued
+	}
+	
+	on_built = {
+		owner = { set_country_flag = building_minerals_capital } #an action when built
+	}
+	
+	on_destroy = {
+		owner = { remove_country_flag = building_minerals_capital } #an action when destroyed
+	}
+}
+
+building_research_capital = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+
+	category = research
+	icon = "building_imperial_machine_capital"
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	potential = {
+		NOT = { has_modifier = resort_colony }
+		NOT = { has_modifier = slave_colony }
+		exists = owner
+		owner = { is_regular_empire = yes }
+		NOT = { owner = { has_country_flag = building_research_capital }}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+
+	planet_modifier = {
+		planet_researchers_produces_mult = 1
+		job_head_researcher_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_researcher_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_brain_drone_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_calculator_add = @b3_jobs
+		}
+	}
+
+	prerequisites = {
+		"tech_global_research_initiative"
+	}
+
+	triggered_desc = {
+		text = job_head_researcher_effect_desc
+	}
+
+	show_tech_unlock_if = {
+		is_regular_empire = yes
+	}
+
+	ai_resource_production = {
+		trigger = { always = yes }
+		physics_research = 6
+		society_research = 6
+		engineering_research = 6
+	}
+	ai_resource_production = {
+		trigger = {
+			planet_resource_compare = {
+				resource = physics_research
+				value >= 30
+			}
+		}
+		physics_research = 10
+		society_research = 10
+		engineering_research = 10
+	}
+
+	on_queued = {
+		owner = { set_country_flag = building_research_capital } 
+	}
+	
+	on_unqueued = {
+		owner = { remove_country_flag = building_research_capital } #an action when unqueued
+	}
+	
+	on_built = {
+		owner = { set_country_flag = building_research_capital } #an action when built
+	}
+	
+	on_destroy = {
+		owner = { remove_country_flag = building_research_capital } #an action when destroyed
+	}
+}
+
+building_credits_capital = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	position_priority = 100
+	icon = "building_imperial_machine_capital"
+	category = resource
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	potential = {
+		buildings_simple_allow = yes
+		NOT = { owner = { has_country_flag = building_credits_capital }}
+	}
+
+	prerequisites = {
+		"tech_resource_centralization"
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+	}
+
+	planet_modifier = {
+		planet_jobs_energy_produces_mult = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_technician_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_acolyte_generator_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_technician_drone_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_robot_empire = yes
+			}
+			NOR = {
+				is_planet_class = pc_habitat
+				is_planet_class = pc_machine
+				is_planet_class = pc_hive
+				is_planet_class = pc_city
+			}
+		}
+		modifier = {
+			district_generator_max = 4
+		}
+	}
+
+	on_queued = {
+		owner = { set_country_flag = building_credits_capital } 
+	}
+	
+	on_unqueued = {
+		owner = { remove_country_flag = building_credits_capital } 
+	}
+	
+	on_built = {
+		owner = { set_country_flag = building_credits_capital } 
+	}
+	
+	on_destroy = {
+		owner = { remove_country_flag = building_credits_capital } 
+	}
+}
+
+building_farm_capital = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1
+	position_priority = 100
+	icon = "building_imperial_machine_capital"
+	category = resource
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	potential = {
+		buildings_simple_allow = yes
+		NOT = { owner = { has_country_flag = building_farm_capital }}
+	}
+
+	prerequisites = {
+		"tech_resource_centralization"
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+
+	planet_modifier = {
+		planet_jobs_food_produces_mult = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_farmer_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_fallen_empire_spiritualist = yes }
+		}
+		modifier = {
+			job_fe_acolyte_farm_add = @b3_jobs
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_agri_drone_add = @b3_jobs
+		}
+	}
+
+	ai_resource_production = {
+		food = 6
+		trigger = {
+			always = yes
+		}
+	}
+	ai_resource_production = {
+		food = 10
+		trigger = {
+			planet_resource_compare = {
+				resource = food
+				value >= 32
+				type = produces
+			}
+		}
+	}
+
+	on_queued = {
+		owner = { set_country_flag = building_credits_capital } 
+	}
+	
+	on_unqueued = {
+		owner = { remove_country_flag = building_credits_capital } 
+	}
+	
+	on_built = {
+		owner = { set_country_flag = building_credits_capital } 
+	}
+	
+	on_destroy = {
+		owner = { remove_country_flag = building_credits_capital } 
+	}
+}

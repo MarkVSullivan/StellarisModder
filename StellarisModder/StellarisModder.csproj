@@ -90,7 +90,6 @@
     <Content Include="Modifications\HabitatImprovements\common\planet_classes\00_planet_classes.txt" />
     <Content Include="Modifications\BuildTall\common\pop_jobs\02_specialist_jobs.txt" />
     <Content Include="Modifications\BuildTall\common\pop_jobs\03_worker_jobs.txt" />
-    <Content Include="Modifications\BuildTall\common\resolutions\00_resolutions.txt" />
     <Content Include="Modifications\BetterBeginning\common\scripted_effects\01_start_of_game_effects.txt" />
     <Content Include="Modifications\BuildTall\common\tradition_categories\00_expansion.txt" />
     <Content Include="Modifications\BetterAquatic\common\traits\02_species_traits_basic_characteristics.txt" />

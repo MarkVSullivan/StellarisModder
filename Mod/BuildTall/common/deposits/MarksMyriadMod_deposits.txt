@@ -1,0 +1,31 @@
+d_urban_mining = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_fungal_caves
+
+	planet_modifier = {
+		district_mining_max = 6
+		planet_max_districts_add = 4
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_urban_energy = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_solar_array
+
+	planet_modifier = {
+		district_generator_max = 6
+		planet_max_districts_add = 4
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}

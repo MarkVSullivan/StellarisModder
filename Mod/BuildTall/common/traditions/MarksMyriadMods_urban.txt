@@ -25,7 +25,7 @@ tr_urbanization_civilian_architecture = {
 
 tr_urbanization_urban_populace = {
 	modifier = {
-		pop_housing_usage_mult = -0.15
+		pop_housing_usage_mult = -0.25
 	}
 
 	possible = {
@@ -39,7 +39,7 @@ tr_urbanization_urban_populace = {
 
 tr_urbanization_cultured_populace = {
 	modifier = {
-		pop_amenities_usage_mult = -0.15
+		pop_amenities_usage_mult = -0.25
 	}
 
 	possible = {
