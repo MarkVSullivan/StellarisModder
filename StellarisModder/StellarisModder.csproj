@@ -77,6 +77,7 @@
     <Content Include="Modifications\FasterMegastructures\common\megastructures\03_think_tank.txt" />
     <Content Include="Modifications\FasterMegastructures\common\megastructures\06_matter_decompressor.txt" />
     <Content Include="Modifications\FasterMegastructures\common\megastructures\11_mega_shipyard.txt" />
+    <Content Include="Modifications\HabitatAquaticsCompatibility\common\decisions\02_special_decisions.txt" />
     <Content Include="Modifications\HabitatImprovements\common\scripted_effects\01_start_of_game_effects.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\ascension_perks\00_ascension_perks.txt" />
     <Content Include="Modifications\RelicTweaks\common\artifact_actions\artifact_actions.txt" />

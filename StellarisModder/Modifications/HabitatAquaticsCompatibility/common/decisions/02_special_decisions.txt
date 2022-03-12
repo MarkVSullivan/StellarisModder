@@ -1,0 +1,17 @@
+# After initial expansion, habitats are now size 9 (not 6)
+@LINEREPLACE decision_upgrade_habitat>effect
+set_planet_size = 6
+@WITH
+set_planet_size = 9
+
+# After final expansion, habitats are now size 12 (not 8)
+@LINEREPLACE decision_upgrade_habitat_2>effect
+set_planet_size = 8
+@WITH
+set_planet_size = 12
+
+# Each time the hydrocentric player expands planetary sea, increase planet size by 3 (not 1)
+@LINEREPLACE decision_expand_planetary_sea>effect
+change_planet_size = 1
+@WITH
+change_planet_size = 3
