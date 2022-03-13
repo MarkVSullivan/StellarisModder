@@ -1,0 +1,6 @@
+﻿l_english:
+
+ job_soldier_desc:1 "Military professionals are needed to train a steady stream of new recruits for army operations."
+ job_soldier_effect_desc:0 "£job_soldier£ $job_soldier_plural$ spawn £defense_army£ §YDefense Armies§!"
+
+ ADD_NAVAL_CAPACITY_FROM_SOLDIERS:0 "Naval Capacity from Quartermaster Jobs: §G+2§!"

@@ -1,0 +1,21 @@
+ap_manifest_destiny = {
+	modifier = {
+		empire_size_colonies_mult = -1.00
+	}
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_manifest_destiny
+		}
+		NOT = {
+			has_ascension_perk = ap_imperial_prerogative
+		}
+		NOT = { has_authority = auth_corporate }
+		has_civic = civic_build_tall
+	}
+	ai_weight = {
+		factor = 15
+	}
+	on_enabled = {
+		run_ai_strategic_data = yes
+	}
+}

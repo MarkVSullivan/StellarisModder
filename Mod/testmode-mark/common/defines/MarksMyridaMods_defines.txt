@@ -1,0 +1,9 @@
+	NGameplay = {
+		TECH_COST_DEFAULT = 1.00
+		LOGISTIC_CEILING_DEFAULT = 1.0
+		GROWTH_SCALE_DEFAULT = 0.15
+
+		BASE_ENVOYS_REGULAR_EMPIRE			= 4			# The starting number of envoys for regular empires
+		ELECTION_COST						= 50	# Base cost of electing a candidate
+
+	}

@@ -1,0 +1,104 @@
+﻿l_english:
+
+ job_quartermaster:0 "Quartermaster"
+ job_quartermaster_plural:0 "Quartemasters"
+ mod_job_quartermaster_add:0 "$job_quartermaster$ Jobs"
+ job_quartermaster_desc:0 "Naval specialist who assist with organization of naval capacity in the empire."
+ job_quartermaster_effect_desc:0 "£job_soldier£ $job_quartermaster_plural$ increase £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!"
+
+ tech_planetary_infrastructure_3:0 "Dark Matter Infrastructure"
+ tech_planetary_infrastructure_3_desc:0 "Additional advances in metallurgy improve the infrastructure of our colonies."
+
+ tech_galactic_administration_2:0 "Advanced Galactic Administration"
+ tech_galactic_administration_2_desc:1 "The administrative needs of an empire spanning the galaxy are immense, but with some advances in administration, we will be ready."
+
+ building_naval_1:0 "Naval Coordination Center"
+ building_naval_1_desc:0 "The naval coordination center assist with coordinating naval ships and increases naval capacity."
+
+ building_naval_2:0 "Naval College"
+ building_naval_2_desc:0 "The naval college handles ship coordination in the sector, greatly increasing naval capacity."
+
+ building_mineral_capital:0 "Minerals Capital"
+ building_mineral_capital_desc:0 "Mineral production is doubled and more miner jobs are provided at your minerals capital, but only one can be built within your empire."
+
+ building_research_capital:0 "Research Capital"
+ building_research_capital_desc:0 "Research is doubled and more research jobs are provided at your research capital, but only one can be built within your empire."
+
+ building_credits_capital:0 "Energy Capital"
+ building_credits_capital_desc:0 "Energy production is doubled and more energy jobs are provided at your energy capital, but only one can be built within your empire."
+
+ building_farm_capital:0 "Farming Capital"
+ building_farm_capital_desc:0 "Food production is doubled and more farmer jobs are provided at your farmin capital, but only one can be built within your empire."
+
+ tech_advanced_cloning_1:0 "Advanced Cloning 1"
+ tech_advanced_cloning_1_desc:0 "Additional advances in cloning improves population growth on all your colonies"
+
+ tech_advanced_cloning_2:0 "Advanced Cloning 2"
+ tech_advanced_cloning_2_desc:0 "Additional advances in cloning improves population growth on all your colonies"
+
+ tech_advanced_cloning_3:0 "Advanced Cloning 3"
+ tech_advanced_cloning_3_desc:0 "Additional advances in cloning improves population growth on all your colonies"
+
+ tech_advanced_cloning_4:0 "Advanced Cloning 4"
+ tech_advanced_cloning_4_desc:0 "Additional advances in cloning improves population growth on all your colonies"
+
+ tech_advanced_cloning_5:0 "Advanced Cloning 5"
+ tech_advanced_cloning_5_desc:0 "Additional advances in cloning improves population growth on all your colonies"
+
+ tech_resource_centralization:0 "Resource Centralization"
+ tech_resource_centralization_desc:0 "Allows resource production to be centralized within your empire for a large one-planet bonus"
+
+ civic_build_tall:0 "Build Tall"
+ civic_build_tall_desc:2 "This empire prefers to build very populous colonies and have less colonies in general, and get bonuses to stability and amenities, while having a draconian penalty for too many systems."
+ civic_tooltip_build_tall_effects:3 "Empire gets bonuses for building tall"
+
+ ap_manifest_destiny:0 "Manifest Destiny"
+ ap_manifest_destiny_desc:0 "Although the empire still prefers to build tall, this is somewhat relaxed by a desire to spread to new frontiers, allowing your empire to control more colonies with less penalty."
+
+ tradition_urbanization:0 "Urbanization"
+ tradition_urbanization_desc:0 "We must build better and larger cities to please our urban citizens."
+ tradition_urbanization_machine_desc:0 "Growth projections indicate we will soon exceed the maximum storage capacity of our home systems. We must expand, or stagnate."
+ tradition_urbanization_hive_desc:0 "There are only two possible states for the hive: growth, or death."
+ tradition_urbanization_void_desc:0 "We must expand our civilization to new systems and habitats or risk eventual extinction."
+ tr_urbanization_adopt:0 "Urbanization Traditions"
+
+ tr_urbanization_civilian_architecture:0 "Civilian Architecture"
+ tr_urbanization_civilian_architecture_desc:1 "Consumer goods factories support twice as many $job_artisan_plural$"
+ tr_urbanization_civilian_architecture_delayed:0 "Advances in civilian architecture allow consumer goods factories to support twice as many artisan jobs, boosting consumer good output for your colonies."
+
+ tr_urbanization_vibrant_districts:0 "Vibrant Districts"
+ tr_urbanization_vibrant_districts_desc:3 "§Y$EMPIRE_SIZE$§! from §YDistricts§! is reduced by §G25%§!.\n§Y$EMPIRE_SIZE$§! from §YColonies§! is reduced by §G50%§!."
+ tr_urbanization_vibrant_districts_delayed:0 "Vibrant districts reduces the perceived size of districts, linking colonies together in a seamless say. This reduces overall empire size."
+
+ tr_urbanization_urban_populace:0 "Urban Populace"
+ tr_urbanization_urban_populace_desc:5 "Population requires 15% less housing."
+ tr_urbanization_urban_populace_delayed:0 "Your population is used to closer living in packed cities, and have adapted to require less personal space and less housing."
+
+ tr_urbanization_cultured_populace:0 "Cultured Populace"
+ tr_urbanization_cultured_populace_desc:4 "Population requires 15% less amenities."
+ tr_urbanization_cultured_populace_delayed:0 "Your cities are increasingly cultured, and as a result the populace requires fewer amenities to be happy."
+
+ tr_urbanization_efficient_docks:0 "Efficient Docks"
+ tr_urbanization_efficient_docks_desc:7 "Naval capacity buildings support twice as many quartermaster jobs"
+ tr_urbanization_efficient_docks_delayed:0 "Technological advances improve naval capacity by allowing more quartermaster jobs in each naval capacity building."
+
+ tr_urbanization_finish:0 "Urbanization Traditions Finished"
+ tr_urbanization_finish_desc:0 "Allows you to turn one of your planets into an Ecumenopolis, or a city-planet.  In addition, you can expand either the mineral or energy capabilities of each of your planets through a planetary decision."
+ tr_urbanization_finish_machine:0 "Urbanization Traditions Finished"
+
+ decision_urbanization_energy_districts:0 "Expand Energy Capacity"
+ decision_urbanization_energy_districts_desc:0 "By miniaturization of energy districts, [Root.GetName] can support additional energy districts."
+
+ decision_urbanization_mineral_districts:0 "Expand Mineral Capacity"
+ decision_urbanization_mineral_districts_desc:0 "Expanding the subterranean network under [Root.GetName] allows the colony to support additional mineral districts."
+
+ d_urban_mining:0 "Urban Mining"
+ d_urban_mining_desc:0 "Unused underground transportation tunnels have been converted to mining stations, increasing the amount of mining districts this colony can support"
+
+ d_urban_energy:0 "Urban Energy"
+ d_urban_mining_desc:0 "Increases in energy production and miniaturization allow your colony to support more energy districts."
+
+ decision_arcology_project_urban:1 "Build Ecumenopolis"
+ decision_arcology_project_urban_effects:0 "$decision_arcology_project_effects$"
+ decision_arcology_project_urban_effects_short:0 "$decision_arcology_project_effects_short$"
+ decision_arcology_project_urban_desc:0 "This sprawling urban planet could be turned into a gigantic city, a glorious ecumenopolis."
