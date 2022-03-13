@@ -9,7 +9,6 @@ tr_urbanization_adopt = {
 tr_urbanization_finish = {
 	modifier = {
 		planet_non_artificial_max_districts_add = 5
-		megastructures_habitat_cost_mult = -0.20
 		ascension_perks_add = 1
 	}
 }

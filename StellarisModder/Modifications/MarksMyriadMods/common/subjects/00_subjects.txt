@@ -1,0 +1,6 @@
+﻿# Vassals pay mineral and energy tax, but less than tributaries
+@ADD vassal
+	subject_tax_rate = {
+		minerals = 0.15
+		energy = 0.15
+	}

@@ -63,7 +63,7 @@
  tr_urbanization_adopt:0 "Urbanization Traditions"
 
  tr_urbanization_civilian_architecture:0 "Civilian Architecture"
- tr_urbanization_civilian_architecture_desc:1 "Consumer goods factories support twice as many $job_artisan_plural$"
+ tr_urbanization_civilian_architecture_desc:1 "§YConsumer goods factories§! support §Gtwice§! as many $job_artisan_plural$"
  tr_urbanization_civilian_architecture_delayed:0 "Advances in civilian architecture allow consumer goods factories to support twice as many artisan jobs, boosting consumer good output for your colonies."
 
  tr_urbanization_vibrant_districts:0 "Vibrant Districts"
@@ -71,19 +71,19 @@
  tr_urbanization_vibrant_districts_delayed:0 "Vibrant districts reduces the perceived size of districts, linking colonies together in a seamless say. This reduces overall empire size."
 
  tr_urbanization_urban_populace:0 "Urban Populace"
- tr_urbanization_urban_populace_desc:5 "Population requires 15% less housing."
+ tr_urbanization_urban_populace_desc:5 "Population requires §G15%§! less §Yhousing§!."
  tr_urbanization_urban_populace_delayed:0 "Your population is used to closer living in packed cities, and have adapted to require less personal space and less housing."
 
  tr_urbanization_cultured_populace:0 "Cultured Populace"
- tr_urbanization_cultured_populace_desc:4 "Population requires 15% less amenities."
+ tr_urbanization_cultured_populace_desc:4 "Population requires §G15%§! less §Yamenities§!."
  tr_urbanization_cultured_populace_delayed:0 "Your cities are increasingly cultured, and as a result the populace requires fewer amenities to be happy."
 
  tr_urbanization_efficient_docks:0 "Efficient Docks"
- tr_urbanization_efficient_docks_desc:7 "Naval capacity buildings support twice as many quartermaster jobs"
+ tr_urbanization_efficient_docks_desc:7 "§YNaval capacity buildings§! support §Gtwice§! as many quartermaster jobs"
  tr_urbanization_efficient_docks_delayed:0 "Technological advances improve naval capacity by allowing more quartermaster jobs in each naval capacity building."
 
  tr_urbanization_finish:0 "Urbanization Traditions Finished"
- tr_urbanization_finish_desc:0 "Allows you to turn one of your planets into an Ecumenopolis, or a city-planet.  In addition, you can expand either the mineral or energy capabilities of each of your planets through a planetary decision."
+ tr_urbanization_finish_desc:0 "Every planet gains the ability to build §Gfive§! more §Ydistricts§!.\nUnlocks the §YBuild Ecumenopolis§! decision to turn one of our planets into an §YEcumenopolis§!, or a city-planet.\nUnlocks the §YExpand Mineral Capacity§! and §YExpand Energy Capacity§! planetary decision to expand either the §Ymineral§! or §Yenergy§! capabilities of each of our planets.\nAscension Perks Unlocked: §G+1§!"
  tr_urbanization_finish_machine:0 "Urbanization Traditions Finished"
 
  decision_urbanization_energy_districts:0 "Expand Energy Capacity"
