@@ -4,3 +4,16 @@
 		minerals = 0.15
 		energy = 0.15
 	}
+@LINEREPLACE vassal
+	can_expand = no
+@WITH
+	can_expand = yes
+@ADD protectorate
+	subject_tax_rate = {
+		minerals = 0.15
+		energy = 0.15
+	}
+@LINEREPLACE protectorate
+	can_expand = no
+@WITH
+	can_expand = yes

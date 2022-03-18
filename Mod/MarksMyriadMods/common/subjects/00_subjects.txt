@@ -18,7 +18,7 @@
 @protectorate_tech_threshold = 0.4
 @protectorate_tech_switch = 0.5
 vassal = {
-	can_expand = no
+	can_expand = yes
 	can_be_integrated = yes
 	research_agreement = yes
 	research_sharing = yes	# for tech sharing modifier
@@ -28,11 +28,6 @@ vassal = {
 	intel_from_being_subject = 40
 	intel_from_being_overlord = 50
 	diplo_threat = 1.5
-	subject_tax_rate = {
-		minerals = 0.25
-		energy = 0.25
-	}
-	
 	potential = {
 		from = { is_country_type = default }
 		has_been_declared_crisis = no
@@ -159,7 +154,7 @@ vassal = {
 }
 
 protectorate = {
-	can_expand = no
+	can_expand = yes
 	can_be_integrated = yes
 	research_agreement = no
 	joins_overlord_wars = no
@@ -174,6 +169,7 @@ protectorate = {
 			influence = 0.25
 		}
 	}
+	
 	diplo_threat = 0.75
 	potential = {
 		from = { is_country_type = default }
@@ -183,6 +179,7 @@ protectorate = {
 			ratio < @protectorate_tech_threshold
 		}
 	}
+	
 	effect = {
 		if = {
 			limit = {
@@ -291,11 +288,18 @@ protectorate = {
 			break = yes
 		}
 	}
+	
 	become_vassal = {
 		tech_unlocked_ratio = {
 			who = from
 			ratio > @protectorate_tech_switch
 		}
 	}
+	
+	subject_tax_rate = {
+		minerals = 0.15
+		energy = 0.15
+	}
+	
 }
 
