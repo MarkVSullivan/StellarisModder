@@ -2190,6 +2190,10 @@ decision_expand_planetary_sea = {
 		}
 	}
 	
+	ai_weight = {
+		weight = 100
+	}
+	
 	abort_effect = {
 		owner = {
 			random_owned_starbase = {

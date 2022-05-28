@@ -12,11 +12,11 @@
 #	uses_modifiers: should modifiers be generated for this archetype at all?
 #}
 @robot_trait_points = 0
-@robot_max_traits = 8
+@robot_max_traits = 6
 @machine_trait_points = 1
-@machine_max_traits = 10
+@machine_max_traits = 8
 @species_trait_points = 2
-@species_max_traits = 10
+@species_max_traits = 8
 BIOLOGICAL = {
 	species_trait_points = @species_trait_points
 	species_max_traits = @species_max_traits

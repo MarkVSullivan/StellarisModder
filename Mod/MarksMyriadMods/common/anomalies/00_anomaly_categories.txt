@@ -301,6 +301,7 @@ debris_gasgiant_category = {
 				owner = {
 					NOR = {
 						species_portrait = human
+						species_portrait = human_legacy
 						has_country_flag = human_1
 						has_country_flag = human_2
 					}
@@ -603,11 +604,7 @@ sol_wasteland_category = {
 	desc = "sol_wasteland_category_desc"
 	picture = GFX_evt_city_ruins
 	level = 1
-	spawn_chance = {
-		modifier = {
-			factor = 0
-		}
-	}
+	#Spawn set via initialisers
 	on_success = galactic_features.104
 }
 
@@ -762,7 +759,7 @@ fungal_emitters_category = {
 
 lost_soul_cat = {
 	desc = "lost_soul_cat_desc"
-	picture = GFX_star_neutron
+	picture = GFX_evt_star_neutron
 	level = 2
 	spawn_chance = {
 		modifier = {
@@ -773,9 +770,33 @@ lost_soul_cat = {
 	on_success = anomaly.6786
 }
 
+on_solar_sails_cat = {
+	desc = "on_solar_sails_cat_desc"
+	picture = GFX_evt_star_neutron
+	level = 2
+	max_once_global = yes
+	spawn_chance = {
+		modifier = {
+			add = 0.1
+			from.leader = {
+				species = {
+					NOT = { has_trait = trait_aquatic }
+				}
+			}
+		}
+		modifier = {
+			add = 0.3
+			from.leader = {
+				species = { has_trait = trait_aquatic }
+			}
+		}
+	}
+	on_success = anomaly.7020
+}
+
 on_crashed_ship_cat = {
 	desc = "on_crashed_ship_desc"
-	picture = GFX_star_neutron
+	picture = GFX_evt_physics_cache
 	level = 2
 	spawn_chance = {
 		modifier = {
