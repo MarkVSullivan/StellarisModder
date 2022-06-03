@@ -1,0 +1,5 @@
+﻿# Aid Agency is better
+@LINEREPLACE holding_aid_agency
+monthly_loyalty = 0.5
+@WITH
+monthly_loyalty = 1.5

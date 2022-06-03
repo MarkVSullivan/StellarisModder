@@ -106,6 +106,7 @@
     <Content Include="Modifications\MarksMyriadMods\common\buildings\02_government_buildings.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\buildings\04_manufacturing_buildings.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\buildings\10_deposit_buildings.txt" />
+    <Content Include="Modifications\MarksMyriadMods\common\buildings\15_overlord_holdings.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\decisions\02_special_decisions.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\districts\03_habitat_districts.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\edicts\02_ambitions.txt" />
@@ -113,6 +114,7 @@
     <Content Include="Modifications\MarksMyriadMods\common\governments\civics\00_civics.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\01_dyson_sphere.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\03_think_tank.txt" />
+    <Content Include="Modifications\MarksMyriadMods\common\megastructures\05_gateways.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\06_matter_decompressor.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\11_mega_shipyard.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\habitats.txt" />

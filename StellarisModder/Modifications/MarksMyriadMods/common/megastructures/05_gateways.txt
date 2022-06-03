@@ -1,0 +1,5 @@
+﻿# Allow multiple gateways to be built at the same time
+@LINEREPLACE
+construction_blocks_and_blocked_by = self_type
+@WITH
+construction_blocks_and_blocked_by = none
