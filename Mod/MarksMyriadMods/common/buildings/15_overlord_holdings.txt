@@ -172,14 +172,14 @@ holding_satellite_campus = {
 			exists = planet.owner
 			planet.owner = { is_gestalt = no }
 		}
-		job_overlord_academic_add = 2
+		job_overlord_academic_add = 4
 	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = planet.owner
 			planet.owner = { is_gestalt = yes }
 		}
-		job_overlord_academic_drone_add = 2
+		job_overlord_academic_drone_add = 4
 	}
 	resources = {
 		category = planet_holdings
@@ -264,14 +264,14 @@ holding_aid_agency = {
 			exists = planet.owner
 			planet.owner = { is_gestalt = no }
 		}
-		job_aid_worker_add = 2
+		job_aid_worker_add = 4
 	}
 	triggered_planet_modifier = {
 		potential = {
 			exists = planet.owner
 			planet.owner = { is_gestalt = yes }
 		}
-		job_aid_worker_drone_add = 2
+		job_aid_worker_drone_add = 4
 	}
 	planet_modifier = {
 		monthly_loyalty = 1.5

@@ -1,0 +1,31 @@
+﻿# Overlord academics are better
+@REPLACE overlord_academic>resources
+	resources = {
+		category = planet_overlord_academics
+		produces = {
+			physics_research = 2
+			engineering_research = 2
+			society_research = 2
+		}
+		upkeep = {
+			consumer_goods = 1
+		}
+	}
+@REPLACE overlord_academic>overlord_resources
+	overlord_resources = {
+		category = planet_overlord_academics
+		produces = {
+			physics_research = 5
+			engineering_research = 5
+			society_research = 5
+		}
+	}
+# Overlord propagandists provide twice as much influence (still less than tooltip)
+@LINEREPLACE overlord_propagandist
+influence = 0.15
+@WITH
+influence = 0.30
+@LINEREPLACE overlord_propagandist_drone
+influence = 0.15
+@WITH
+influence = 0.30

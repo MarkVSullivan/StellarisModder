@@ -1,5 +1,22 @@
-﻿# Aid Agency is better
+﻿# Aid Agency is better (more loyalty and more aid workers)
 @LINEREPLACE holding_aid_agency
 monthly_loyalty = 0.5
 @WITH
 monthly_loyalty = 1.5
+@LINEREPLACE holding_aid_agency
+job_aid_worker_add = 2
+@WITH
+job_aid_worker_add = 4
+@LINEREPLACE holding_aid_agency
+job_aid_worker_drone_add = 2
+@WITH
+job_aid_worker_drone_add = 4
+# Satellite campus has more academic jobs
+@LINEREPLACE holding_satellite_campus
+job_overlord_academic_add = 2
+@WITH
+job_overlord_academic_add = 4
+@LINEREPLACE holding_satellite_campus
+job_overlord_academic_drone_add = 2
+@WITH
+job_overlord_academic_drone_add = 4
