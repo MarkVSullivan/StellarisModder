@@ -34,24 +34,14 @@ give_starting_resources_effect = {
 		}
 		owner = {
 			add_resource = {
-				minerals = 2500
-				energy = 5000
-				food = 2400
-				alloys = 2500
-				consumer_goods = 5000
-				influence = 600
-				unity = 6000
+
 				exotic_gases = 5000
 				rare_crystals = 5000
 				volatile_motes = 5000
-				minor_artifacts = 150
+				minor_artifacts = 250
 			}
 			add_relic = r_war_forge
 			add_relic = r_omnicodex
-			give_technology = {
-				tech = tech_robotic_workers
-				message = no
-			}
 			give_technology = {
 				tech = tech_psionic_theory
 				message = no
@@ -61,81 +51,12 @@ give_starting_resources_effect = {
 				message = no
 			}
 			give_technology = {
-				tech = tech_habitat_1
-				message = no
-			}
-			give_technology = {
 				tech = tech_gateway_activation
 				message = no
 			}
 			give_technology = {
 				tech = tech_gateway_construction
 				message = no
-			}
-			add_research_option = tech_habitat_2
-			create_leader = {
-				class = scientist
-				species = owner_main_species
-				skill = 3
-				leader_age_min = 20
-				leader_age_max = 25
-				traits = {
-					trait = "leader_trait_towel"
-					trait = "leader_trait_inspired_archaeologist"
-					trait = "leader_trait_carefree"
-					trait = "leader_trait_meticulous"
-				}
-			}
-			last_created_leader = {
-				add_experience = 500
-			}
-			create_leader = {
-				class = scientist
-				species = owner_main_species
-				skill = 3
-				leader_age_min = 20
-				leader_age_max = 25
-				traits = {
-					trait = "leader_trait_towel"
-					trait = "leader_trait_inspired_archaeologist"
-					trait = "leader_trait_carefree"
-					trait = "leader_trait_meticulous"
-				}
-			}
-			last_created_leader = {
-				add_experience = 500
-			}
-			create_leader = {
-				class = scientist
-				species = owner_main_species
-				skill = 3
-				leader_age_min = 20
-				leader_age_max = 25
-				traits = {
-					trait = "leader_trait_towel"
-					trait = "leader_trait_inspired_archaeologist"
-					trait = "leader_trait_carefree"
-					trait = "leader_trait_meticulous"
-				}
-			}
-			last_created_leader = {
-				add_experience = 500
-			}
-			create_leader = {
-				class = scientist
-				species = owner_main_species
-				skill = 3
-				leader_age_min = 20
-				leader_age_max = 25
-				traits = {
-					trait = "leader_trait_towel"
-					trait = "leader_trait_inspired_archaeologist"
-					trait = "leader_trait_carefree"
-					trait = "leader_trait_meticulous"
-				}
-			}
-			last_created_leader = {
-				add_experience = 500
 			}
 			create_leader = {
 				class = scientist
