@@ -2702,7 +2702,8 @@ give_starting_resources_effect = {
 					leader_class = scientist
 				}
 				add_trait = leader_trait_spark_of_genius
-				add_trait = leader_trait_resilient
+				add_trait = leader_trait_eager
+				add_trait = leader_trait_scientist_chosen
 			}
 		}
 		owner = {
@@ -2757,6 +2758,7 @@ give_starting_resources_effect = {
 					trait = "leader_trait_inspired_archaeologist"
 					trait = "leader_trait_carefree"
 					trait = "leader_trait_meticulous"
+					trait = "leader_trait_eager"
 				}
 			}
 			last_created_leader = {
@@ -2773,6 +2775,7 @@ give_starting_resources_effect = {
 					trait = "leader_trait_inspired_archaeologist"
 					trait = "leader_trait_carefree"
 					trait = "leader_trait_meticulous"
+					trait = "leader_trait_eager"
 				}
 			}
 			last_created_leader = {
@@ -2789,6 +2792,7 @@ give_starting_resources_effect = {
 					trait = "leader_trait_inspired_archaeologist"
 					trait = "leader_trait_carefree"
 					trait = "leader_trait_meticulous"
+					trait = "leader_trait_eager"
 				}
 			}
 			last_created_leader = {
@@ -2805,6 +2809,7 @@ give_starting_resources_effect = {
 					trait = "leader_trait_inspired_archaeologist"
 					trait = "leader_trait_carefree"
 					trait = "leader_trait_meticulous"
+					trait = "leader_trait_eager"
 				}
 			}
 			last_created_leader = {
@@ -2821,6 +2826,7 @@ give_starting_resources_effect = {
 					trait = "leader_trait_inspired_archaeologist"
 					trait = "leader_trait_carefree"
 					trait = "leader_trait_meticulous"
+					trait = "leader_trait_eager"
 				}
 			}
 			last_created_leader = {
@@ -2837,6 +2843,7 @@ give_starting_resources_effect = {
 					trait = "leader_trait_inspired_archaeologist"
 					trait = "leader_trait_carefree"
 					trait = "leader_trait_meticulous"
+					trait = "leader_trait_eager"
 				}
 			}
 			last_created_leader = {
@@ -2853,6 +2860,7 @@ give_starting_resources_effect = {
 					trait = "leader_trait_inspired_archaeologist"
 					trait = "leader_trait_carefree"
 					trait = "leader_trait_meticulous"
+					trait = "leader_trait_eager"
 				}
 			}
 			last_created_leader = {
@@ -2870,6 +2878,25 @@ give_starting_resources_effect = {
 					trait = "leader_trait_cautious"
 					trait = "leader_trait_engineer"
 					trait = "leader_trait_resilient"
+					trait = "leader_trait_eager"
+				}
+			}
+			last_created_leader = {
+				add_experience = 500
+			}
+			create_leader = {
+				class = admiral
+				species = owner_main_species
+				skill = 3
+				leader_age_min = 20
+				leader_age_max = 25
+				traits = {
+					trait = "leader_trait_resilient"
+					trait = "leader_trait_aggressive"
+					trait = "leader_trait_cautious"
+					trait = "leader_trait_engineer"
+					trait = "leader_trait_resilient"
+					trait = "leader_trait_eager"
 				}
 			}
 			last_created_leader = {
@@ -2885,6 +2912,7 @@ give_starting_resources_effect = {
 					trait = "leader_trait_resilient"
 					trait = "leader_trait_army_logistician"
 					trait = "leader_trait_general_chosen"
+					trait = "leader_trait_eager"
 				}
 			}
 			last_created_leader = {
@@ -2901,6 +2929,7 @@ give_starting_resources_effect = {
 					trait = "leader_trait_retired_fleet_officer"
 					trait = "leader_trait_intellectual"
 					trait = "leader_trait_righteous"
+					trait = "leader_trait_eager"
 				}
 			}
 			last_created_leader = {

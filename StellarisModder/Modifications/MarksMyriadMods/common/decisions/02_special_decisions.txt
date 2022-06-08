@@ -15,3 +15,9 @@ set_planet_size = 12
 change_planet_size = 1
 @WITH
 change_planet_size = 3
+
+# A repaired shattered ring should be size 15, not 10
+@LINEREPLACE decision_shattered_ring_project>effect
+set_planet_size = 10
+@WITH
+set_planet_size = 15

@@ -1994,14 +1994,17 @@ decision_shattered_ring_project = {
 			alloys = 10000
 		}
 	}
+	
 	potential = {
 		is_planet_class = pc_shattered_ring_habitable
 		exists = owner
 	}
+	
 	allow = {
 		num_uncleared_blockers < 1
 		owner = { has_technology = tech_mega_engineering }
 	}
+	
 	effect = {
 		# Make ringworld
 		custom_tooltip = decision_shattered_ring_project_effects
@@ -2067,12 +2070,14 @@ decision_shattered_ring_project = {
 				VARIABLE = num_industrial_districts
 			}
 			# Finally, bring it in line with ringworld sizes
-			set_planet_size = 10
+			set_planet_size = 15
 		}
 	}
+	
 	ai_weight = {
 		weight = 100
 	}
+	
 }
 
 @expand_planetary_sea_length = 720
