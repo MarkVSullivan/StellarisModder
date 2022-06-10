@@ -11,3 +11,7 @@
 @species_max_traits = 5
 @WITH
 @species_max_traits = 8
+@LINEREPLACE
+@machine_trait_points = 1
+@WITH
+@machine_trait_points = 2

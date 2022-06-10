@@ -7,38 +7,39 @@ pop_environment_tolerance = 0.50
 
 # All rings should be size 15, not 10
 @LINEREPLACE pc_ringworld_habitable
-set_planet_size = 10
+planet_size = 10
 @WITH
-set_planet_size = 15
+planet_size = 15
 
 @LINEREPLACE pc_ringworld_habitable_damaged
-set_planet_size = 10
+planet_size = 10
 @WITH
-set_planet_size = 15
+planet_size = 15
 
 @LINEREPLACE pc_ringworld_tech
-set_planet_size = 10
+planet_size = 10
 @WITH
-set_planet_size = 15
+planet_size = 15
 
 @LINEREPLACE pc_ringworld_tech_damaged
-set_planet_size = 10
+planet_size = 10
 @WITH
-set_planet_size = 15
+planet_size = 15
 
 @LINEREPLACE pc_ringworld_seam
-set_planet_size = 10
+planet_size = 10
 @WITH
-set_planet_size = 15
+planet_size = 15
 
 @LINEREPLACE pc_ringworld_seam_damaged
-set_planet_size = 10
+planet_size = 10
 @WITH
-set_planet_size = 15
+planet_size = 15
 
 @LINEREPLACE pc_cybrex
-set_planet_size = 10
+planet_size = 10
 @WITH
-set_planet_size = 15
+planet_size = 15
+
 
 

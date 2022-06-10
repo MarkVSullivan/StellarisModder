@@ -2706,9 +2706,21 @@ give_starting_resources_effect = {
 				add_trait = leader_trait_scientist_chosen
 			}
 		}
+		every_owned_leader = {
+			if = {
+				limit = {
+					leader_class = scientist
+					research_leader = {
+						area = engineering
+					}
+				}
+				add_trait = leader_trait_expertise_industry
+			}				
+		}
 		owner = {
 			add_resource = {
 				alloys = 1000
+				influence = 250
 				exotic_gases = 5000
 				rare_crystals = 5000
 				volatile_motes = 5000
