@@ -1,0 +1,30 @@
+tech_federations = {
+	cost = 100000
+	area = society
+	tier = 5
+	category = { statecraft }
+	prerequisites = { "tech_xeno_relations" }
+	weight = @tier5weight2
+
+	weight_modifier = {
+		factor = 4
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}

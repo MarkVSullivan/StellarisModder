@@ -118,6 +118,7 @@
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\05_gateways.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\06_matter_decompressor.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\11_mega_shipyard.txt" />
+    <Content Include="Modifications\MarksMyriadMods\common\megastructures\14_hyper_relay.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\megastructures\habitats.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\planet_classes\00_planet_classes.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\pop_jobs\02_specialist_jobs.txt" />

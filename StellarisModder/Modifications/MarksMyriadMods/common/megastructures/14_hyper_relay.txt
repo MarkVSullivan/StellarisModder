@@ -1,0 +1,13 @@
+﻿# Hyper relays are cheaper to build and maintain
+@LINEREPLACE
+alloys = 500
+@WITH
+alloys = 150
+@LINEREPLACE
+rare_crystals = 100
+@WITH
+rare_crystals = 20
+@LINEREPLACE
+energy = 2
+@WITH
+energy = 1

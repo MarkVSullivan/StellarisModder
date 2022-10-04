@@ -627,18 +627,18 @@ building_farm_capital = {
 	}
 
 	on_queued = {
-		owner = { set_country_flag = building_credits_capital } 
+		owner = { set_country_flag = building_farm_capital } 
 	}
 	
 	on_unqueued = {
-		owner = { remove_country_flag = building_credits_capital } 
+		owner = { remove_country_flag = building_farm_capital } 
 	}
 	
 	on_built = {
-		owner = { set_country_flag = building_credits_capital } 
+		owner = { set_country_flag = building_farm_capital } 
 	}
 	
 	on_destroy = {
-		owner = { remove_country_flag = building_credits_capital } 
+		owner = { remove_country_flag = building_farm_capital } 
 	}
 }
