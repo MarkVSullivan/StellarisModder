@@ -217,8 +217,25 @@ building_mineral_capital = {
 	}
 
 	potential = {
-		buildings_simple_allow = yes
+
+		NOT = { has_modifier = resort_colony }
+
 		NOT = { owner = { has_country_flag = building_minerals_capital }}
+
+		NOR = { # Ringworlds don't have mines
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_cybrex
+		}
+		OR = { # Habitats only have mines if they're built on an appropriate deposit
+			NOT = { is_planet_class = pc_habitat }
+			has_planet_flag = mining_habitat
+		}
+		OR = {
+			owner = {
+				is_ai = no
+			}
+			has_any_mining_district = yes
+		}
 	}
 
 	prerequisites = {
@@ -344,11 +361,32 @@ building_research_capital = {
 	}
 
 	potential = {
+		exists = owner
+		NOT = { owner = { has_country_flag = building_research_capital }}
 		NOT = { has_modifier = resort_colony }
 		NOT = { has_modifier = slave_colony }
-		exists = owner
-		owner = { is_regular_empire = yes }
-		NOT = { owner = { has_country_flag = building_research_capital }}
+		OR = {
+			NOT = { is_planet_class = pc_habitat }
+			AND = {
+				exists = owner
+				owner = { is_gestalt = yes }
+			}
+			has_planet_flag = research_habitat
+		}
+		OR = {
+			owner = {
+				is_ai = no
+			}
+			OR = {
+				has_district = district_hab_science
+				has_district = district_rw_science
+				has_building = building_research_lab_1
+				has_building = building_research_lab_2
+				has_building = building_research_lab_3
+				has_building = building_institute
+				has_building = building_supercomputer
+			}
+		}
 	}
 
 	resources = {
@@ -455,8 +493,22 @@ building_credits_capital = {
 	}
 
 	potential = {
-		buildings_simple_allow = yes
 		NOT = { owner = { has_country_flag = building_credits_capital }}
+		NOT = { has_modifier = resort_colony }
+		OR = {
+			NOT = { is_planet_class = pc_habitat }
+			AND = {
+				exists = owner
+				owner = { is_gestalt = yes }
+			}
+			has_planet_flag = energy_habitat
+		}
+		OR = {
+			owner = {
+				is_ai = no
+			}
+			has_any_generator_district_or_building = yes
+		}
 	}
 
 	prerequisites = {
@@ -554,8 +606,19 @@ building_farm_capital = {
 	}
 
 	potential = {
-		buildings_simple_allow = yes
+		exists = owner
 		NOT = { owner = { has_country_flag = building_farm_capital }}
+		NOR = {
+			is_planet_class = pc_machine
+			has_modifier = resort_colony
+		}
+
+		OR = {
+			owner = {
+				is_ai = no
+			}
+			has_any_farming_district_or_buildings = yes
+		}
 	}
 
 	prerequisites = {
