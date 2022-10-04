@@ -258,6 +258,12 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_ap_detox"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_detox.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
 		name = "GFX_ap_manifest_destiny"
 		texturefile = "gfx/interface/icons/ascension_perks/ap_manifest_destiny.dds"
 		alwaystransparent = yes
