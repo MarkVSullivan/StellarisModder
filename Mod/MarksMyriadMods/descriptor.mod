@@ -1,7 +1,7 @@
-version="1.1.1"
+version="3.5.0"
 tags={
 	"Overhaul"
 }
 name="Mark's Myriad Mods"
-supported_version="3.4.*"
+supported_version="3.5.*"
 remote_file_id="2778092655"
