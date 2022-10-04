@@ -1,3 +1,4 @@
+@partial
 # Make void borne ascension perk better to make up for reduced habitat habitability
 @REPLACE ap_voidborn>modifier
 	modifier = {

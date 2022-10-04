@@ -1,4 +1,5 @@
-﻿# Soldiers no longer provide naval capacity and one less army
+﻿@partial
+# Soldiers no longer provide naval capacity and one less army
 @REPLACE soldier
 soldier = {
 	category = worker

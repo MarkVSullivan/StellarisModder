@@ -1,4 +1,5 @@
-﻿# Allow emperor to still wage war (since I can't bar empires from being in the empire)
+﻿@partial
+# Allow emperor to still wage war (since I can't bar empires from being in the empire)
 @REPLACE wg_conquest>potential
 	potential = {
 		has_total_war_cb = no

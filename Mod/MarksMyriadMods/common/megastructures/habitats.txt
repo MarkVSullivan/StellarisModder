@@ -1,4 +1,3 @@
-# see README.txt for example
 habitat_0 = {
 	entity = ""
 	construction_entity = "habitat_phase_01_entity"

@@ -1,3 +1,4 @@
+@partial
 # Make dyson sphere upgrades take half as long to build
 @LINEREPLACE
 build_time = 3600

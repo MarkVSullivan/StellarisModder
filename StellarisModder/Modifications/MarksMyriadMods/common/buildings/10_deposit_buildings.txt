@@ -1,4 +1,5 @@
-﻿# Deposit buildings (mote traps, gas extractors, and crystal mines) have two jobs, rather than one
+﻿@partial
+# Deposit buildings (mote traps, gas extractors, and crystal mines) have two jobs, rather than one
 @LINEREPLACE building_mote_harvesters
 job_mote_harvester_add = 1
 @WITH

@@ -1,4 +1,5 @@
-﻿# Job output increase in hegemonies applies to president as well
+﻿@partial
+# Job output increase in hegemonies applies to president as well
 @REPLACE job_output_1>leader_modifier
 	leader_modifier = { }
 @REPLACE job_output_2>leader_modifier

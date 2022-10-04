@@ -1,4 +1,5 @@
-﻿# Add more envoys with techs
+﻿@partial
+# Add more envoys with techs
 @LINEREPLACE tech_autonomous_agents
 envoys_add = 1
 @WITH

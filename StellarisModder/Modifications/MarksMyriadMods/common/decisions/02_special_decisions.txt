@@ -1,3 +1,4 @@
+@partial
 # After initial expansion, habitats are now size 9 (not 6)
 @LINEREPLACE decision_upgrade_habitat>effect
 set_planet_size = 6

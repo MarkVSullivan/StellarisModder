@@ -1,4 +1,5 @@
-﻿# Aid Agency is better (more loyalty and more aid workers)
+﻿@partial
+# Aid Agency is better (more loyalty and more aid workers)
 @LINEREPLACE holding_aid_agency
 monthly_loyalty = 0.5
 @WITH

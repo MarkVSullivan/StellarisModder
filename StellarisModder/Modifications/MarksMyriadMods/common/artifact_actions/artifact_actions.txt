@@ -1,3 +1,4 @@
+@partial
 # Using minor artifacts for precursor clue is cheaper and has shorter cooldown
 @LINEREPLACE artifact_precursor_clue
 minor_artifacts = 25

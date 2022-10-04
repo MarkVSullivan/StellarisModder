@@ -1,3 +1,4 @@
+@partial
 # Add knight-errand and serf to the noble estates
 @REPLACE building_noble_estates>planet_modifier
 	planet_modifier = {

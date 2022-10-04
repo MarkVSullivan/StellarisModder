@@ -1,4 +1,5 @@
-﻿# Overlord academics are better
+﻿@partial
+# Overlord academics are better
 @REPLACE overlord_academic>resources
 	resources = {
 		category = planet_overlord_academics

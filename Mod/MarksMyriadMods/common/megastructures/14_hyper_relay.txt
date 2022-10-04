@@ -121,21 +121,6 @@ hyper_relay = {
 	}
 }
 
-# Ruined Hyper Relay
-hyper_relay_ruined = {
-	entity = "hyper_relay_01_destroyed_entity"
-	portrait = "GFX_megastructure_construction_background"
-	place_entity_on_planet_plane = no
-	build_outside_gravity_well = yes
-	# not a valid bypass. bypass_type = relay_bypass
-	show_galactic_map_icon = no
-	construction_blocks_and_blocked_by = self_type
-	potential = {
-		always = no
-	}
-}
-
-# Restored Hyper Relay
 hyper_relay_restored = {
 	entity = "hyper_relay_entity"
 	construction_entity = "hyper_relay_entity"

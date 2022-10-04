@@ -59,14 +59,11 @@ namespace StellarisModder
             // Write each entity
             foreach( var entity in entities)
             {
-                // Write the value of the entity
-                writer.WriteLine(entity.Value);
-
-                // Add an empty line after an entity
-                //if ( entity.Type == ResourceFileEntityType.Entity)
-                //{
-                //    writer.WriteLine();
-                //}
+                if (entity.Changed || replaceEntireFile)
+                {
+                    // Write the value of the entity
+                    writer.WriteLine(entity.Value);
+                }
             }
 
             // Flush and close

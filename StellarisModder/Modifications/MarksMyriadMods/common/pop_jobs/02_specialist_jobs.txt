@@ -1,3 +1,4 @@
+@partial
 # Make pearl divers slightly better
 @REPLACE pearl_diver>resources
 	resources = {

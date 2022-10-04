@@ -1,4 +1,5 @@
-﻿@ADD tradition_expansion
+﻿@partial
+@ADD tradition_expansion
 	potential = {
 		NOT = { has_civic = civic_build_tall }
 	}

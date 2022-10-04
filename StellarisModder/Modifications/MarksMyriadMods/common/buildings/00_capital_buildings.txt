@@ -1,3 +1,4 @@
+@partial
 # Functional architecture should work for habitats as well
 @ADD building_hab_capital
 	triggered_planet_modifier = {

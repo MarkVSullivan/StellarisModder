@@ -1,3 +1,4 @@
+@partial
 # Habitats are easier to maintain; housing also provides some amenities
 @REPLACE district_hab_housing>planet_modifier
     planet_modifier = {

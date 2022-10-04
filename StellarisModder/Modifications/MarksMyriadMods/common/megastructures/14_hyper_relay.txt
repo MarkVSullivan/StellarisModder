@@ -1,4 +1,5 @@
-﻿# Hyper relays are cheaper to build and maintain
+﻿@partial
+# Hyper relays are cheaper to build and maintain
 @LINEREPLACE
 alloys = 500
 @WITH

@@ -1,4 +1,5 @@
-﻿# Can build multiple matter decompressors (requires black hole)
+﻿@partial
+# Can build multiple matter decompressors (requires black hole)
 @LINEREPLACE matter_decompressor_0
 from = { NOT = { has_country_flag = built_matter_decompressor_site_contingency } }
 @WITH

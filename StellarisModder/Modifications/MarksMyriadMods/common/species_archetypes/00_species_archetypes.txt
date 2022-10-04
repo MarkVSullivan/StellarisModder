@@ -1,3 +1,4 @@
+@partial
 # More trait PICKS allowed (but no more points)
 @LINEREPLACE
 @robot_max_traits = 4

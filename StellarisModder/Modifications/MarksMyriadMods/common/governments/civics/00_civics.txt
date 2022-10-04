@@ -1,4 +1,5 @@
-﻿# Allow dictatorships to have aristocratic elites
+﻿@partial
+# Allow dictatorships to have aristocratic elites
 @REPLACE civic_aristocratic_elite>possible
 	possible = {
 		ethics = {

@@ -1,4 +1,5 @@
-﻿# Promoting a faction works slightly better
+﻿@partial
+# Promoting a faction works slightly better
 @REPLACE promoted_xenophobe
 promoted_xenophobe = {
 	pop_ethic_xenophobe_attraction_mult = 2

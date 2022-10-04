@@ -1,4 +1,5 @@
-﻿# Makes upkeep on ambitions less
+﻿@partial
+# Makes upkeep on ambitions less
 @LINEREPLACE
 @ambitionUpkeep = 75
 @WITH

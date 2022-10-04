@@ -1,3 +1,4 @@
+@partial
 # Refineries, chemical planets, and crysal plants have two jobs, rather than one
 @LINEREPLACE building_refinery
 job_gas_refiner_add = 1

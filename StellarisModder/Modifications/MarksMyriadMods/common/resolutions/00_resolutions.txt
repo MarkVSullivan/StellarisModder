@@ -1,4 +1,5 @@
-﻿# Support overlord's permanent seat on council more
+﻿@partial
+# Support overlord's permanent seat on council more
 @ADD resolution_galacticreforms_permanent_seat>ai_weight
 		modifier = {
 			factor = 5

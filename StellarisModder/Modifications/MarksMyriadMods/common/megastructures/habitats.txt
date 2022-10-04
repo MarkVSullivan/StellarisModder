@@ -1,3 +1,4 @@
+@partial
 # Make habitats slightly cheaper to build
 @REPLACE habitat_0>resources>cost
         cost = {
