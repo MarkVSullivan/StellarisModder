@@ -10,7 +10,9 @@ namespace StellarisModder
 {
     public class ResourceFile
     {
-        private readonly List<ResourceFileEntity> entities;       
+        private readonly List<ResourceFileEntity> entities;
+
+        private bool replaceEntireFile = true;
 
         public ResourceFile(string SourceFile)
         {
@@ -23,6 +25,13 @@ namespace StellarisModder
         {
             // Get the instruction file details
             InstructionSet instructions = InstructionSet.Read(instructionFile);
+
+            // Peek into the first line to see if this is going to attempt a partial replacement
+            if ( instructions.Peek() != null && instructions.Peek().Equals("@partial", StringComparison.OrdinalIgnoreCase))
+            {
+                replaceEntireFile = false;
+                instructions.Pop();
+            }
 
             // Loop through the instructions
             while ( instructions.Peek() != null )

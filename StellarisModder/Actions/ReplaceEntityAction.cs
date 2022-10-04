@@ -58,6 +58,7 @@ namespace StellarisModder.Actions
 
                 entity.EntityName = newEntityName;
                 entity.Value = newValue;
+                entity.Changed = true;
 
                 return true;
             }
@@ -74,6 +75,7 @@ namespace StellarisModder.Actions
                 }
 
                 var parentEntity = File.GetEntity(parentEntityName, id);
+                parentEntity.Changed = true;
 
                 return replace_entity_recursive(parentEntity, remainingEntityChain, newEntityName, newValue, 0);
             }
@@ -89,7 +91,9 @@ namespace StellarisModder.Actions
                 var childEntity = entity.GetSubEntity(entityChain.Trim());
                 childEntity.EntityName = newEntityName;
                 childEntity.Value = newValue;
+                childEntity.Changed = true;
                 entity.Collapse(depth);
+                entity.Changed = true;
             }
             else
             {
@@ -98,6 +102,7 @@ namespace StellarisModder.Actions
                 var nextEntity = entity.GetSubEntity(nextEntityName);
                 returnValue = replace_entity_recursive(nextEntity, remainingEntityChain, newEntityName, newValue, depth + 1);
                 entity.Collapse(depth);
+                entity.Changed = true;
             }
 
             //entity.Collapse(depth);

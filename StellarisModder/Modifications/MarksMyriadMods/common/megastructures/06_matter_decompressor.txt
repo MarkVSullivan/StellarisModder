@@ -1,21 +1,5 @@
 ﻿# Can build multiple matter decompressors (requires black hole)
 @LINEREPLACE matter_decompressor_0
-is_megastructure_type = matter_decompressor_0
+from = { NOT = { has_country_flag = built_matter_decompressor_site_contingency } }
 @WITH
-#is_megastructure_type = matter_decompressor_0
-@LINEREPLACE matter_decompressor_0
-is_megastructure_type = matter_decompressor_1
-@WITH
-#is_megastructure_type = matter_decompressor_1
-@LINEREPLACE matter_decompressor_0
-is_megastructure_type = matter_decompressor_2
-@WITH
-#is_megastructure_type = matter_decompressor_2
-@LINEREPLACE matter_decompressor_0
-is_megastructure_type = matter_decompressor_3
-@WITH
-#is_megastructure_type = matter_decompressor_3
-@LINEREPLACE matter_decompressor_0
-is_megastructure_type = matter_decompressor_4
-@WITH
-#is_megastructure_type = matter_decompressor_4
+from = { NOT = { has_country_flag = BOGUS_built_matter_decompressor_site_contingency } }

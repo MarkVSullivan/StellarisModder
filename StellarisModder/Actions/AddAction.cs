@@ -40,7 +40,8 @@ namespace StellarisModder.Actions
             {
                 EntityName = newEntityName,
                 Value = newValue,
-                Type = ResourceFileEntityType.Entity
+                Type = ResourceFileEntityType.Entity,
+                Changed = true
             };
 
             // Top level entity?
@@ -54,6 +55,7 @@ namespace StellarisModder.Actions
                 parentEntity.Parse();
                 parentEntity.SubEntities.Add(newEntity);
                 parentEntity.Collapse(0);
+                parentEntity.Changed = true;
             }
             else
             {
@@ -62,6 +64,7 @@ namespace StellarisModder.Actions
                 string remainingEntityChain = entityName.Substring(seperatorIndex + 1);
 
                 var parentEntity = File.GetEntity(parentEntityName);
+                parentEntity.Changed = true;
 
                 add_entity_recursive(parentEntity, remainingEntityChain, newEntity, 0);
                 if (parentEntity.SubEntities != null)
@@ -83,6 +86,8 @@ namespace StellarisModder.Actions
                 childEntity.Parse();
                 childEntity.SubEntities.Add(newEntity);
                 childEntity.Collapse(depth);
+                childEntity.Changed = true;
+                entity.Changed = true;
             }
             else
             {
@@ -91,6 +96,7 @@ namespace StellarisModder.Actions
                 var nextEntity = entity.GetSubEntity(nextEntityName);
                 returnValue = add_entity_recursive(nextEntity, remainingEntityChain, newEntity, depth + 1);
                 entity.Collapse(depth);
+                entity.Changed = true;
             }
 
             //entity.Collapse(depth);

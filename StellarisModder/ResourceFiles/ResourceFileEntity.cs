@@ -25,6 +25,8 @@ namespace StellarisModder
 
         public List<ResourceFileEntity> SubEntities { get; private set;  }
 
+        public bool Changed { get; set; } = false;
+
         public void Parse()
         {
             string[] split = Value.Split('\r');

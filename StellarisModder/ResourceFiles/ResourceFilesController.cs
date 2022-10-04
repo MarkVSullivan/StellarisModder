@@ -72,12 +72,16 @@ namespace StellarisModder
                     continue;
                 }
 
-                // Copy the file
+                // Make destination folder
+                if (!Directory.Exists(output_folder))
+                    Directory.CreateDirectory(output_folder);
+
+                // Add log to console
                 Console.WriteLine(relativeFile);
-                File.Copy(sourceFile, outputFile, true);
+               // File.Copy(sourceFile, outputFile, true);
 
                 // Now, read the instructions and output file and make replacements as needed
-                ResourceFile file = new ResourceFile(outputFile);
+                ResourceFile file = new ResourceFile(sourceFile);
 
                 // Update the contents based on the instructions
                 file.Update(thisInstructionFile);

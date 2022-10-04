@@ -79,10 +79,13 @@ namespace StellarisModder.Actions
 
                 var parentEntity = file.GetEntity(parentEntityName);
 
+                if (parentEntity == null) return false;
+
                 bool returnValue = replace_within_entity_recursive(parentEntity, remainingEntityChain, lineToReplace, replaceWith, 1);
 
                 if (parentEntity.SubEntities != null)
                     parentEntity.Collapse(0);
+                parentEntity.Changed = true;
 
                 return returnValue;
             }
@@ -95,11 +98,15 @@ namespace StellarisModder.Actions
 
             string newValue = entity.Value.Replace("\t" + lineToReplace + "\r", "\t" + replaceWith + "\r");
             entity.Value = newValue;
+            entity.Changed = true;
             return true;
         }
 
         private bool replace_within_entity_recursive(ResourceFileEntity entity, string entityChain, string lineToReplace, string replaceWith, int depth)
         {
+            if (entity == null)
+                return false;
+
             bool returnValue = false;
 
             int seperatorIndex = entityChain.IndexOf('>');
@@ -115,6 +122,7 @@ namespace StellarisModder.Actions
                 string remainingEntityChain = entityChain.Substring(seperatorIndex + 1);
                 var nextEntity = entity.GetSubEntity(nextEntityName);
                 returnValue = replace_within_entity_recursive(nextEntity, remainingEntityChain, lineToReplace, replaceWith, depth + 1);
+                nextEntity.Changed = true;
             }
 
             return returnValue;
@@ -135,6 +143,7 @@ namespace StellarisModder.Actions
 
                     string newValue = entity.Value.Replace(lineToReplace, replaceWith);
                     entity.Value = newValue;
+                    entity.Changed = true;
                 }
                 else if (entity.Value.IndexOf("\t" + lineToReplace + "\r") >= 0)
                 {
@@ -142,6 +151,7 @@ namespace StellarisModder.Actions
 
                     string newValue = entity.Value.Replace("\t" + lineToReplace + "\r", "\t" + replaceWith + "\r");
                     entity.Value = newValue;
+                    entity.Changed = true;
                 }
             }
 

@@ -100,7 +100,6 @@
     <Content Include="Modifications\MarkRelicTweaks\events\ancient_relics_arcsite_events_2.txt" />
     <Content Include="Modifications\MarkBetterAquatics\events\aquatics_events.txt" />
     <Content Include="Modifications\MarkRelicTweaks\events\precursor_events.txt" />
-    <Content Include="Modifications\MarksMyriadMods\common\anomalies\00_anomaly_categories.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\artifact_actions\artifact_actions.txt" />
     <Content Include="Modifications\MarkHabitatTallCompatibility\common\ascension_perks\00_ascension_perks.txt" />
     <Content Include="Modifications\MarksMyriadMods\common\buildings\00_capital_buildings.txt" />
