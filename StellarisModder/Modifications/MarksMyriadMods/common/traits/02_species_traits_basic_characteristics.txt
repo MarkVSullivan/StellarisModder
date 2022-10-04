@@ -1,4 +1,3 @@
-@partial
 # Hydrocentric perk makes aquatic a bit better
 @LINEREPLACE trait_aquatic
 pop_housing_usage_mult = -0.05

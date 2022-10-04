@@ -1,4 +1,3 @@
-@partial
 # Some higher level traits (non-initial) slightly cheaper
 @LINEREPLACE trait_fertile
 cost = 4
