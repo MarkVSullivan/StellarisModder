@@ -1,4 +1,0 @@
-@robot_max_traits = 6
-@machine_trait_points = 2
-@machine_max_traits = 8
-@species_max_traits = 8
