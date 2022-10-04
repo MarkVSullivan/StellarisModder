@@ -53,6 +53,13 @@ namespace StellarisModder
             if (File.Exists(OutputFile))
                 File.Delete(OutputFile);
 
+            if ( replaceEntireFile )
+            {
+                OutputFile = OutputFile.Replace(".txt", "_partial.txt");
+                if (File.Exists(OutputFile))
+                    File.Delete(OutputFile);
+            }
+
             // Open stream to the file
             var writer = new StreamWriter(OutputFile, false);
 
